@@ -1,0 +1,325 @@
+body {
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    color: var(--text-color);
+}
+
+#hero {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 250px;
+}
+
+#hero-container {
+    max-width: 510px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#headline {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#logo {
+    margin-right: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    color: var(--text-color);
+}
+
+:root {
+    --dark: #212424;
+    --primary: #ffd37f;
+    --secondary: #35a7ff;
+    --text-color: #25272a;
+    --p-color: #45494f;
+    --container-width: 900px;
+    --font-family: Inter,system-ui,sans-serif;
+    --mobile-padding: 0px;
+}
+
+::selection {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+#logo {
+    margin-right: 15px;
+}
+* {
+    box-sizing: border-box;
+}
+svg {
+    width: 26;
+    height: 26;
+    fill: none;
+}
+user agent stylesheet
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+#headline {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+user agent stylesheet
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#hero {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 250px;
+}
+
+path{
+    display: path("M 130.28 47.55 c 0.01 -0.04 0.02 -0.06 0.03 -0.1 c 0.03 -0.17 0.06 -0.33 0.1 -0.49 c -0.06 0.2 -0.1 0.39 -0.13 0.59 Z m 0 0 c 0.01 -0.04 0.02 -0.06 0.03 -0.1 c 0.03 -0.17 0.06 -0.33 0.1 -0.49 c -0.06 0.2 -0.1 0.39 -0.13 0.59 Z M 110 0.87 C 49.73 0.87 0.88 49.73 0.88 109.99 c 0 60.27 48.86 109.13 109.12 109.13 c 4.8 0 9.51 -0.31 14.15 -0.92 l -55.17 -50.45 c 9.73 6.92 21.34 11.48 34.08 12.73 c -20.17 -3.12 -35.87 -14.16 -37.35 -15.22 c -0.03 -0.02 -0.05 -0.04 -0.07 -0.05 c -3.64 -2.93 -6.97 -6.2 -9.95 -9.77 c 0.14 -0.27 0.41 -0.56 0.88 -0.85 c 2.86 -1.82 3.81 -4.68 3.79 -7.86 c -0.02 -4.41 1.09 -8.45 3.07 -12.36 c 2.54 -4.97 1.88 -9.73 -1.75 -14.01 c -0.81 -0.96 -1.53 -2.06 -2.49 -2.8 c -5.42 -4.16 -6.11 -9.74 -5.05 -15.95 c 1.12 -6.53 -1.01 -10.17 -7.12 -12.49 c -2.33 -0.88 -3.56 -1.34 -4.03 -2.11 c -0.53 -0.87 -0.04 -2.14 0.99 -4.87 c 0.47 -1.22 0.93 -2.09 1.95 -2.36 c 0.44 -0.13 0.99 -0.14 1.68 -0.03 c 4.03 0.63 7.36 -1.52 10.15 -4.07 c 3.5 -3.18 7.53 -5.05 11.93 -6.47 c 6.59 -2.13 9.41 -6.03 9.4 -12.96 c -0.02 -2.95 -0.13 -5.93 -0.46 -8.85 c -0.04 -0.36 -0.04 -0.65 -0.02 -0.92 c 11.48 -5.7 24.65 -8.35 38.35 -7 c 5.3 0.53 10.41 1.63 15.28 3.22 c -0.05 0.08 -0.12 0.16 -0.17 0.24 c -0.03 0.04 -0.05 0.1 -0.09 0.15 c -0.15 0.28 -0.31 0.61 -0.4 0.77 l 4.72 1.62 c 0 -0.01 0.01 -0.01 0.02 -0.01 c 0.69 -0.48 1.69 -0.38 2.71 -0.05 c 1.3 0.42 2.63 1.2 3.41 1.64 c 7.29 4.07 13.84 9.37 19.41 15.57 c 0.04 0.04 0.07 0.08 0.1 0.12 c 2.06 2.29 3.97 4.7 5.73 7.21 l 51.02 49.89 c 0.29 -3.24 0.44 -6.53 0.44 -9.86 C 219.12 49.73 170.27 0.87 110 0.87 Z M 46.83 94.45 c 2.11 0.95 3.13 2.55 2.67 4.97 c -0.22 1.14 -0.21 2.32 -0.42 3.46 c -1.33 7.37 1.17 13.23 6.63 18.24 c 5.04 4.59 5.3 7.04 2.29 13.22 c -1.59 3.27 -2.48 6.69 -2.4 10.34 c 0.01 0.35 0.04 0.73 -0.02 1.08 c -0.28 1.99 -0.04 4.41 -2.63 5.03 c -0.29 0.07 -0.56 0.1 -0.79 0.07 c -9.5 -13.4 -14.38 -30.17 -12.65 -47.79 c 0.36 -3.6 0.97 -7.08 1.83 -10.48 c 0.33 -0.04 0.75 0.05 1.24 0.25 c 1.41 0.54 2.87 0.97 4.25 1.61 Z m 27.35 -35.78 c -0.13 2.12 -1.5 3.83 -3.52 4.76 c -1.55 0.72 -3.1 1.45 -4.72 1.96 c -4 1.23 -7.55 3.18 -10.65 6.02 c -1.85 1.7 -3.85 3.23 -6.86 3.56 a 71.014 71.014 0 0 1 25.61 -25.99 c 0.11 3.49 0.34 6.61 0.14 9.69 Z m 56.13 -11.22 c 0.03 -0.17 0.06 -0.33 0.1 -0.49 c -0.05 0.2 -0.1 0.39 -0.12 0.59 c 0 -0.04 0.01 -0.06 0.02 -0.1 Z m -0.03 0.1 c 0.01 -0.04 0.02 -0.06 0.03 -0.1 c 0.03 -0.17 0.06 -0.33 0.1 -0.49 c -0.06 0.2 -0.1 0.39 -0.13 0.59 Z");
+    fill: rgb(53, 167, 255);
+}
+
+path{
+    display: path("M 218.69 119.86 c -4.57 50.98 -44.17 91.84 -94.54 98.35 l -58.51 -52.99 c 0.02 0.02 0.04 0.04 0.07 0.05 c 1.48 1.06 17.18 12.09 37.35 15.22 c 8.21 1.27 16.35 0.26 24 -1.72 c 0.78 -0.2 1.56 -0.4 2.33 -0.62 c 8.01 -2.58 16.33 -6.75 24.87 -12.87 c 14.38 -11.49 24.28 -28.57 26.24 -48.33 c 0.45 -4.7 0.44 -9.34 0 -13.87 c -1.19 -1.99 -3.47 -2.66 -6.91 -2.12 c -0.98 0.14 -1.96 0.28 -2.92 0.54 c -3.1 0.85 -5.77 1.01 -8.12 -2.06 c -1.34 -1.76 -3.92 -3.09 -6.25 -1.74 c -2.27 1.3 -0.94 3.48 -0.37 5.33 c 0.04 0.17 0.09 0.35 0.13 0.51 c 1.09 4.19 -1.26 7.15 -5.58 7.07 c -2.4 -0.05 -4.56 -0.8 -6.47 -2.28 c -0.7 -0.53 -1.53 -1.23 -2.38 -0.37 c -0.71 0.7 -1.13 1.66 -0.76 2.71 c 0.24 0.66 0.65 1.27 1.02 1.88 c 1.65 2.71 4.09 4.39 6.95 5.69 c 4.52 2.06 4.99 4.05 2.12 8.14 c -1.74 2.49 -3.59 4.93 -5.81 7.05 c -3.5 3.3 -5.71 7.23 -6.46 12.07 c -0.65 4.15 -1.42 8.3 -4.55 11.56 c -3.63 3.8 -7.78 6.87 -12.57 9.02 c -4.82 2.16 -8.75 0.81 -11.38 -3.81 c -2.38 -4.16 -3.19 -8.69 -3.02 -13.44 c 0.12 -2.77 0.71 -5.58 -0.33 -8.27 c -1.04 -2.63 -1.47 -5.26 -1.11 -8.12 c 0.4 -3.12 -0.74 -4.65 -3.76 -5.63 c -1.18 -0.38 -2.47 -0.77 -3.67 -0.67 c -5.58 0.5 -10.07 -1.99 -14.43 -4.97 c -2.67 -1.84 -4.57 -4.29 -5.46 -7.43 c -3.47 -12.41 5.88 -25.99 18.72 -27.23 c 6.05 -0.58 11.75 0.81 17.23 3.23 c 4.84 2.14 10.01 2.7 15.17 3.23 c 2.79 0.3 3.91 -1.15 3.57 -3.94 c -0.35 -2.89 -2.37 -4.32 -4.77 -5.31 c -3.54 -1.47 -7.35 -1.44 -11.09 -1.79 c -3.65 -0.36 -7.39 -0.07 -10.86 -1.58 c -3.59 -1.55 -4.47 -5.35 -2.06 -8.42 a 7.987 7.987 0 0 1 3.4 -2.56 c 2.4 -0.98 3.54 -2.84 4.02 -5.29 c 0.86 -4.37 2.64 -6.08 7.04 -6.9 c 2.85 -0.53 5.72 -0.6 8.55 -0.09 c 2.41 0.43 3.4 -0.31 3.02 -2.8 c -0.05 -0.32 -0.1 -0.65 -0.13 -0.99 c -0.03 -0.23 -0.05 -0.46 -0.07 -0.7 c -0.16 -1.66 -0.17 -3.44 0.14 -5.16 c 0.03 -0.17 0.06 -0.33 0.1 -0.49 v -0.01 c 0.04 -0.23 0.11 -0.46 0.18 -0.69 c 0.02 -0.12 0.05 -0.22 0.1 -0.34 c 0.04 -0.09 0.07 -0.18 0.11 -0.28 c 0 -0.02 0.01 -0.04 0.02 -0.05 c 0.02 -0.07 0.04 -0.14 0.08 -0.22 c 0.03 -0.09 0.06 -0.18 0.12 -0.28 c 0.04 -0.12 0.09 -0.23 0.14 -0.36 l 0.12 -0.27 c 0.09 -0.2 0.2 -0.4 0.3 -0.6 c 0.09 -0.16 0.25 -0.49 0.4 -0.77 c 0.04 -0.05 0.06 -0.11 0.09 -0.15 c 0.05 -0.08 0.12 -0.16 0.17 -0.24 l 6.79 2.71 c -1.02 -0.33 -2.02 -0.43 -2.71 0.05 c -0.01 0 -0.02 0 -0.02 0.01 c -1.19 0.84 -1.33 3.26 -1.33 4.53 c -0.02 3.19 1.29 7.24 -1.05 9.94 c -3.72 4.3 -11.98 -0.6 -16.09 3.33 c -1.45 1.39 -1.9 3.5 -2.75 5.32 c -1.36 2.92 -3.96 5.24 -7.02 6.28 c 1.14 1.53 3.27 1.83 5.17 1.95 c 4.12 0.23 8.29 0.11 12.33 0.9 c 4.05 0.78 8.09 2.61 10.52 5.94 c 2.42 3.34 2.75 8.39 -0.04 11.44 c -2.42 2.65 -6.43 3.18 -10 2.79 c -8.96 -1 -17.14 -6.64 -26.15 -6.38 c -6.71 0.2 -13.4 4.18 -15.92 10.41 c -2.51 6.21 -0.01 14.3 6 17.27 c 5.32 2.63 12.26 1.25 16.92 4.92 c 2.7 2.14 4.04 5.6 4.49 9.01 c 0.45 3.41 0.14 6.86 0.19 10.31 c 0.05 5.24 0.94 10.47 2.61 15.42 c 0.39 1.17 0.94 2.44 2.09 2.86 c 0.74 0.27 1.56 0.11 2.31 -0.11 c 6.91 -1.87 12.69 -7.44 14.81 -14.27 c 1.11 -3.6 1.29 -7.49 2.95 -10.86 c 2.04 -4.08 5.98 -6.84 8.85 -10.39 c 0.42 -0.52 0.83 -1.08 0.94 -1.74 c 0.33 -1.89 -1.73 -3.19 -3.36 -4.19 c -2.5 -1.53 -4.73 -3.66 -5.86 -6.35 c -1.14 -2.7 -1.05 -6.01 0.68 -8.37 c 1.72 -2.37 5.21 -3.44 7.78 -2.04 c 0.99 0.53 1.8 1.38 2.84 1.81 c 1.05 0.44 2.52 0.24 2.92 -0.82 c 0.28 -0.7 -0.03 -1.49 -0.21 -2.22 c -1.28 -4.78 3.38 -10.1 8.29 -9.46 c 2.02 0.26 3.83 1.31 5.7 2.09 c 4.57 1.91 9.75 2.29 14.53 1.04 c 0.02 0 0.04 -0.01 0.06 -0.01 c -0.07 -0.3 -0.15 -0.6 -0.23 -0.9 c -0.3 -1.21 -0.64 -2.41 -1.01 -3.6 c -0.11 -0.34 -0.21 -0.69 -0.32 -1.02 c -0.43 -1.32 -0.89 -2.62 -1.4 -3.9 c -0.14 -0.38 -0.29 -0.75 -0.44 -1.12 c -0.32 -0.8 -0.66 -1.6 -1.02 -2.39 a 56.027 56.027 0 0 0 -1.19 -2.56 c -0.25 -0.51 -0.51 -1.01 -0.77 -1.52 c -0.34 -0.65 -0.68 -1.29 -1.04 -1.92 c -0.36 -0.66 -0.73 -1.3 -1.11 -1.94 c -0.21 -0.36 -0.43 -0.71 -0.64 -1.06 a 0.219 0.219 0 0 0 -0.03 -0.05 c -0.22 -0.35 -0.44 -0.69 -0.66 -1.03 a 55.087 55.087 0 0 0 -1.92 -2.87 a 77.744 77.744 0 0 0 -5.73 -7.21 c -0.03 -0.04 -0.06 -0.08 -0.1 -0.12 c -0.37 -0.43 -0.73 -0.83 -1.09 -1.2 l 57.91 58.46 Z");
+    fill: rgb(6, 146, 254);
+}
+
+#headline {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+* {
+    box-sizing: border-box;
+}
+user agent stylesheet
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+#hero {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 250px;
+}
+body {
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    color: var(--text-color);
+}
+:root {
+    --dark: #212424;
+    --primary: #ffd37f;
+    --secondary: #35a7ff;
+    --text-color: #25272a;
+    --p-color: #45494f;
+    --container-width: 900px;
+    --font-family: Inter,system-ui,sans-serif;
+    --mobile-padding: 0px;
+}
+::selection {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+#hero-p {
+    margin-bottom: 30px;
+}
+
+p {
+    line-height: 26px;
+}
+
+.btn-shine {
+    position: relative;
+    overflow: hidden;
+    background: #35a7ff;;
+}
+.login {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--text-color);
+    padding: 12px 60px;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 0;
+    font-family: var(--font-family);
+    cursor: pointer;
+    transition: opacity .2s ease-out,transform .2s ease-out;
+    box-shadow: 2px 2px 1px rgba(0,0,0,.1);
+}
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#login-privacy {
+    font-size: 10px;
+    color: #595959;
+    line-height: 19px;
+    margin-top: 5px;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--mobile-padding);
+}
+
+#video-container {
+    background-color: var(--dark);
+    position: relative;
+    padding-top: 330px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+#video {
+    background-color: #303030;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: -200px;
+    left: 0;
+    right: 0;
+    border-radius: 6px;
+    box-shadow: 2px 2px 1px rgba(0,0,0,.1);
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+}
+
+#description-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: var(--container-width);
+    grid-gap: 40px;
+}
+
+#description-subtitle {
+    text-align: right;
+}
+
+.subtitle-big {
+    font-size: 40px;
+    line-height: 55px;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--mobile-padding);
+}
+
+p {
+    line-height: 26px;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.section-regular {
+    padding: 50px 0;
+}
+
+#topic-grid {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--mobile-padding);
+}
+
+.subtitle-big {
+    font-size: 40px;
+    line-height: 55px;
+}
+
+h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#topic-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 30px;
+    grid-gap: 0 50px;
+    row-gap: 0;
+    column-gap: 50px;
+}
+
+.secondary-bullet {
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+}
+
+.secondary-bullet li {
+    color: var(--secondary);
+    font-weight: 700;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    padding-left: 0;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Contact us - Freecodehub</title>
+    <style>
+        .gfg_feedback_button {
+    background-color: #273239;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    float: right;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    }
+    button, input {
+    line-height: normal;
+    }
+    button, input, textarea {
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-family: inherit;
+    margin-right: 0%;
+    margin-bottom: 7px;
+    padding: 8px 10px;
+    }
+    </style>
+</head>
+<body style="background-color: black;">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="index.html" style="text-decoration: none;"><h3 href="#" id="home" class="navbar-brand">freecode<span class="text-warning">hub</span></h3></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">What you'll learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">Intructors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="text-white" style="margin-top: 9%; margin-left: 9%;">
+        <h1>FreeCodeHub</h1>
+        <br>
+        <br>
+        <h4>Address</h4>
+        <div style="color: darkgray;">
+            <p>
+                FreeCodeHub <br>
+                A-143, 9th Floor, Sovereign Corporate Tower, <br>
+                Sector- 136, Ahmedabad, Gujarat (380061) <br>
+                +91-8000996247 (Course related Queries)
+            </p>
+            <br>
+        </div>
+        <h4>Feedback and Queries</h4>
+        <p>Select issue<span class="text-danger">*</span></p>
+        <select class="select_feedback gfg_feedback_input" name="feedback_select" required="">
+            <option value="" selected="" disabled="" hidden="">Select an Option</option>
+            <option value="Feedback and Query">Feedback</option>
+            <option value="Course Query">Course Related Queries</option>
+            <option value="Course Payment Query">Course Payment Related Issues</option>
+            <option value="Purchase Course Issues">Any Issue in Purchased Course</option>
+            <option value="Review Query">Review Related Queries</option>
+            <option value="Campus Event Sponsorship Query">Campus Event Sponsorship Related Queries</option>
+            <option value="Content Improvement Query">Content Improvement Related Queries</option>
+            <option value="Content Internship/Payment Query">Content Internship/Payment Related Queries</option>
+            <option value="DMCA Copyright">DMCA Notice/Copyright Issue</option>
+            <option value="DPO">DPO Related Queries</option>
+            <option value="Hiring Query">Hiring Related Queries</option>
+            <option value="Advertise with us">Advertise with us</option>
+            <option value="Brand and Content Integration">Brand and Content Integration</option>
+            <option value="Other">Other</option>
+        </select>
+        <br>
+        <br>
+        <p>Email Address<span class="text-danger">*</span></p>
+        <input class="email_feedback gfg_feedback_input" name="email" type="email" style="padding-left: 12.22%;">
+        <br><br>
+        <p>Contact Number</p>
+        <input class="mobile_feedback gfg_feedback_input" name="feedback_number" type="tel" placeholder="Contact Number" maxlength="20" style="padding-right: 12.22%;">
+        <br><br>
+        <p>Drop Your feedback/query<span class="text-danger">*</span></p>
+        <textarea class="textarea_feedback gfg_feedback_input" name="feedback_area" rows="4" cols="50" maxlength="300" placeholder="Max Allowed Characters: 300"></textarea>
+        <button style="margin-right: 94.4%;" class="button_feedback gfg_feedback_button" type="button" onclick="sendEmail()">
+            Submit
+        </button>
+    </div>
+    <br><br><br><br>
+
+    <footer class="bg-dark text-white text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h3 href="#">freecode<span class="text-warning">hub</span></h3>          
+            <p>
+              HTML/CSS was founded in 2008 by Pawan Suthar with a vision to establish comprehensive platform for computer science education and skill development.
+              Over the years, the platform has experienced exponential growths. Cementing it's position as one of the most trusted renowned names in the programming
+              community.
+            </p>
+
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase text-warning">Company</h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="about.html" target="_self" class="text-white" style="text-decoration: none;">About Us</a>
+                </li>
+                <li>
+                  <a href="legal.html" class="text-white" style="text-decoration: none; ">Legal</a>
+                </li>
+                <li>
+                  <a href="career.html" class="text-white" style="text-decoration: none;">Careers</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="text-white" style="text-decoration: none;">Contact Us</a>
+                </li>
+                <li>
+                    <a href="media.html" class="text-white" style="text-decoration: none;">In Media</a>
+                </li>
+                <li>
+                    <a href="advertise.html" class="text-white" style="text-decoration: none;">Advertise with us</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0" id="footer">
+              <h5 class="text-uppercase mb-0 text-warning">Web Development</h5>
+              <ul class="list-unstyled" style="margin-top: 3%;">
+                <li style="display: list-item; text-align: -webkit-match-parent;">
+                  <a href="virtual.html" class="text-white" style="text-decoration: none;">HTML</a>
+                </li>
+                <li>
+                  <a href="virtual.html" class="text-white" style="text-decoration: none;">CSS</a>
+                </li>
+                <li>
+                  <a href="java.html" class="text-white" style="text-decoration: none;">JavaScript</a>
+                </li>
+                <li>
+                  <a href="react.html" class="text-white" style="text-decoration: none;">ReactJS</a>
+                </li>
+                <li>
+                    <a href="php.html" class="text-white" style="text-decoration: none;">PHP</a>
+                </li>
+                <li>
+                    <a href="sql.html" class="text-white" style="text-decoration: none;">SQL</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="https://freecodehub.tech/">freecodehub.tech</a>
+          
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+</body>
+</html>
