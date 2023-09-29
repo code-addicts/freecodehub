@@ -6,3 +6,17 @@
 body { margin: 0; padding: 0; }
 #map { position: absolute; top: 0; bottom: 0; width: 100%; }
 
+.nav-link {
+  text-decoration: none;
+  color: #333; /* Default text color */
+  padding: 10px 15px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+  background-color: #007bff; /* Change to your desired background color on hover */
+  color: #fff; /* Change to your desired text color on hover */
+}
+
+
