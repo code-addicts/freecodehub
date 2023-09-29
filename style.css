@@ -19,4 +19,50 @@ body { margin: 0; padding: 0; }
   color: #fff; /* Change to your desired text color on hover */
 }
 
+/* Style the FAQ section */
+#questions {
+    background-color: #f8f9fa; /* Set background color */
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+/* Style the FAQ title */
+#questions h2 {
+    text-align: center; /* Center-align the title */
+    color: #333; /* Text color */
+    font-size: 28px; /* Font size */
+    margin-bottom: 20px; /* Spacing below the title */
+}
+
+/* Style the accordion buttons */
+#questions .accordion-button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove the default button border */
+    border-radius: 5px; /* Add rounded corners */
+    padding: 15px 20px; /* Adjust padding as needed */
+    text-align: left; /* Left-align button text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Style the accordion buttons on hover */
+#questions .accordion-button:hover {
+    background-color: #0056b3; /* Change to your desired background color on hover */
+}
+
+/* Style the accordion answers */
+#questions .accordion-body {
+    background-color: #fff; /* Answer background color */
+    color: #333; /* Answer text color */
+    border: 1px solid #ddd; /* Add a border around the answer */
+    border-radius: 5px; /* Add rounded corners */
+    padding: 15px; /* Adjust padding as needed */
+}
+
+/* Style the accordion container */
+#questions .accordion {
+    background-color: transparent; /* Make the accordion background transparent */
+    border: none; /* Remove the default accordion border */
+    box-shadow: none; /* Remove the default accordion box-shadow */
+}
+
 
