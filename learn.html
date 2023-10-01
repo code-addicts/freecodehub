@@ -602,6 +602,80 @@
                 These question largely dictate the success of our programs whether you formally study them or not. With any luck I have motivated you to learn what I call the big three topics in software engineering, which we shall go into now.
             </h5>
             <br><br>
+            <h2>
+                How We Measure Runtime And Memory Space:
+            </h2>
+            <br>
+            <h5>The first of the big three topics is described using a big scary term:</h5>
+            <br>
+            <h5><b>Asymptotic Runtime & Space Complexity.</b></h5>
+            <br><br>
+            <h5>
+                Having already described runtime and memory space, I think a serviceable replacement for the word complexity here is “efficiency." And asymptotic is related to the fact that we can represent this efficiency (or lack thereof) on a two dimensional Cartesian Graph. You know, x and y, rise over run, and all that stuff.
+            </h5>
+            <br><br>
+            <h5>
+                Do not worry if you are unfamiliar with this stuff. You only need a very basic understanding of these things to apply it in your code.
+            </h5>
+            <br><br>
+            <h5>
+                Also, note that there is such a thing as a Graph data structure, but that concept is far removed from a Cartesian Graph and not what I am referring to.
+            </h5>
+            <br><br>
+            <h5>
+                Since we can represent our code and how it behaves with respect to either runtime or memory space on a Cartesian Graph, it follows that there must be functions which describe how to draw such a graph.
+            </h5>
+            <br><br>
+            <h5>
+                The way in which we describe how efficient our code in this way is to use “Big O” notation.
+            </h5>
+            <br><br>
+            <h5>
+                Here is the simplest introduction I can give you in order to understand this topic. I will use the modern programming language Kotlin for my code samples which will hopefully provide a happy middle ground for you web and native developers.
+            </h5>
+            <br><br>
+            <h5>
+                Suppose three functions (also sometimes known as methods, algorithms, commands, or procedures):
+            </h5>
+            <br><br>
+            <h5>
+                Function <span class="bg-dark">printStatement</span>:
+            </h5>
+            <br>
+            <img src="img/learn1.jpg" alt="" style="max-width: 100%; height: auto;">
+            <br><br><br>
+            <h5>
+                Function <span class="bg-dark">printArray</span>:
+            </h5>
+            <br>
+            <img src="img/learn2.jpg" alt="" style="max-width: 100%; height: auto;">
+            <br><br><br>
+            <h5>
+                Function <span class="bg-dark">printArraySums</span>:
+            </h5>
+            <br>
+            <img src="img/learn3.jpg" alt="" style="max-width: 100%; height: auto;">
+            <br><br><br>
+            <h5>
+                For ease of understanding, suppose that every time println(...) is called, it takes 100ms, or 1/10th of a second on average to complete (in reality 100ms for a single print command is terribly slow but it's easier to imagine than a microsecond or picosecond).
+            </h5>
+            <br><br>
+            <h5>
+                With that in mind, let us think critically about how these functions can be expected to behave differently, based on what inputs they are given.
+            </h5>
+            <br><br>
+            <h5>
+                <span class="bg-dark">printStatement</span>, barring anything other than a catastrophic failure of the system itself, will always take an average time of 100ms to complete.
+            </h5>
+            <br><br>
+            <h5>
+                In fact, while Big O notation is very concerned about the size of the arguments given to a function (that will make more sense shortly), this function does not even have any arguments to change its behaviour.
+            </h5>
+            <br><br>
+            <h5>
+                Therefore, we can say that the runtime complexity (time taken until completion), is constant, which can be represented by the following mathematical function and graph:
+            </h5>
+            <br><br>
         </div>
     </section>
 
