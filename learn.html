@@ -937,7 +937,96 @@
             <h5>
                 This is generally achieved by using some kind of loop:
             </h5>
-            
+            <br>
+            <h5>Function <span class="bg-dark">naiveSearch:</span></h5>
+            <br><br>
+            <img src="img/learn7.jpg" alt="" style="max-width: 100%; height: auto;">
+            <br>
+            <br>
+            <h5>
+                If we happen to only have a few hundred, or even a few thousand users in this collection, then we can expect this function to return quite quickly all the same.
+            </h5>
+            <br><br>
+            <h5>
+                But let us assume we are working in a successful social media tech start up, and we have just hit one million users.
+            </h5>
+            <br><br>
+            <h5>
+                You should be able to reason that naiveSearch has O(n) asymptotic complexity as its worst case runtime complexity. The reason in short is that if the target User happens to be located at n, then we must invariably traverse the entire collection to get there.
+            </h5>
+            <br><br>
+            <h5>
+                If you are not already familiar with the Binary Search (BS) algorithm, then you should prepare to have your mind blown.
+            </h5>
+            <br><br>
+            <h5>
+                What if I told you that by using a BS algorithm to search our collection with one million elements, you will only ever make, at most, 20 comparisons? That is right; 20 comparisons (as opposed to 1 million with NS) is the worst case scenario.
+            </h5>
+            <br><br>
+            <h5>
+                Now, I will explain how BS works in principle, but my one piece of homework for you to do is to implement it in your preferred programming language. It may be that the language you choose already has a BS implementation from its standard library, but this is an important learning exercise!
+            </h5>
+            <br><br>
+            <h5>
+                In principle, rather than searching an ordered collection one by one, unidirectionally, we start by looking at the value at index n/2. So in a collection with 10 elements, we would check the fifth element. The ordering is important, because we can then compare the element at n/2 with our target:
+            </h5>
+            <br><br>
+            <h5 style="margin-right: 30%;">
+                <li>If the value of that element is greater than the target, we know that the element we want must be located earlier in the collection</li>
+                <br>
+                <li>
+                    If the value of that element is less than the target, then we know that the element we want must be located further ahead in the collection
+                </li>
+                <br>
+                <li>
+                    You should be able to guess what happens if we have a match
+                </li>
+                <br>
+            </h5>
+            <br>
+            <h5>
+                Now, the idea is that we are cutting the dataset in half every iteration. Suppose the value at element n/2 was less than our target value. We would next select the middle index between n/2 and n.
+            </h5>
+            <br><br>
+            <h5>
+                From there, our algorithm keeps slicing back or forth using the same logic over a smaller and smaller range of indexes in our collection.
+            </h5>
+            <br><br>
+            <h5>
+                This brings us to the beauty of the BS algorithm applied to a sorted collection: Rather than the time it takes to complete growing linearly, or exponentially with respect to n, it grows logarithmically:
+            </h5>
+            <br><br>
+            <img src="img/learn8.png" alt="" style="max-width: 100%; height: auto;">
+            <br>
+            <p>
+                A Binary Search has logarithmic runtime complexity, which means that it handles large values of n like a boss (very well)
+            </p>
+            <br>
+            <br>
+            <h5>
+                If this article really is your first introduction to the main ideas in software engineering, then please do not expect everything to make sense immediately.
+            </h5>
+            <br><br>
+            <h5>
+                While I hope that some of my explanations helped, my primary goal was to give you a basic list of ideas to study yourself, and what I believe to be a good order in which to study those ideas.
+            </h5>
+            <br><br>
+            <h5>
+                The next step for you is to make a plan for learning this field, and to take action on it. The following section is all about how to do that.
+            </h5>
+            <br><br>
+            <h1>
+                How to Learn Software Engineering – Some Practical Advice
+            </h1>
+            <br>
+            <h5>
+                I will now discuss some ideas and approaches which I have personally used to make the process of learning various DS and algorithms easier (but not easy!), both practically, and from motivational perspective.
+            </h5>
+            <br><br>
+            <h5>
+                As a learning aid, you might also want to watch my live lesson on youtube where I cover this topic. Do not skip the rest of this article though; I go into much more detail here!
+            </h5>
+            <br><br>
         </div>
     </section>
 
