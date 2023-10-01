@@ -800,6 +800,143 @@
             </h5>
             <br><br>
             <h3>Physical Array</h3>
+            <br>
+            <h5>
+                The first way takes advantage of the fact that we can group pieces of data (for example a list of friends in a social media application) into a chunk of contiguous (physically next to each other) memory space.
+            </h5>
+            <br><br>
+            <h5>
+                This turns out to be a very fast and efficient way for a computer to traverse memory space. Instead of giving the computer an n sized list of addresses for each piece of data, we give the computer a single address denoting the start of this DS in physical memory, and the size of (that is, n) the DS as a single value.
+            </h5>
+            <br><br>
+            <h5>
+                The instruction set for doing this could be as simple as telling the machine to move from left to right (or whatever direction), decrement the value of n by 1 each move, and to stop/return when that value hits 0.
+            </h5>
+            <br><br>
+            <h2>Lists Of Links (Addresses)</h2>
+            <br>
+            <h5>
+                The second way requires each piece of data in the structure itself to contain the address(es) of the next or previous (maybe both?) item within itself.
+            </h5>
+            <br>
+            <br>
+            <h5>
+                One of the big problems with contiguous memory spaces is that they present problems when it comes to growing (adding more elements) or shrinking (this can fragment the memory space, which I will not explain but suggest a quick google search).
+            </h5>
+            <br><br>
+            <h5>
+                By having each piece of data Link to the other pieces (usually just the previous or next one), it becomes largely irrelevant where each piece sits in physical memory space.
+            </h5>
+            <br><br>
+            <h5>
+                Therefore, we can grow or shrink the data structure with relative ease. You should be able to reason that since each part of the structure stores not just its own data, but the address of the next (or more than that) element, then each piece would necessarily require more memory space than with the contiguous Array approach.
+            </h5>
+            <br><br>
+            <h5>
+                However, whether it is ultimately more efficient depends on what kind of problem you are trying to solve.
+            </h5>
+            <br><br>
+            <h5>
+                The two approaches I have discussed are generally known as an Array and a Linked List. With very little exception, most of what we care about in the study of DS is how to group collections of data which have some kind of reason to be grouped together, and how best to do that.
+            </h5>
+            <br><br>
+            <h5>
+                As I tried to point out, what makes one structure better in a certain situation can make it worse in another.
+            </h5>
+            <br><br>
+            <h5>
+                You should be able to reason from the previous few paragraphs that a Linked List is typically more suitable for a dynamic (changing) collection, whereas an Array is typically more suitable for a fixed collection – at least with respect to runtime and space efficiency.
+            </h5>
+            <br><br>
+            <h5>
+                Do not be misled, however! It is not always the case that our primary concern is to pick the most efficient DS (or algorithm) with respect to runtime and memory space. Remember, if n is very small then worrying about a nanosecond or a few bits of memory here and there are not necessarily as important as ease of use and legibility.
+            </h5>
+            <br><br>
+            <h5>
+                The last thing I would like to say about DS is that I have observed a profound lack of consensus about the difference between a DS and a Data Type (DT).
+            </h5>
+            <br><br>
+            <h5>
+                Again, I think this is largely due to different experts approaching this from different backgrounds (mathematics, digital circuits, low level programming, high level programming) and the fact that it is really quite hard to make a verbal definition of one that does not at least partially (or entirely) describe the other.
+            </h5>
+            <br><br>
+            <h5>
+                At the risk of making the situation even more confusing, on a purely practical level, I think of data structures as things which are independent of a high level programming language’s Type System (assuming it has one). On the other hand, a data type is defined by and within such a Type system.
+            </h5>
+            <br><br>
+            <h5>
+                But I know that Type Theory itself is independent of any particular Type system, so you can hopefully see how tricky it is to say anything concrete about these two terms.
+            </h5>
+            <br><br>
+            <h3>Algorithms</h3>
+            <br>
+            <h5>
+                I took quite a long time to explain the previous two topics because they allow me to introduce and motivate this topic rather easily.
+            </h5>
+            <br><br>
+            <h5>
+                Before we continue, I must very briefly try to untangle another mess of jargon. To explain the term “algorithm” in my own way, it is actually very simple: An algorithm is a set of instructions (commands) which can be understood and executed (acted upon) by an Information Processing System (IPS).
+            </h5>
+            <br><br>
+            <h5>
+                For example, if you were to follow a recipe to cook something, then you would be the IPS, the algorithm would be the recipe, and the ingredients and cookware would be the data inputs (arguments).
+            </h5>
+            <br><br>
+            <h5>
+                Now, by that definition the words function, method, procedure, operation, program, script, subroutine and algorithm all point to the same underlying concept.
+            </h5>
+            <br><br>
+            <h5>
+                This is not by accident – these words all fundamentally mean the same thing. The confusion is that different computer scientists and language designers will implement (build) the same idea in a slightly different way. Or even more depressingly, they will build them the same way but give a different name. I wish this was not the case, but the best I can do is to warn you.
+            </h5>
+            <br><br>
+            <h5>
+                That is all you need to know about algorithms in general, so let us be more specific about how they can help us to write better code.
+            </h5>
+            <br><br>
+            <h5>
+                Recall that our primary concern as software engineers is to write code which is guaranteed to be efficient (at least such that it keeps our users happy) and safe with respect to limited system resources.                
+            </h5>
+            <br><br>
+            <h5>
+                Also recall that I previously stated that some DS perform better than others with respect to runtime and memory space, particularly as n gets large.
+            </h5>
+            <br><br>
+            <h5>
+                The same is true of algorithms. Depending on what you are trying to do, different algorithms will perform better than others.
+            </h5>
+            <br><br>
+            <h5>
+                It is also worth noting that the DS will tend to shape which algorithms can be applied to the problem, so selecting the right DS and the right algorithm is the true art of software engineering.
+            </h5>
+            <br><br>
+            <h5>
+                To finish off this third main topic, we will look at two common but very different ways to solve the one problem: Searching an ordered Array. By ordered, I mean to say that it is ordered something like least to greatest, greatest to least, or even alphabetically.
+            </h5>
+            <br><br>
+            <h5>
+                Also, assume that the algorithm is given some kind of target value as an argument, which is what we use to locate a particular element. This should become clear in the example in case there is any confusion.
+            </h5>
+            <br><br>
+            <h5>
+                The example problem is as follows: We have a collection of Users (perhaps loaded from a database or server), which is sorted from least to greatest by a field called userId, which is an Integer value.
+            </h5>
+            <br><br>
+            <h5>
+                Suppose that this userId comes from taking the system time (look up Unix Time for more info) just prior to creating the new User. Rounded to the smallest value that still guarantees no repeated values.
+            </h5>
+            <br><br>
+            <h5>
+                If that previous sentence did not make sense, all you need to know is that this is a sorted collection with no repeats.
+            </h5>
+            <br><br>
+            <h5>
+                A simple way to write this algorithm would be to write what we will call a Naive Search (NS). Naive, in this context, means simple, but in a bad way, which refers to the fact that we just tell the computer to start from one end of the collection and move to the other until it finds a match to the target index.
+            </h5>
+            <br><br>
+            <h5>
+                This is generally achieved by using some kind of loop:
+            </h5>
             
         </div>
     </section>
