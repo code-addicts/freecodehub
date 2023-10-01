@@ -676,6 +676,131 @@
                 Therefore, we can say that the runtime complexity (time taken until completion), is constant, which can be represented by the following mathematical function and graph:
             </h5>
             <br><br>
+            <img src="img/learn4.png" alt="" style="max-width: 100%; height: auto;">
+            <br><br><br>
+            <h5>
+                The runtime (T) for <span class="bg-dark">printStatement</span> is always an average of 100 milliseconds and is therefore constant.
+            </h5>
+            <br><br>
+            <h5>
+                In the above graphic, T represents the runtime for <span class="bg-dark">println(...)</span> which we established to be an average of 100 milliseconds. I will explain what n refers to momentarily.
+            </h5>
+            <br><br>
+            <h5>
+                printArray presents a new problem. It stands to reason that the time it takes for printArray to complete will be directly proportionate to the size of the Array, arr, which is passed into it.
+            </h5>
+            <br><br>
+            <h5>
+                If the Array has four elements, that would result in println(...) being called four times, for a total average runtime of 400ms for printArray itself. To be more mathematically precise, we would say that the runtime complexity of printArray is linear:
+            </h5>
+            <br><br>
+            <img src="img/learn4.png" alt="" style="max-width: 100%; height: auto;">
+            <br><br>
+            <h5>
+                The number of times <span class="bg-dark">println(...)</span> is called, is directly proportionate (i.e. grows linearly) with respect to n.
+            </h5>
+            <br><br>
+            <h5>
+                printArraySums takes things a step further into something which you should be concerned about even as a junior or intermediate level developer. The number of arguments/inputs to any given function is referred to with a small n, when using Big O notation.
+            </h5>
+            <br><br>
+            <h5>
+                In our second function, this refers exclusively to the size of the Array (that is, arr.size), but in the third function it refers to the collective size of multiple arguments (that is, arrOne and arrTwo).
+            </h5>
+            <br><br>
+            <h5>
+                In Big O notation, there are actually three different qualities of a given piece of code that we can pay attention to:
+            </h5>
+            <br><br>
+            <h5>
+                <li>
+                    In Big O notation, there are actually three different qualities of a given piece of code that we can pay attention to:
+                </li>
+                <br>
+                <li>
+                    How efficient is the code if n is of an average expected size (average performance)?
+                </li>
+                <br>
+                <li>
+                    How efficient is the code if n is near or at the its maximum allowable value for the system (worst-case performance)?
+                </li>
+                <br>
+            </h5>
+            <br>
+            <h5>
+                Generally speaking, in the same sense that a civil engineer is most concerned about the maximum number of vehicles a bridge can support, a software engineer is usually most concerned about worst-case performance.
+            </h5>
+            <br><br>
+            <h5>
+                By looking at printArraySums, you should be able to reason that we can represent its worst-case runtime complexity (the number of times println(...) will be called) as n * n; where n is at or near to the maximum allowable size of an Array in the system.
+            </h5>
+            <br><br>
+            <h5>
+                In case it is not clear, we are not just pairing and summing the elements of arrOne and arrTwo at the same indexes, we are literally summing every value of them together in a nested loop.
+            </h5>
+            <br><br>
+            <h5>
+                From here you can start to truly understand the importance of asymptotic runtime and space complexity. In a worst-case scenario, the runtime grows exponentially in a quadratic curve:
+            </h5>
+            <br><br>
+            <img src="img/learn5.png" alt="" style="max-width: 100%; height: auto;">
+            <br><br>
+            <h5>
+                <span class="bg-dark">printArraySums(...)</span> has its runtime grow in a quadratic curve. For T = 100ms, n does not even need to be that large to result in a bad user experience.
+            </h5>
+            <br><br>
+            <h5>
+                Two final notes on this topic: Firstly, if I suddenly made you a bit fearful of nested loops (and yes, each nested loop potentially adds another factor of n), then I have done a good job.
+            </h5>
+            <br><br>
+            <h5>
+                Even so, understand that if you are certain that n will not exceed a reasonable size even in a function which has exponential growth, then there is not actually a problem.
+            </h5>
+            <br><br>
+            <h5>
+                If you would like to know how to determine if n will have a negative impact on performance, stick around for the last section of this article.
+            </h5>
+            <br><br>
+            <h5>
+                Secondly, you may have noticed that all of my examples were about runtime complexity, not memory space complexity.
+            </h5>
+            <br><br>
+            <h5>
+                The reason for this is simple: We represent space complexity in exactly the same manner and notation. Since we do not actually allocate any new memory apart from a temporary reference or two within each frame of the forEach{...} loops, asymptotically speaking, the second and third functions are still linear, O(n), with respect to memory allocation.
+            </h5>
+            <br><br>
+            <h3 class="text-light">Data Structures</h3>
+            <br>
+            <h5>
+                The term Data Structure, despite what any single teacher may tell you, does not have a singular definition.
+            </h5>
+            <br><br>
+            <h5>
+                Some teachers will emphasize their abstract nature and how we can represent them in mathematics, some teachers will emphasize how they are physically arranged in memory space, and some will emphasize how they are implemented in a particular language specification.
+            </h5>
+            <br><br>
+            <h5>
+                I hate to tell you this, but this is actually a very common problem in computer science and engineering: One word meaning many things and many words meaning one thing, all at the same time.
+            </h5>
+            <br><br>
+            <h5>
+                Therefore, rather than trying to make every kind of expert from every kind of academic or professional background happy by using a plethora of technical definitions, let me upset everyone equally by explaining things as clearly as I can in plain English.
+            </h5>
+            <br><br>
+            <h5>
+                For the purposes of this article, Data Structures (DS) refer to the ways in which we represent and group together our application’s data in our programs. Things like user profiles, friends lists, social networks, game states, high scores and so on.
+            </h5>
+            <br><br>
+            <h5>
+                When considering DS from the physical perspective of the hardware and operating system, there are two main ways to build a DS. Both ways take advantage of the fact that physical memory is discrete (a fancy word for countable), and therefore addressable.
+            </h5>
+            <br><br>
+            <h5>
+                An easy way to imagine this is to think about street addresses and how, depending on which direction you are physically moving (and depending on how your country organizes street addresses), the address increases or decreases in value.
+            </h5>
+            <br><br>
+            <h3>Physical Array</h3>
+            
         </div>
     </section>
 
