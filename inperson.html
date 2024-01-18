@@ -24,7 +24,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-TM2XX7G"></script>
-   //GOOGLE ADSENSE CODE:
+   <!--GOOGLE ADSENSE CODE-->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6631542551937450"
      crossorigin="anonymous">
      </script>
@@ -117,36 +117,68 @@
         <br><br>
     </section>
 
-        <video style="margin-left: 55%; margin-top: 6%;" id="flashcards-video" width="280" height="690" muted="" loop="" playsinline="" preload="none" autoplay=""><source src="https://res.cloudinary.com/dbfn5lnvx/video/upload/q_auto/v1650895123/learnhtmlcss/flashcards.mp4" type="video/mp4" style="max-width: 100%; height: auto;"></video>
-        <h1 class="subtitle-big" style="margin-top: -48%; margin-left: 15%;">
-            HTML<span class="text-warning">/</span>CSS 
-            <span class="text-warning">flashcards</span>
-        </h1>
-        <p class="text-dark" style="margin-left: 15%;">
-            HTML is a markup language used to create static<br>
-            web pages and web applications. CSS is a style sheet language<br>
-            responsible for the presentation of documents written in<br>
-            a markup language.
-            <br>
-            <br>
-            This course is designed with the learner in mind. That's why <br>
-            we've developed a separate flashcards app where you can reinforce <br>
-            the new concepts that you learned using <br> 
-            <br>
-            spaced repetition.
-            Spaced repetition has been proven to be <br>
-            a more effective learning method. <br>
-            To give our flash cards structure, we used some <br>
-            fundamental HTML components. <br>
-            <br>
-            The heading for the flash card will be added using the <br>
-            h2> inside the head portion. Now we will add the content <br>
-            to the section using the h2 and h4 tags, and we will<br>
-            make the button for creating the flash card<br>
-            using the button tag.
-        </p>
-    <br>
-    <br>
+       <section class="flashcards-section">
+        <div class="flashcards-content">
+            <video class="flashcards-video" width="280" height="690" muted loop playsinline preload="none" autoplay>
+                <source src="https://res.cloudinary.com/dbfn5lnvx/video/upload/q_auto/v1650895123/learnhtmlcss/flashcards.mp4" type="video/mp4">
+            </video>
+            <div class="flashcards-text">
+                <h1 class="subtitle-big">
+                    HTML<span class="text-warning">/</span>CSS
+                    <span class="text-warning">Flashcards</span>
+                </h1>
+                <p>
+                    <b>HTML</b> is a markup language used to create static web pages and web applications. <b>CSS</b> is a style sheet language responsible for the presentation of documents written in a markup language.
+                </p>
+                <p>
+                    This course is designed with the learner in mind. We've developed a separate flashcards app to reinforce the new concepts using spaced repetition, a more effective learning method.
+                </p>
+                <p>
+                    To give our flash cards structure, we used fundamental HTML components. The heading for the flash card will be added using the <code>&lt;h2&gt;</code> inside the head portion. Now, we will add the content to the section using the <code>&lt;h2&gt;</code> and <code>&lt;h4&gt;</code> tags, and we will make the button for creating the flash card using the <code>&lt;button&gt;</code> tag.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .flashcards-section {
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+    
+        .flashcards-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    
+        .flashcards-video {
+            margin-left: 2%;
+            margin-top: 6%;
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .flashcards-text {
+            margin-left: 2%;
+            max-width: 600px;
+        }
+    
+        .flashcards-text p {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .flashcards-content {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+
+            .flashcards-video {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 
     <center style="margin-top: 8%;">
         <h1 class="subtitle-big">
