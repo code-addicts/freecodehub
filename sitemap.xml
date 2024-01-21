@@ -13,7 +13,8 @@
     <loc>https://www.freecodehub.tech/virtual.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <url>
+  </url>
+  <url>
     <loc>https://www.freecodehub.tech/hybrid.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -28,12 +29,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  </url>
+  
   <url>
     <loc>https://www.freecodehub.tech/career.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  
   <url>
     <loc>https://www.freecodehub.tech/inperson.html</loc>
     <changefreq>weekly</changefreq>
