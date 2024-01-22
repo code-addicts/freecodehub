@@ -34,6 +34,18 @@ body { margin: 0; padding: 0; }
     background-color: #007bff; /* Change to your desired line color on hover */
 }
 
+#enroll-btn {
+    background-color: #007bff;
+    color: black;
+    border: none;
+}
+
+#enroll-btn:hover {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
 /* Style the FAQ section */
 #questions {
     background-color: #f8f9fa; /* Set background color */
