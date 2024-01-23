@@ -58,6 +58,18 @@ body { margin: 0; padding: 0; }
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.788); /* Increase the box shadow on hover */
 }
 
+.card-blue {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.card-blue:hover {
+    transform: scale(1.05); /* Increase the scale on hover to create a zoom effect */
+    box-shadow: 0 8px 30px rgba(14, 70, 255, 0.788); /* Increase the box shadow on hover */
+}
+
 /* Style the FAQ section */
 #questions {
     background-color: #f8f9fa; /* Set background color */
