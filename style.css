@@ -35,12 +35,16 @@ body { margin: 0; padding: 0; }
 }
 
 #enroll-btn {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s;
     background-color: #007bff;
     color: black;
     border: none;
 }
 
 #enroll-btn:hover {
+    transform: scale(1.05);
     background-color: black;
     color: white;
     border: none;
