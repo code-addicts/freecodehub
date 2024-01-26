@@ -1,1 +1,1 @@
-# freecodehub.tech
+# FreeCodeHub
