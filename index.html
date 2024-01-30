@@ -502,7 +502,7 @@
       </footer>
     
         <!-- Your modal form -->
-<form id="contact-form" action="send_email.php" method="POST">
+<form id="contact-form" action="" method="POST">
     <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -565,51 +565,5 @@
 </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <meta name="msvalidate.01" content="C9875E81890FBA88CE8DE12035C74FA7" />
-<!-- Place this script at the end of your HTML, before the closing </body> tag -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var submitButton = document.querySelector('#enroll .modal-footer button.btn-primary');
-
-        submitButton.addEventListener('click', function () {
-            // Retrieve form data
-            var firstName = document.querySelector('#first-name').value.trim();
-            var lastName = document.querySelector('#last-name').value.trim();
-            var email = document.querySelector('#email').value.trim();
-            var phone = document.querySelector('#phone').value.trim();
-
-            // Validate form data
-            if (firstName === '' || lastName === '' || email === '' || phone === '') {
-                alert('Please fill out all fields.');
-                return;
-            }
-
-            // Validate email format
-            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailPattern.test(email)) {
-                alert('Please enter a valid email address.');
-                return;
-            }
-
-            // Process form data (you can submit it to a server using AJAX)
-
-            // For now, we'll log the form data to the console
-            console.log('First Name:', firstName);
-            console.log('Last Name:', lastName);
-            console.log('Email:', email);
-            console.log('Phone:', phone);
-
-            // Reset form fields
-            document.querySelector('#first-name').value = '';
-            document.querySelector('#last-name').value = '';
-            document.querySelector('#email').value = '';
-            document.querySelector('#phone').value = '';
-
-            // Close the modal after form submission
-            var modal = document.querySelector('#enroll');
-            var modalInstance = bootstrap.Modal.getInstance(modal);
-            modalInstance.hide();
-        });
-    });
-</script>
 </body>
 </html>
