@@ -502,7 +502,6 @@
       </footer>
     
         <!-- Your modal form -->
-<form id="contact-form" action="https://formspree.io/f/xbjndevg" method="POST">
     <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -512,7 +511,8 @@
                 </div>
                 <div class="modal-body">
                     <p class="lead">Fill out this form and we will get back to you</p>
-                    <form>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="8efbe14c-2266-4dff-8f08-0ac1bcc79d9c">
                         <div class="mb-3">
                             <label for="first-name" class="col-form-label">First Name:</label>
                             <input type="text" class="form-control" id="first-name">
@@ -538,7 +538,6 @@
             </div>
         </div>
     </div>
-</form>
 
     <script type="module">
   // Import the functions you need from the SDKs you need
