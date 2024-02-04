@@ -120,4 +120,18 @@ body { margin: 0; padding: 0; }
     box-shadow: none; /* Remove the default accordion box-shadow */
 }
 
+/* Style for blog page */
+.blog-heading{
+    text-align: center;
+    color: #333;
+    margin-top: 10%;
+}
+
+.blog-container{
+    width: 80%;
+    height: auto;
+    background-color: #f8f9fa;
+    margin-inline: 10%;
+}
+
 
