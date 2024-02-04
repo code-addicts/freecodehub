@@ -134,4 +134,13 @@ body { margin: 0; padding: 0; }
     margin-inline: 10%;
 }
 
+/* styling of java */
+.java-container{
+    width: 60%;
+    background-color: #fff;
+    height: auto;
+    margin-top: 7%;
+    margin-left: 20%;
+}
+
 
