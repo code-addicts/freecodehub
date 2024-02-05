@@ -18,6 +18,8 @@
 @media only screen and (min-width: 600px) {
     .hidden-mobile {
         display: inline;
+        width: 0.1px;
+        height: 0.1px;
     }
 }
 
