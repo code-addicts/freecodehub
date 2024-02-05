@@ -10,6 +10,17 @@
         margin-left: 20%;
     }
 }
+
+.hidden-mobile {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .hidden-mobile {
+        display: inline;
+    }
+}
+
 body { margin: 0; padding: 0; }
 #map { position: absolute; top: 0; bottom: 0; width: 100%; }
 
