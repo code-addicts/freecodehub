@@ -202,5 +202,8 @@ div {
     display: table;
     clear: both;
 }
+*:before{
+    box-sizing: inherit;
+}
 
 
