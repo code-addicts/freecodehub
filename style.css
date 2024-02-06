@@ -284,11 +284,17 @@ body { margin: 0; padding: 0; }
 
 @media only screen and (max-width: 480px) {
     .html-heading {
-        margin-left: 28px;
+        margin-left: 22px;
         font-size: 60px; /* Further adjust font size for even smaller screens */
     }
     .para-heading {
-        margin-left: -20px;
+        margin-left: -18px;
         font-size: 14px; /* Further adjust font size for even smaller screens */
+    }
+    .tut-button,
+    .ref-button,
+    .refe-button,
+    .tryit-button {
+        margin: 5px;
     }
 }
