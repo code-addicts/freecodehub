@@ -262,35 +262,33 @@ body { margin: 0; padding: 0; }
     color: white;
 }
 
+.html-heading {
+    font-size: 100px;
+    font-weight: bolder;
+}
 
-/* Adjustments for smaller screens */
+.para-heading {
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: -2%;
+}
+
 @media only screen and (max-width: 768px) {
-    .w3-col.l6 {
-        width: 100%; /* Make the columns full width on smaller screens */
-        margin: 10px; /* Remove left margin */
-        text-align: center; /* Center align the content */
+    .html-heading {
+        font-size: 60px; /* Adjust font size for smaller screens */
     }
-    .w3-col > h1 {
-        font-size: 100px; /* Decrease the font size of the heading */
-    }
-    .w3-col.l6 > p {
-        font-size: 16px; /* Decrease the font size of the paragraph */
-         /* Remove left margin */
-    }
-    .w3-button.ga-fp {
-        margin-left: 0; /* Remove left margin for buttons */
-    }
-    .w3-hide-small {
-        display: none; /* Hide small elements */
+    .para-heading {
+        font-size: 16px; /* Adjust font size for smaller screens */
     }
 }
 
-/* Adjustments for extra small screens */
-@media only screen and (max-width: 600px) {
-    .w3-code.htmlHigh {
-        height: auto; /* Adjust height of code block for better display on small screens */
+@media only screen and (max-width: 480px) {
+    .html-heading {
+        margin-left: 15px;
+        font-size: 60px; /* Further adjust font size for even smaller screens */
     }
-    .w3-code.htmlHigh span {
-        font-size: 12px; /* Decrease font size of code elements for better readability */
+    .para-heading {
+        margin-left: -20px;
+        font-size: 14px; /* Further adjust font size for even smaller screens */
     }
 }
