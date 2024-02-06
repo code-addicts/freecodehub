@@ -192,6 +192,7 @@ body { margin: 0; padding: 0; }
 .tut-button {
     background-color: #007bff;
     color: white;
+    font-weight: 600;
     font-size: 18px;
     display: block;
     margin: 0px 0px 0px 40px;
@@ -201,8 +202,19 @@ body { margin: 0; padding: 0; }
 
 .ref-button {
     text-decoration: none;
-    background-color: #04AA6D;
+    background-color: #333;
     color: white;
+    font-size: 18px;
+    display: block;
+    margin: 0px 0px 0px 40px;
+    width: 200px;
+    border-radius: 25px;
+}
+.refe-button {
+    text-decoration: none;
+    background-color: #e0c423;
+    color: black;
+    font-weight: 600;
     font-size: 18px;
     display: block;
     margin: 0px 0px 0px 40px;
@@ -213,4 +225,30 @@ body { margin: 0; padding: 0; }
 .ws-yellow {
     background-color: #FFF4A3!important;
     color: black!important;
+}
+
+
+
+/* Add hover effect for 'Learn HTML' button */
+.tut-button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Add hover effect for 'Learn HTML' button */
+.ws-yellow:hover {
+    background-color: #c2b86fde!important;
+    color: black!important;
+}
+
+/* Add hover effect for 'Video Tutorial' button */
+.ref-button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Add hover effect for 'Get Certified' button */
+.refe-button:hover {
+    background-color: #c2b505;
+    color: white;
 }
