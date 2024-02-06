@@ -173,4 +173,29 @@ body { margin: 0; padding: 0; }
     }
 }
 
+/*HTML SECTION's STYLE*/
+.ws-light-green {
+    background-color: #fff!important;
+    color: black!important;
+}
+.w3-padding-32 {
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.w3-white, .w3-hover-white:hover {
+    color: #000!important;
+    background-color: #fff!important;
+}
+.w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
+    color: #000!important;
+    background-color: #f1f1f1!important;
+}
+
 
