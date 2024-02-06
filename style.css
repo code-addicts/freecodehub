@@ -173,18 +173,6 @@ body { margin: 0; padding: 0; }
     }
 }
 
-/*HTML SECTION's STYLE*/
-.ws-light-green {
-    background-color: #fff!important;
-    color: black!important;
-}
-.w3-padding-32 {
-    padding-top: 32px!important;
-    padding-bottom: 32px!important;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
 
 
 
