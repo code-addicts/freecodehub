@@ -197,5 +197,10 @@ div {
     color: #000!important;
     background-color: #f1f1f1!important;
 }
+.w3-row::before{
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
