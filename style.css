@@ -304,3 +304,43 @@ body { margin: 0; padding: 0; }
         margin: 5px;
     }
 }
+
+/*try it yourself section*/
+.grey-color {
+    background-color: #E7E9EB;
+    color: #000;
+}
+
+.green-border {
+    border-left: 4px solid #04AA6D;
+}
+.w3-code, w3-codeline {
+    font-size: 15px;
+}
+.w3-code {
+    border-left: 4px solid #04AA6D;
+}
+
+.w3-section, .w3-code {
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+}
+.w3-code {
+    width: auto;
+    background-color: #fff;
+    color: #000;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word;
+}
+.w3-code, .w3-codespan {
+    font-family: Consolas,Menlo,"courier new",monospace;
+    font-size: 16px;
+}
+.tryit-button {
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 25px;
+    font-size: 18px;
+    width: 200px;
+}
