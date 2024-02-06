@@ -284,7 +284,7 @@ body { margin: 0; padding: 0; }
 
 @media only screen and (max-width: 480px) {
     .html-heading {
-        margin-left: 15px;
+        margin-left: 28px;
         font-size: 60px; /* Further adjust font size for even smaller screens */
     }
     .para-heading {
