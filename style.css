@@ -344,7 +344,7 @@ body { margin: 0; padding: 0; }
 .tryit-button {
     background-color: #007bff;
     color: white;
-    border-radius: 25px;
+    border-radius: 5px;
     font-size: 18px;
     width: 200px;
 }
