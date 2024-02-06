@@ -461,5 +461,13 @@ a:-webkit-any-link {
     cursor: pointer;
     text-decoration: underline;
 }
+.w3-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 
