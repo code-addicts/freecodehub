@@ -305,6 +305,10 @@ body { margin: 0; padding: 0; }
     }
 }
 
+.w3-content {
+    margin-right: 5%;
+}
+
 /*try it yourself section*/
 .grey-color {
     background-color: #E7E9EB;
