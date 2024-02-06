@@ -215,34 +215,6 @@ div {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-@media only screen and (max-width: 500px){
-    h1 {
-        font-size: 30px;
-    }
-    h1 {
-        font-size: 42px;
-    }
-    h1, h2, h3, h4, h5, h6 {
-        font-family: "Segoe UI",Arial,sans-serif;
-        font-weight: 400;
-        margin: 10px 0;
-    }
-    h1 {
-        font-size: 36px;
-    }
-    *, *:before, *:after {
-        box-sizing: inherit;
-    }
-    user agent stylesheet
-    h1 {
-        display: block;
-        font-size: 2em;
-        margin-block-start: 0.67em;
-        margin-block-end: 0.67em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        font-weight: bold;
-    }
-}
+
 
 
