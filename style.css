@@ -273,6 +273,8 @@ body { margin: 0; padding: 0; }
     margin-left: -2%;
 }
 
+
+
 @media only screen and (max-width: 768px) {
     .html-heading {
         font-size: 60px; /* Adjust font size for smaller screens */
@@ -288,7 +290,26 @@ body { margin: 0; padding: 0; }
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width:768px) {
+    h1,
+    .w3-jumbo {
+      font-size: 60px !important;
+    }
+  }
+
+
+@media only screen and (max-width: 1365px) {
+    .w3-col.l6 {
+        justify-content: center;
+        align-items: center;
+        margin-left: 50%;
+    }
+    .w3-hide-small.l6 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .html-heading {
         margin-left: 22px;
         font-size: 60px; /* Further adjust font size for even smaller screens */
