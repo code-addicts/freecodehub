@@ -3,24 +3,13 @@
         width: 50%;
     }
     .java-container{
-        width: 80%;
+        width: 90%;
         background-color: #fff;
         height: auto;
         margin-top: 10%;
         margin-left: 20%;
     }
 }
-
-.hidden-mobile {
-    display: none;
-}
-
-@media only screen and (min-width: 600px) {
-    .hidden-mobile {
-        display: inline;
-    }
-}
-
 body { margin: 0; padding: 0; }
 #map { position: absolute; top: 0; bottom: 0; width: 100%; }
 
@@ -168,8 +157,18 @@ body { margin: 0; padding: 0; }
 @media only screen and (max-width: 600px) {
     .java-container {
         width: 80%;
-        margin-top: 20%;
+        margin-top: 15%;
         margin-left: 10.5%;
+    }
+}
+
+.hidden-mobile {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .hidden-mobile {
+        display: inline;
     }
 }
 
@@ -206,7 +205,7 @@ body { margin: 0; padding: 0; }
 .ws-yellow {
     background-color: #FFF4A3!important;
     color: black!important;
-    box-shadow: 0 4px 8px rgba(255, 244, 163, 0.5); /* Shadow color adjusted to match button color */
+    box-shadow: 0 4px 8px rgba(255, 244, 163, 1); /* Shadow color adjusted to match button color */
 }
 
 /* Add shadow for 'HTML Reference' button */
@@ -233,9 +232,8 @@ body { margin: 0; padding: 0; }
     margin: 0px 0px 0px 40px;
     width: 200px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(224, 196, 35, 0.6); /* Shadow color adjusted to match button color */
+    box-shadow: 0 4px 8px rgba(224, 196, 35, 0.7); /* Shadow color adjusted to match button color */
 }
-
 
 
 /* Add hover effect for 'Learn HTML' button */
@@ -259,7 +257,7 @@ body { margin: 0; padding: 0; }
 /* Add hover effect for 'Get Certified' button */
 .refe-button:hover {
     background-color: #c2b505;
-    color: white;
+    color: black;
 }
 
 .html-heading {
@@ -273,6 +271,7 @@ body { margin: 0; padding: 0; }
     margin-left: -2%;
 }
 
+
 .w3-content {
     margin-right: 5%;
 }
@@ -284,13 +283,13 @@ body { margin: 0; padding: 0; }
 }
 
 .green-border {
-    border-left: 4px solid #04AA6D;
+    border-left: 4px solid #0056b3;
 }
 .w3-code, w3-codeline {
     font-size: 15px;
 }
 .w3-code {
-    border-left: 4px solid #04AA6D;
+    border-left: 4px solid #0056b3;
 }
 
 .w3-section, .w3-code {
@@ -321,6 +320,7 @@ body { margin: 0; padding: 0; }
     background-color: #0056b3;
     color: white;
 }
+
 .grey-color {
     background-color: #E7E9EB;
     color: black;
