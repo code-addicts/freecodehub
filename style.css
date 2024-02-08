@@ -273,38 +273,6 @@ body { margin: 0; padding: 0; }
     margin-left: -2%;
 }
 
-@media only screen and (max-width: 768px) {
-    .html-heading {
-        font-size: 60px; /* Adjust font size for smaller screens */
-    }
-    .para-heading {
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
-    .w3-hide-small.l6 {
-        display: none;
-    }
-    .w3-col.l6 {
-        margin-block: 10%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .html-heading {
-        margin-left: 22px;
-        font-size: 60px; /* Further adjust font size for even smaller screens */
-    }
-    .para-heading {
-        margin-left: -18px;
-        font-size: 14px; /* Further adjust font size for even smaller screens */
-    }
-    .tut-button,
-    .ref-button,
-    .refe-button,
-    .tryit-button {
-        margin: 5px;
-    }
-}
-
 .w3-content {
     margin-right: 5%;
 }
