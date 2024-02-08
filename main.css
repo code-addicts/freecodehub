@@ -1,0 +1,10 @@
+/*Style section of lang*/
+.w3-center{
+    margin: 50px 0px 0px 20%;
+}
+
+.w3-hide-small{
+    max-width: 35%;
+    margin-left: 55%;
+    margin-top: -40%;
+}
