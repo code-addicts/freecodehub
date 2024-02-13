@@ -354,7 +354,11 @@ body { margin: 0; padding: 0; }
 .w3-round, .w3-round-medium {
     border-radius: 4px;
 }
-
+.ws-turquoise {
+    background-color: #96D4D4!important;
+    color: black!important;
+    padding-top: 101px;
+}
 @media (min-width: 993px){
     .w3-col.l6 {
         width: 49.99999%;
