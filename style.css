@@ -367,11 +367,6 @@ body { margin: 0; padding: 0; }
 .w3-col.l6{
     float: left;
 }
-@media screen and (max-width: 768px){
-    h1, .w3-jumbo {
-        font-size: 60px !important;
-    }
-}
 @media screen and (max-width: 600px) {
     .w3-hide-small{
         display: none;
