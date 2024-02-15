@@ -332,7 +332,6 @@ body { margin: 0; padding: 0; }
 .w3-content, .w3-auto {
     margin-left: auto;
     margin-right: auto;
-    margin-right: 25px;
 }
 .w3-center {
     text-align: center!important;
