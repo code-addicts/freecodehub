@@ -38,12 +38,95 @@
   gtag('config', 'G-KGT7S8VZ55');
 </script>
     <title>Learn HTML - freecodehub</title>
+    <style>
+        @media (min-width: 993px) {
+            .w3-sidebar.w3-collapse {
+                display: block !important;
+            }
+        }
+
+        .w3-sidebar {
+            overflow: inherit;
+        }
+
+        .w3-sidebar {
+            height: 100%;
+            width: 200px;
+            background-color: #fff;
+            position: fixed !important;
+            z-index: 1;
+            overflow: auto;
+        }
+
+        #leftmenuinner {
+            padding-top: 75px;
+        }
+
+        #leftmenuinner {
+            position: fixed;
+            top: 0;
+            padding-bottom: 0;
+            height: 100%;
+            width: 220px;
+            background-color: transparent;
+        }
+
+        #leftmenuinnerinner {
+            height: 100%;
+            width: 100%;
+            background-color: #E7E9EB;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        #sidenav h2 {
+            font-size: 21px;
+            padding-left: 16px;
+            margin: -4px 0 4px 0;
+            width: 204px;
+        }
+
+        #sidenav a.active {
+            background-color: #0053b6;
+            color: #ffffff !important;
+        }
+
+        #sidenav a {
+            font-family: "Segoe UI", Arial, sans-serif;
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 2px 1px 1px 16px;
+        }
+
+        .w3-main {
+            margin-left: 220px;
+        }
+
+        .w3-main {
+            transition: margin-left 0s;
+            min-width: 330px;
+        }
+
+        .w3-light-grey,
+        .w3-hover-light-grey:hover,
+        .w3-light-gray,
+        .w3-hover-light-gray:hover {
+            color: #000 !important;
+            background-color: #f1f1f1 !important;
+        }
+    </style>
 </head>
+
 <body style="background-color: black;">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
-            <a href="https://www.freecodehub.tech/index.html" style="text-decoration: none;"><h3 href="#" id="home" class="navbar-brand">FreeCode<span class="text-warning">Hub</span></h3></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+            <a href="https://www.freecodehub.tech/index.html" style="text-decoration: none;">
+                <h3 href="#" id="home" class="navbar-brand">FreeCode<span class="text-warning">Hub</span></h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span
+                    class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -63,133 +146,1505 @@
         </div>
     </nav>
 
-    <div class="text-light" style="margin: 10%; margin-left: 25%; width: 50%;">
-        <h3>
-            Intro
-        </h3>
-        <p style="font-size: 13px; color: gray; margin-top: 3%;">
-            Last updated September 2023
-        </p>
-        <p>
-            Welcome to Learn HTML/CSS!
-        </p>
-        <p>
-            This course will teach you semantic and accessible HTML and CSS.
-        </p>
-        <p>
-            While many courses teach HTML and CSS, this course follows a different approach. It's not only interactive but also aims to teach you the best practices for HTML and CSS.
-        </p>
-        <p>
-            Lessons are meant to teach you short information that you will apply directly in the following challenges.
-        </p>
-        <p>
-            You will learn concepts <strong>step by step</strong> and then apply what you learned to build <strong>two projects</strong>.
-        </p>
-        <p>
-            This course requires <strong>no prerequisites</strong>. It's meant for students who want to learn HTML and CSS.
-        </p>
-        <p>
-            The first 15 chapters (121 lessons and challenges) are totally free; after that, you will be asked to upgrade (a one-time payment that gives you access for 5 years) if you'd like to get access to the full course.
-        </p>
-        <br>
-        <br>
-        <h3>
-            Which browsers does this course aim to support?
-        </h3>
-        <br>
-        <p>
-            The concepts we teach in this course are supported on the last two versions of all major browsers. We do not support Internet Explorer as Microsoft has officially withdrawn it.
-        </p>
-        <br>
-        <br>
-        <h3>
-            What can I expect?
-        </h3>
-        <br>
-        <p>
-            This course is different than many HTML and CSS courses. It does not aim to teach you things the quick and dirty way. As you will see, browsers are very lenient with the HTML and CSS we write. However, suppose you write sub-optimal HTML code. In that case, you will be excluding people from using your website, miss out on SEO benefits, miss out on some browser features, and more.
-        </p>
-        <p>
-            This is a slow course. You may also have the urge to skip chapters because you know some of the concepts. While it is possible to skip chapters (from the bottom-right help center), we recommend that you don't.
-        </p>
-        <br><br>
-        <h4>
-            Mobile flashcards
-        </h4>
-        <br>
-        <p>
-            Every time you complete a challenge, you unlock a new set of flashcards that help you recap and persist new concepts.
-        </p>
-        <p>
-            Flashcard instructions will show up once you complete this chapter.
-        </p>
-        <br><br>
-        <h3>
-            What can I build at the end of this course?
-        </h3>
-        <br>
-        <p>
-            Throughout this course, you will be working on two types of challenges:
-        </p>
-        <p>
-            challenges with minimal styling that help you practice what you just learned. Then, you'll get the opportunity to practice what you learned on two real projects.
-        </p>
-        <p>
-            The first project is a portfolio website. Once you complete the course, you will be able to customize this portfolio website and use it as your own.
-        </p>
-        <p>
-            The second project is a mobile web app called MyBank. It simulates a banking mobile web app. The web app is static, meaning we're only working on the HTML and CSS. It does not call any API or external service and has no programming logic.
-        </p>
-        <p>
-            Check out the screencasts from these two projects below to get an idea of what you will be able to build (click on a video to play).
-        </p>
-        <p>
-            Please note that these two projects have a few lines of JavaScript that will be given to you. This course does not teach JavaScript.
-        </p>
-        <br>
-        <h4>
-            Are you ready?
-        </h4>
-        <br>
-        <p>
-            When you're done, click next or press <span class="bg-dark">cmd+enter</span> (on mac) or <span class="bg-dark">ctrl+enter</span> (on Windows/Linux) to proceed to the next lesson.
-        </p>
+    <div class="w3-sidebar w3-collapse" id="sidenav">
+        <div id="leftmenuinner">
+            <div id="leftmenuinnerinner">
+                <!--  <a href='javascript:void(0)' onclick='close_menu()' class='w3-button w3-hide-large w3-large w3-display-topright' style='right:16px;padding:3px 12px;font-weight:bold;'>&times;</a>-->
+                <h2 class="left"><span class="left_h2">HTML</span> Tutorial</h2>
+                <a target="_top" href="default.asp" class="active">HTML HOME</a>
+                <a target="_top" href="html_intro.asp">HTML Introduction</a>
+                <a target="_top" href="html_editors.asp">HTML Editors</a>
+                <a target="_top" href="html_basic.asp">HTML Basic</a>
+                <a target="_top" href="html_elements.asp">HTML Elements</a>
+                <a target="_top" href="html_attributes.asp">HTML Attributes</a>
+                <a target="_top" href="html_headings.asp">HTML Headings</a>
+                <a target="_top" href="html_paragraphs.asp">HTML Paragraphs</a>
+                <a target="_top" href="html_styles.asp">HTML Styles</a>
+                <a target="_top" href="html_formatting.asp">HTML Formatting</a>
+                <a target="_top" href="html_quotation_elements.asp">HTML Quotations</a>
+                <a target="_top" href="html_comments.asp">HTML Comments</a>
+                <a target="_top" href="html_colors.asp">HTML Colors</a>
+                <div class="tut_overview">
+                    <a target="_top" href="html_colors.asp">Colors</a>
+                    <a target="_top" href="html_colors_rgb.asp">RGB</a>
+                    <a target="_top" href="html_colors_hex.asp">HEX</a>
+                    <a target="_top" href="html_colors_hsl.asp">HSL</a>
+                </div>
+                <a target="_top" href="html_css.asp">HTML CSS</a>
+                <a target="_top" href="html_links.asp">HTML Links</a>
+                <div class="tut_overview">
+                    <a target="_top" href="html_links.asp">Links</a>
+                    <a target="_top" href="html_links_colors.asp">Link Colors</a>
+                    <a target="_top" href="html_links_bookmarks.asp">Link Bookmarks</a>
+                </div>
+                <a target="_top" href="html_images.asp">HTML Images</a>
+                <div class="tut_overview">
+                    <a target="_top" href="html_images.asp">Images</a>
+                    <a target="_top" href="html_images_imagemap.asp">Image Map</a>
+                    <a target="_top" href="html_images_background.asp">Background Images</a>
+                    <a target="_top" href="html_images_picture.asp">The Picture Element</a>
+                </div>
+                <a target="_top" href="html_favicon.asp">HTML Favicon</a>
+                <a target="_top" href="html_page_title.asp">HTML Page Title</a>
+                <a target="_top" href="html_tables.asp">HTML Tables</a>
+                <div class="tut_overview">
+                    <a target="_top" href="html_tables.asp">HTML Tables</a>
+                    <a target="_top" href="html_table_borders.asp">Table Borders</a>
+                    <a target="_top" href="html_table_sizes.asp">Table Sizes</a>
+                    <a target="_top" href="html_table_headers.asp">Table Headers</a>
+                    <a target="_top" href="html_table_padding_spacing.asp">Padding &amp; Spacing</a>
+                    <a target="_top" href="html_table_colspan_rowspan.asp">Colspan &amp; Rowspan</a>
+                    <a target="_top" href="html_table_styling.asp">Table Styling</a>
+                    <a target="_top" href="html_table_colgroup.asp">Table Colgroup</a>
+                </div>
+                <a target="_top" href="html_lists.asp">HTML Lists</a>
+                <div class="tut_overview">
+                    <a target="_top" href="html_lists.asp">Lists</a>
+                    <a target="_top" href="html_lists_unordered.asp">Unordered Lists</a>
+                    <a target="_top" href="html_lists_ordered.asp">Ordered Lists</a>
+                    <a target="_top" href="html_lists_other.asp">Other Lists</a>
+                </div>
+                <a target="_top" href="html_blocks.asp">HTML Block &amp; Inline</a>
+                <a target="_top" href="html_div.asp">HTML Div</a>
+                <a target="_top" href="html_classes.asp">HTML Classes</a>
+                <a target="_top" href="html_id.asp">HTML Id</a>
+                <a target="_top" href="html_iframe.asp">HTML Iframes</a>
+                <a target="_top" href="html_scripts.asp">HTML JavaScript</a>
+                <a target="_top" href="html_filepaths.asp">HTML File Paths</a>
+                <a target="_top" href="html_head.asp">HTML Head</a>
+                <a target="_top" href="html_layout.asp">HTML Layout</a>
+                <a target="_top" href="html_responsive.asp">HTML Responsive</a>
+                <a target="_top" href="html_computercode_elements.asp">HTML Computercode</a>
+                <a target="_top" href="html5_semantic_elements.asp">HTML Semantics</a>
+                <a target="_top" href="html5_syntax.asp">HTML Style Guide</a>
+                <a target="_top" href="html_entities.asp">HTML Entities</a>
+                <a target="_top" href="html_symbols.asp">HTML Symbols</a>
+                <a target="_top" href="html_emojis.asp">HTML Emojis</a>
+                <a target="_top" href="html_charset.asp">HTML Charsets</a>
+                <a target="_top" href="html_urlencode.asp">HTML URL Encode</a>
+                <a target="_top" href="html_xhtml.asp">HTML vs. XHTML</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> Forms</h2>
+                <a target="_top" href="html_forms.asp">HTML Forms</a>
+                <a target="_top" href="html_forms_attributes.asp">HTML Form Attributes</a>
+                <a target="_top" href="html_form_elements.asp">HTML Form Elements</a>
+                <a target="_top" href="html_form_input_types.asp">HTML Input Types</a>
+                <a target="_top" href="html_form_attributes.asp">HTML Input Attributes</a>
+                <a target="_top" href="html_form_attributes_form.asp">HTML Input Form Attributes</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> Graphics</h2>
+                <a target="_top" href="html5_canvas.asp">HTML Canvas</a>
+                <a target="_top" href="html5_svg.asp">HTML SVG</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> Media</h2>
+                <a target="_top" href="html_media.asp">HTML Media</a>
+                <a target="_top" href="html5_video.asp">HTML Video</a>
+                <a target="_top" href="html5_audio.asp">HTML Audio</a>
+                <a target="_top" href="html_object.asp">HTML Plug-ins</a>
+                <a target="_top" href="html_youtube.asp">HTML YouTube</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> APIs</h2>
+                <a target="_top" href="html5_geolocation.asp">HTML Geolocation</a>
+                <a target="_top" href="html5_draganddrop.asp">HTML Drag/Drop</a>
+                <a target="_top" href="html5_webstorage.asp">HTML Web Storage</a>
+                <a target="_top" href="html5_webworkers.asp">HTML Web Workers</a>
+                <a target="_top" href="html5_serversentevents.asp">HTML SSE</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> Examples</h2>
+                <a target="_top" href="html_examples.asp">HTML Examples</a>
+                <a target="_top" href="html_editor.asp">HTML Editor</a>
+                <a target="_top" href="html_quiz.asp">HTML Quiz</a>
+                <a target="_top" href="html_exercises.asp">HTML Exercises</a>
+                <a target="_top" href="html_website.asp">HTML Website</a>
+                <a target="_top" href="html_bootcamp.asp">HTML Bootcamp</a>
+                <a target="_top" href="html_exam.asp">HTML Certificate</a>
+                <a target="_top" href="html_summary.asp">HTML Summary</a>
+                <a target="_top" href="html_accessibility.asp">HTML Accessibility</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> References</h2>
+                <a target="_top" href="/tags/default.asp">HTML Tag List</a>
+                <a target="_top" href="/tags/ref_attributes.asp">HTML Attributes</a>
+                <a target="_top" href="/tags/ref_standardattributes.asp">HTML Global Attributes</a>
+                <a target="_top" href="/tags/ref_html_browsersupport.asp">HTML Browser Support</a>
+                <a target="_top" href="/tags/ref_eventattributes.asp">HTML Events</a>
+                <a target="_top" href="/tags/ref_colornames.asp">HTML Colors</a>
+                <a target="_top" href="/tags/ref_canvas.asp">HTML Canvas</a>
+                <a target="_top" href="/tags/ref_av_dom.asp">HTML Audio/Video</a>
+                <a target="_top" href="/tags/ref_html_dtd.asp">HTML Doctypes</a>
+                <a target="_top" href="/tags/ref_charactersets.asp">HTML Character Sets</a>
+                <a target="_top" href="/tags/ref_urlencode.asp">HTML URL Encode</a>
+                <a target="_top" href="/tags/ref_language_codes.asp">HTML Lang Codes</a>
+                <a target="_top" href="/tags/ref_httpmessages.asp">HTTP Messages</a>
+                <a target="_top" href="/tags/ref_httpmethods.asp">HTTP Methods</a>
+                <a target="_top" href="/tags/ref_pxtoemconversion.asp">PX to EM Converter</a>
+                <a target="_top" href="/tags/ref_keyboardshortcuts.asp">Keyboard Shortcuts</a>
+                <br><br>
+            </div>
+        </div>
     </div>
-    <div id="lazy-css">
-        <nav>
-            <div id="action-bar-container">
-                <div id="action-bar-tutorial-restart">
+
+    <div class="w3-main w3-light-grey" id="belowtopnav" style="margin-left:220px;">
+
+        <div class="w3-row w3-white">
+
+            <div class="w3-col l10 m12" id="main">
+                <div id="mainLeaderboard" style="overflow:hidden;">
+                    <!-- MainLeaderboard-->
+
+                    <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
+                    <div id="adngin-main_leaderboard-0"></div>
+                    <!-- adspace leaderboard -->
 
                 </div>
-                <action-bar course="htmlcss"></action-bar>
+
+                <h1>HTML<span class="color_h1"> Tutorial</span></h1>
+                <div class="w3-clear nextprev">
+                    <a class="w3-left w3-btn" href="/default.asp">❮ Home</a>
+                    <a class="w3-right w3-btn" href="html_intro.asp">Next ❯</a>
+                </div>
+
+                <div class="w3-panel w3-info intro">
+                    <p>HTML is the standard markup language for Web pages.</p>
+                    <p>With HTML you can create your own Website.</p>
+                    <p>HTML is easy to learn - You will enjoy it!</p>
+                    <a class="w3-btn w3-margin-bottom" href="html_intro.asp"
+                        style="font-size: 18px;padding-left:25px;padding-right:25px;font-family: 'Source Sans Pro', sans-serif;margin-top:6px;">Study
+                        our free HTML Tutorial »</a><br>
+                    <a style="font-size: 18px;padding-left:25px;padding-right:25px;font-family: 'Source Sans Pro', sans-serif;margin-top:9px;position:relative;overflow:visible;margin-bottom:1px;"
+                        href="/videos/index.php" class="w3-btn ws-black ws-hover-black"
+                        title="HTML video tutorial">Watch our Video Tutorial »<span
+                            class="ribbon-vidx ws-yellow">NEW</span></a><br>
+                </div>
+                <hr>
+
+                <h2>Easy Learning with HTML "Try it Yourself"</h2>
+                <p>With our "Try it Yourself" editor, you can edit the HTML code and view the
+                    result:</p>
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor"
+                                style="color:red"> html</span><span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span><br>
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span
+                                class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+                            class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>title<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span>Page Title<span class="tagnamecolor"
+                            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span
+                                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span
+                                class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span
+                            class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span>This is a Heading<span class="tagnamecolor"
+                            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span
+                                class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+                            class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span>This is a paragraph.<span
+                            class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span><br><br>
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                                style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span
+                                class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                    </div>
+                    <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_default" target="_blank">Try it
+                        Yourself »</a>
+                </div>
+                <p><strong>Click on the "Try it Yourself" button to see how it works.</strong></p>
+                <hr>
+
+                <h2>HTML Examples</h2>
+                <p>In this HTML tutorial, you will find more than 200 examples. With our online
+                    "Try it Yourself" editor, you can edit and test each example yourself!</p>
+                <p><a href="html_examples.asp" class="ws-btn ws-grey ws-hover-black">Go to HTML Examples!</a></p>
+                <hr>
+                <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+                    <!-- MidContent -->
+                    <!-- <p class="adtext">Advertisement</p> -->
+
+                    <div id="adngin-mid_content-0"></div>
+
+                </div>
+                <hr>
+                <h2>HTML Exercises</h2>
+                <p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
+                <form autocomplete="off" id="w3-exerciseform" action="exercise.asp?filename=exercise_html_attributes1"
+                    method="post" target="_blank">
+                    <h2>Test Yourself With Exercises</h2>
+                    <div class="exercisewindow">
+                        <h2>Exercise:</h2>
+                        <p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
+                        <div class="exerciseprecontainer">
+                            &lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools
+                            is a web developer's site.&lt;/p&gt;
+                        </div>
+                        <br>
+                        <button type="submit" class="w3-btn w3-margin-bottom">Submit Answer »</button>
+                        <p><a target="_blank" href="exercise.asp?filename=exercise_html_attributes1">Start the
+                                Exercise</a></p>
+                    </div>
+                </form>
+                <hr>
+                <h2>HTML Quiz Test</h2>
+                <p>Test your HTML skills with our HTML Quiz!</p>
+                <p><a href="html_quiz.asp" class="ws-btn w3-blue">Start HTML Quiz!</a></p>
+                <hr>
+                <style>
+                    #img_mylearning {
+                        max-width: 100%;
+                    }
+                </style>
+                <h2>My Learning</h2>
+
+                <p>Track your progress with the free "My Learning" program here at W3Schools.</p>
+                <p>Log in to your account, and start earning points!</p>
+                <p>This is an optional feature. You can study at W3Schools without using My Learning.</p>
+
+                <a href="https://my-learning.w3schools.com/" target="_blank" class="ga-featured">
+                    <img id="img_mylearning" loading="lazy" src="/images/mylearning.png" style="max-width:100%;"></a>
+                <br>
+                <!--
+      <a class="ws-btn w3-margin-bottom"
+       href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fmy-learning.w3schools.com"
+       target="_blank"
+       style="font-size: 18px;padding-left:25px;padding-right:25px;
+       font-family : 'Source Sans Pro', sans-serif;
+       margin-top:6px;"
+       >
+       Sign up
+      </a>
+      -->
+                <hr>
+
+                <h2>HTML References</h2>
+                <p>At W3Schools you will find complete references about HTML elements,
+                    attributes, events, color names, entities, character-sets, URL encoding,
+                    language codes, HTTP messages, browser support, and more:</p>
+
+                <div class="w3-row-padding" style="margin-left:-16px;margin-right:-16px">
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/default.asp">HTML Elements</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_html_browsersupport.asp">Browser
+                            Support</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_attributes.asp">Attributes</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_standardattributes.asp">Global
+                            Attributes</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_eventattributes.asp">Event
+                            Attributes</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_colornames.asp">Color Names</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_canvas.asp">Canvas</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_av_dom.asp">Audio/Video DOM</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_charactersets.asp">Character Sets</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_urlencode.asp">URL Encoding</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_language_codes.asp">Language Codes</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_country_codes.asp">Country Codes</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_httpmessages.asp">HTTP Messages</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_pxtoemconversion.asp">Px to Em
+                            Converter</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_keyboardshortcuts.asp">Keyboard
+                            Shortcuts</a>
+                    </div>
+
+                </div>
+                <br>
+
+                <style>
+                    #w3_cert_badge {
+                        position: absolute;
+                        right: 5%;
+                        width: 220px;
+                        transform: rotate(10deg);
+                        bottom: -20%;
+                    }
+
+                    #w3_cert_arrow {
+                        position: absolute;
+                        right: 220px;
+                        width: 220px;
+                        transform: rotate(10deg);
+                        bottom: 0;
+                        z-index: 1;
+                    }
+
+                    #getdiploma {
+                        position: relative;
+                        padding: 0 60px 50px 60px;
+                        margin-bottom: 125px;
+                        border-radius: 16px;
+                        background-color: #282A35;
+                        color: #FFC0C7;
+                        font-family: 'Source Sans Pro', sans-serif;
+                    }
+
+                    #getdiploma h2 {
+                        font-size: 50px;
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                        font-family: 'Source Sans Pro', sans-serif
+                    }
+
+                    #getdiploma p {
+                        font-size: 42px;
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                        font-family: 'Source Sans Pro', sans-serif
+                    }
+
+                    #getdiploma a {
+                        border-radius: 50px;
+                        font-size: 18px;
+                        background-color: #04AA6D;
+                        padding: 17px 55px
+                    }
+
+                    #getdiploma a:hover,
+                    #getdiploma a:active {
+                        background-color: #059862 !important;
+                    }
+
+
+                    @media screen and (max-width: 1442px) {
+                        #w3_cert_arrow {
+                            right: 212px;
+                            bottom: -15px;
+                        }
+                    }
+
+
+                    @media screen and (max-width: 1202px) {
+                        #w3_cert_arrow {
+                            display: none;
+                        }
+                    }
+
+                    @media screen and (max-width: 992px) {
+                        #w3_cert_arrow {
+                            display: block;
+                        }
+                    }
+
+
+                    @media screen and (max-width: 800px) {
+                        #w3_cert_arrow {
+                            display: none;
+                        }
+
+                        #getdiploma h2 {
+                            font-size: 44px;
+                        }
+
+                        #getdiploma p {
+                            font-size: 30px;
+                        }
+
+                        #getdiploma a {
+                            width: 100%;
+                        }
+
+                        #w3_cert_badge {
+                            top: -16px;
+                            right: -8px;
+                            width: 100px;
+                        }
+
+                        #getdiploma {
+                            margin-bottom: 55px;
+                        }
+                    }
+                </style>
+
+                <div class="w3-panel" id="getdiploma">
+
+                    <h2>Kickstart your career</h2>
+                    <p>Get certified by completing <span id="hey">the</span> <span id="coursetopic">HTML</span> course
+                    </p>
+                    <a class="w3-btn w3-margin-bottom ga-featured" id="cert_firstpage"
+                        href="https://campus.w3schools.com/collections/course-catalog/products/html-course?utm_source=classic&amp;utm_medium=tutorials&amp;utm_campaign=first-page-ad"
+                        target="_blank">Get certified</a>
+
+                    <script>
+                        var foldername;
+                        function getCourseFolder() {
+                            var pathname = window.location.pathname;
+                            if (pathname.substr(0, 1) == "/") { pathname = pathname.substr(1); }
+                            pos = pathname.indexOf("/");
+                            foldername = pathname.substr(0, pos);
+                            foldername = foldername.toUpperCase();
+                            certLink = "";
+                            switch (foldername) {
+                                case "CPP":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/c-course-1?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    foldername = "C++";
+                                    break;
+                                case "JAVA":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/java-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    break;
+                                case "BOOTSTRAP4":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/bootstrap-4-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    break;
+                                case "XML":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/xml-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    break;
+                                case "JQUERY":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/jquery-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    break;
+                                case "ACCESSIBILITY":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/accessibility-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    break;
+                                case "BOOTSTRAP":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/bootstrap-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    break;
+                                case "HTML":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/html-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    break;
+                                case "CSS":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/css-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    break;
+                                case "JS":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/javascript-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    foldername = "JavaScript";
+                                    break;
+                                case "REACT":
+                                    subjectText = "React.js";
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/react-js-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    break;
+                                case "SQL":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/sql-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    break;
+                                case "PHP":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/php-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    break;
+                                case "CYBERSECURITY":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/cyber-security-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    foldername = "Cyber Security";
+                                    break;
+                                case "R":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/r-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    break;
+                                case "NUMPY":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/numpy-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    break;
+                                case "TYPESCRIPT":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/learn-typescript?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    break;
+                                case "PANDAS":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/pandas-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    break;
+                                case "PYTHON":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/python-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    break;
+                                case "CS":
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog/products/c-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                                    foldername = "C#";
+                                    break;
+                                default:
+                                    certLink = "https://campus.w3schools.com/collections/course-catalog?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad";
+                            }
+                            document.getElementById("cert_firstpage").href = certLink;
+                            if (foldername == "QUIZTEST" || foldername == "EXERCISES") {
+                                document.getElementById("hey").innerText = "a";
+                            }
+                            if (foldername == "QUIZTEST" || foldername == "EXERCISES") foldername = "";
+                            document.getElementById("coursetopic").innerText = foldername;
+                        }
+                        getCourseFolder();
+                    </script>
+
+                    <svg id="w3_cert_arrow" viewBox="0 0 170 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.7747 42.7064C9.7747 42.7064 19.5575 77.2951 44.4558 84.8113C62.0225 90.1142 81.0061 80.1196 77.791 68.3309C76.0904 62.0955 69.0574 62.4735 65.5106 65.8444C59.1003 71.9368 67.8591 89.7423 77.9205 96.1324C112.816 118.295 161.943 84.5867 161.943 84.5867"
+                            stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M159.804 93.8429L162.704 84.4917L152.715 80.8293" stroke="white" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <svg id="w3_cert_badge" data-name="w3_cert_badge" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 300 300">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #04aa6b;
+                                }
+
+                                .cls-2 {
+                                    font-size: 23px;
+                                }
+
+                                .cls-2,
+                                .cls-3,
+                                .cls-4 {
+                                    fill: #fff;
+                                }
+
+                                .cls-2,
+                                .cls-3 {
+                                    font-family: RobotoMono-Medium, Roboto Mono;
+                                    font-weight: 500;
+                                }
+
+                                .cls-3 {
+                                    font-size: 20.08px;
+                                }
+                            </style>
+                        </defs>
+                        <circle class="cls-1" cx="150" cy="150" r="146.47"
+                            transform="translate(-62.13 150) rotate(-45)"></circle><text class="cls-2"
+                            transform="translate(93.54 63.89) rotate(-29.5)">w</text><text class="cls-2"
+                            transform="translate(107.13 56.35) rotate(-20.8)">3</text><text class="cls-2"
+                            transform="matrix(0.98, -0.21, 0.21, 0.98, 121.68, 50.97)">s</text><text class="cls-2"
+                            transform="translate(136.89 47.84) rotate(-3.47)">c</text><text class="cls-2"
+                            transform="translate(152.39 47.03) rotate(5.12)">h</text><text class="cls-2"
+                            transform="translate(167.85 48.54) rotate(13.72)">o</text><text class="cls-2"
+                            transform="translate(182.89 52.35) rotate(22.34)">o</text><text class="cls-2"
+                            transform="matrix(0.86, 0.52, -0.52, 0.86, 197.18, 58.36)">l</text><text class="cls-2"
+                            transform="matrix(0.77, 0.64, -0.64, 0.77, 210.4, 66.46)">s</text><text class="cls-3"
+                            transform="translate(35.51 186.66) rotate(69.37)"> </text><text class="cls-3"
+                            transform="matrix(0.47, 0.88, -0.88, 0.47, 41.27, 201.28)">C</text><text class="cls-3"
+                            transform="matrix(0.58, 0.81, -0.81, 0.58, 48.91, 215.03)">E</text><text class="cls-3"
+                            transform="matrix(0.67, 0.74, -0.74, 0.67, 58.13, 227.36)">R</text><text class="cls-3"
+                            transform="translate(69.16 238.92) rotate(39.44)">T</text><text class="cls-3"
+                            transform="matrix(0.85, 0.53, -0.53, 0.85, 81.47, 248.73)">I</text><text class="cls-3"
+                            transform="translate(94.94 256.83) rotate(24.36)">F</text><text class="cls-3"
+                            transform="translate(109.34 263.09) rotate(16.83)">I</text><text class="cls-3"
+                            transform="translate(124.46 267.41) rotate(9.34)">E</text><text class="cls-3"
+                            transform="translate(139.99 269.73) rotate(1.88)">D</text><text class="cls-3"
+                            transform="translate(155.7 270.01) rotate(-5.58)"> </text><text class="cls-3"
+                            transform="translate(171.32 268.24) rotate(-13.06)"> </text><text class="cls-2"
+                            transform="translate(187.55 266.81) rotate(-21.04)">.</text><text class="cls-3"
+                            transform="translate(203.27 257.7) rotate(-29.24)"> </text><text class="cls-3"
+                            transform="translate(216.84 249.83) rotate(-36.75)"> </text><text class="cls-3"
+                            transform="translate(229.26 240.26) rotate(-44.15)">2</text><text class="cls-3"
+                            transform="translate(240.39 229.13) rotate(-51.62)">0</text><text class="cls-3"
+                            transform="translate(249.97 216.63) rotate(-59.17)">2</text><text class="cls-3"
+                            transform="matrix(0.4, -0.92, 0.92, 0.4, 257.81, 203.04)">3</text>
+                        <path class="cls-4"
+                            d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z">
+                        </path>
+                        <path class="cls-4"
+                            d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z">
+                        </path>
+                    </svg>
+
+                </div>
+
+                <!--
+      <div class="w3-center ws-black htmlvidad w3-padding" style="border-radius:20px;">
+        <a href="https://www.w3schools.com/videos/index.php">
+          <img src="htmlvideoad2.png" style="max-width:100%;" title="html video tutorial">
+        </a>
+      </div>
+      -->
+
+                <br>
+                <br>
+                <div class="w3-clear nextprev">
+                    <a class="w3-left w3-btn" href="/default.asp">❮ Home</a>
+                    <a class="w3-right w3-btn" href="html_intro.asp">Next ❯</a>
+                </div>
+                <div id="user-profile-bottom-wrapper" class="user-profile-bottom-wrapper">
+                    <div class="user-authenticated w3-hide">
+                        <a href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fwww.w3schools.com%2Fhtml%2Fdefault.asp"
+                            class="user-profile-btn ga-bottom ga-bottom-profile" title="Your W3Schools Profile"
+                            aria-label="Your W3Schools Profile" target="_top">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 2048 2048"
+                                class="user-profile-icon" aria-label="Your W3Schools Profile Icon">
+                                <path
+                                    d="M 843.500 1148.155 C 837.450 1148.515, 823.050 1149.334, 811.500 1149.975 C 742.799 1153.788, 704.251 1162.996, 635.391 1192.044 C 517.544 1241.756, 398.992 1352.262, 337.200 1470 C 251.831 1632.658, 253.457 1816.879, 340.500 1843.982 C 351.574 1847.431, 1696.426 1847.431, 1707.500 1843.982 C 1794.543 1816.879, 1796.169 1632.658, 1710.800 1470 C 1649.008 1352.262, 1530.456 1241.756, 1412.609 1192.044 C 1344.588 1163.350, 1305.224 1153.854, 1238.500 1150.039 C 1190.330 1147.286, 1196.307 1147.328, 1097 1149.035 C 1039.984 1150.015, 1010.205 1150.008, 950 1149.003 C 851.731 1147.362, 856.213 1147.398, 843.500 1148.155"
+                                    stroke="none" fill="#2a93fb" fill-rule="evenodd"></path>
+                                <path
+                                    d="M 1008 194.584 C 1006.075 194.809, 999.325 195.476, 993 196.064 C 927.768 202.134, 845.423 233.043, 786 273.762 C 691.987 338.184, 622.881 442.165, 601.082 552 C 588.496 615.414, 592.917 705.245, 611.329 760.230 C 643.220 855.469, 694.977 930.136, 763.195 979.321 C 810.333 1013.308, 839.747 1026.645, 913.697 1047.562 C 1010.275 1074.879, 1108.934 1065.290, 1221 1017.694 C 1259.787 1001.221, 1307.818 965.858, 1339.852 930.191 C 1460.375 795.998, 1488.781 609.032, 1412.581 451.500 C 1350.098 322.327, 1240.457 235.724, 1097.500 202.624 C 1072.356 196.802, 1025.206 192.566, 1008 194.584"
+                                    stroke="none" fill="#0aaa8a" fill-rule="evenodd"></path>
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="user-progress"
+                                aria-label="Your W3Schools Profile Progress">
+                                <path class="user-progress-circle1" fill="none"
+                                    d="M 25.99650934151373 15.00000030461742 A 20 20 0 1 0 26 15"></path>
+                                <path class="user-progress-circle2" fill="none" d="M 26 15 A 20 20 0 0 0 26 15"></path>
+                            </svg>
+
+                            <span class="user-progress-star">★</span>
+
+                            <span class="user-progress-point">+1</span>
+                        </a>
+                    </div>
+
+                    <div class="w3s-pathfinder -teaser user-anonymous">
+                        <div class="-background-image -variant-t2">&nbsp;</div>
+
+                        <div class="-inner-wrapper">
+                            <div class="-main-section">
+                                <div class="-inner-wrapper">
+                                    <div class="-title">W3schools Pathfinder</div>
+
+                                    <div class="-headline">Track your progress - it's free!</div>
+
+                                    <div class="-body">
+                                        <div class="-progress-bar">
+                                            <div class="-slider" style="width: 20%;">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="-right-side-section">
+                                <div class="-user-session-btns">
+                                    <a href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fpathfinder.w3schools.com"
+                                        data-skip-href-patch="true"
+                                        class="-login-btn w3-btn bar-item-hover w3-right ws-light-green ga-bottom ga-bottom-login"
+                                        title="Login to your account" aria-label="Login to your account" target="_top">
+                                        Log in
+                                    </a>
+
+                                    <a href="https://profile.w3schools.com/sign-up?redirect_url=https%3A%2F%2Fpathfinder.w3schools.com"
+                                        data-skip-href-patch="true"
+                                        class="-signup-btn w3-button w3-right ws-green ws-hover-green ga-bottom ga-bottom-signup"
+                                        title="Sign Up to Improve Your Learning Experience"
+                                        aria-label="Sign Up to Improve Your Learning Experience" target="_top">
+                                        Sign Up
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-            <div id="course-dropdown">
-                <app-menu topright="">
-                    <button slot="trigger" class="dropdown-overflow-container" aria-label="Overflow menu">
-                        <svg class="dropdown-overflow-trigger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="gray">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-                        </svg>
-                    </button>
-                    <dropdown-restart course="htmlcss" hidden=""></dropdown-restart>
-                    <dropdown-random course="htmlcss"></dropdown-random>
-                    <dropdown-highlights course="htmlcss"></dropdown-highlights>
-                    <dropdown-ligatures course="htmlcss"></dropdown-ligatures>
-                    <dropdown-sound-effects course="htmlcss"></dropdown-sound-effects>
-                    <dropdown-theme course="htmlcss"></dropdown-theme>
-                    <dropdown-install course="htmlcss"></dropdown-install>
-                    <app-menu-item separator=""></app-menu-item>
-                    <dropdown-knowledge-map course="htmlcss"></dropdown-knowledge-map>
-                    <app-menu-item separator=""></app-menu-item>
-                    <dropdown-features-faq course="htmlcss"></dropdown-features-faq>
-                    <app-menu-item separator=""></app-menu-item>
-                    <dropdown-achievements course="htmlcss"></dropdown-achievements>
-                    <dropdown-update course="htmlcss" hidden=""></dropdown-update>
-                </app-menu>
+
+            <div class="w3-col l2 m12" id="right">
+
+                <div class="sidesection">
+                    <div id="skyscraper">
+
+                        <div id="adngin-sidebar_top-0"></div>
+
+                    </div>
+                </div>
+
+                <style>
+                    .ribbon-vid {
+                        font-size: 12px;
+                        font-weight: bold;
+                        padding: 6px 20px;
+                        left: -20px;
+                        top: -10px;
+                        text-align: center;
+                        color: black;
+                        border-radius: 25px;
+                    }
+                </style>
+
+                <div class="sidesection" style="margin-top:20px;margin-bottom:20px;">
+                    <a id="upperfeatureshowcaselink" class="ga-right ga-top-certification-generic-html"
+                        href="https://campus.w3schools.com/collections/course-catalog/products/html-course"
+                        target="_blank">
+                        <picture id="upperfeatureshowcase">
+                            <source id="upperfeatureshowcase3001"
+                                srcset="/images/img_certification_up_generic_html_300.png" media="(max-width: 990px)"
+                                style="border-radius: 5px;">
+                            <source id="upperfeatureshowcase120"
+                                srcset="/images/img_certification_up_generic_html_120.png" media="(max-width: 1260px)"
+                                style="border-radius: 5px;">
+                            <source id="upperfeatureshowcase160"
+                                srcset="/images/img_certification_up_generic_html_160.png" media="(max-width: 1700px)"
+                                style="border-radius: 5px;">
+                            <img id="upperfeatureshowcase300" src="/images/img_certification_up_generic_html_300.png"
+                                alt="Get Certified" style="width:auto;border-radius: 5px;">
+                        </picture>
+                    </a>
+                </div>
+
+                <div class="sidesection">
+                    <h4><a href="/colors/colors_picker.asp">COLOR PIKER</a></h4>
+                    <a href="/colors/colors_picker.asp" class="ga-right">
+                        <img src="/images/colorpicker2000.png" alt="colorpicker" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="sidesection">
+                    <div class="sharethis" style="visibility: visible;">
+                        <a href="https://www.facebook.com/w3schoolscom/" target="_blank" title="Facebook"><span
+                                class="fa fa-facebook-square fa-2x ga-right"></span></a>
+                        <a href="https://www.instagram.com/w3schools.com_official/" target="_blank"
+                            title="Instagram"><span class="fa fa-instagram fa-2x ga-right"></span></a>
+                        <a href="https://www.linkedin.com/company/w3schools.com/" target="_blank" title="LinkedIn"><span
+                                class="fa fa-linkedin-square fa-2x ga-right"></span></a>
+                        <a href="https://discord.gg/6Z7UaRbUQM" target="_blank"
+                            title="Join the W3schools community on Discord"><span
+                                class="fa fa-discord fa-2x ga-right"></span></a>
+                    </div>
+                </div>
+
+
+                <script>
+                    var internalFeatureRnd = Math.floor(Math.random() * (5 - 1)) + 1;
+                    function addTryitSpaces(subject, spacesurl) {
+                        let spacesButt = document.createElement("a");
+                        let ribb = document.createElement("span");
+                        spacesButt.innerHTML = "Get your own " + subject + " Server"
+                        spacesButt.classList.add("ws-black", "ws-hover-black", "spaces-tryit", "ga-featured");
+                        spacesButt.href = spacesurl;
+                        spacesButt.setAttribute("title", "W3Schools Spaces");
+                        spacesButt.setAttribute("target", "_blank");
+
+                        var tryits = document.getElementsByClassName("w3-example");
+                        for (var i = 0; i < tryits.length; i++) {
+                            if (tryits[i].firstElementChild.nodeName == "H3") {
+                                tryits[i].firstElementChild.appendChild(spacesButt.cloneNode(true));
+                                break;
+                            }
+                        }
+                    }
+
+                    var upimgsubject1 = "";
+                    var uplink1 = "https://campus.w3schools.com/products/w3schools-full-access-course";
+                    var upclass1 = "ga-top-fullaccess-jan";
+                    var upimgstart1 = "/images/img_fullaccess_up_sep1_green_";
+                    var upimgend1 = ".png";
+                    var upimgsubject2 = "";
+                    var uplink2 = "https://www.w3schools.com/spaces/index.php";
+                    var upclass2 = "ga-top-spaces-nov";
+                    var upimgstart2 = "/images/img_spaces_up_generic_";
+                    var upimgend2 = ".png";
+                    var upimgsubject3 = "";
+                    var uplink3 = "https://campus.w3schools.com/collections/course-catalog";
+                    var upclass3 = "ga-top-certification-generic";
+                    var upimgstart3 = "/images/img_certification_up_generic_";
+                    var upimgend3 = ".png";
+                    var upimgsubject4 = "";
+                    var uplink4 = "https://campus.w3schools.com/collections/course-catalog/products/front-end-course";
+                    var upclass4 = "ga-top-program";
+                    var upimgstart4 = "/images/img_program_up_";
+                    var upimgend4 = ".png";
+
+                    var upshowcase120 = document.getElementById("upperfeatureshowcase120");
+                    var upshowcase160 = document.getElementById("upperfeatureshowcase160");
+                    var upshowcase300 = document.getElementById("upperfeatureshowcase300");
+                    var upshowcase3001 = document.getElementById("upperfeatureshowcase3001");
+                    var upshowcaselink = document.getElementById("upperfeatureshowcaselink");
+
+                    switch (subjectFolder) {
+                        case "java":
+                            upimgsubject2 = "java_";
+                            uplink2 = "https://www.w3schools.com/java/java_server.asp";
+                            upclass2 = "ga-top-spaces-nov-java";
+                            addTryitSpaces("Java", "/java/java_server.asp");
+                            break;
+                        case "html":
+                            upimgsubject2 = "html_";
+                            uplink2 = "https://www.w3schools.com/html/html_website.asp";
+                            upclass2 = "ga-top-spaces-nov-html";
+                            upimgsubject3 = "html_";
+                            uplink3 = "https://campus.w3schools.com/collections/course-catalog/products/html-course";
+                            upclass3 = "ga-top-certification-generic-html";
+                            break;
+                        case "tags":
+                            upimgsubject2 = "html_";
+                            uplink2 = "https://www.w3schools.com/html/html_website.asp";
+                            upclass2 = "ga-top-spaces-nov-html";
+                            upimgsubject3 = "html_";
+                            uplink3 = "https://campus.w3schools.com/collections/course-catalog/products/html-course";
+                            upclass3 = "ga-top-certification-generic-html";
+                            break;
+                        case "css":
+                            upimgsubject2 = "css_";
+                            uplink2 = "https://www.w3schools.com/css/css_website.asp";
+                            upclass2 = "ga-top-spaces-nov-css";
+                            upimgsubject3 = "css_";
+                            uplink3 = "https://campus.w3schools.com/collections/course-catalog/products/css-course";
+                            upclass3 = "ga-top-certification-generic-css";
+                            break;
+                        case "cssref":
+                            upimgsubject2 = "css_";
+                            uplink2 = "https://www.w3schools.com/css/css_website.asp";
+                            upclass2 = "ga-top-spaces-nov-css";
+                            upimgsubject3 = "css_";
+                            uplink3 = "https://campus.w3schools.com/collections/course-catalog/products/css-course";
+                            upclass3 = "ga-top-certification-generic-css";
+                            break;
+                        case "js":
+                            upimgsubject2 = "js_";
+                            uplink2 = "https://www.w3schools.com/js/js_website.asp";
+                            upclass2 = "ga-top-spaces-nov-js";
+                            upimgsubject3 = "js_";
+                            uplink3 = "https://campus.w3schools.com/collections/course-catalog/products/javascript-course";
+                            upclass3 = "ga-top-certification-generic-js";
+                            break;
+                        case "jsref":
+                            upimgsubject2 = "js_";
+                            uplink2 = "https://www.w3schools.com/js/js_website.asp";
+                            upclass2 = "ga-top-spaces-nov-js";
+                            upimgsubject3 = "js_";
+                            uplink3 = "https://campus.w3schools.com/collections/course-catalog/products/javascript-course";
+                            upclass3 = "ga-top-certification-generic-js";
+                            break;
+                        case "react":
+                            upimgsubject2 = "react_";
+                            uplink2 = "https://www.w3schools.com/react/react_server.asp";
+                            upclass2 = "ga-top-spaces-nov-react";
+                            upimgsubject3 = "react_";
+                            uplink3 = "https://campus.w3schools.com/collections/course-best-sellers/products/react-js-course";
+                            upclass3 = "ga-top-certification-generic-react";
+                            upimgsubject4 = "modernweb_";
+                            uplink4 = "https://campus.w3schools.com/collections/course-best-sellers/products/learn-modern-web-development";
+                            upclass4 = "ga-top-program-modernweb";
+                            addTryitSpaces("React.js", "/react/react_server.asp");
+                            break;
+                        case "sql":
+                            upimgsubject2 = "sql_";
+                            uplink2 = "https://www.w3schools.com/sql/sql_server.asp";
+                            upclass2 = "ga-top-spaces-nov-sql";
+                            upimgsubject3 = "sql_";
+                            uplink3 = "https://campus.w3schools.com/collections/course-best-sellers/products/sql-course";
+                            upclass3 = "ga-top-certification-generic-sql";
+                            upimgsubject4 = "modernweb_";
+                            uplink4 = "https://campus.w3schools.com/collections/course-best-sellers/products/learn-modern-web-development";
+                            upclass4 = "ga-top-program-modernweb";
+                            addTryitSpaces("SQL", "/sql/sql_server.asp");
+                            break;
+                        case "mysql":
+                            upimgsubject2 = "sql_";
+                            uplink2 = "https://www.w3schools.com/sql/sql_server.asp";
+                            upclass2 = "ga-top-spaces-nov-sql";
+                            upimgsubject3 = "sql_";
+                            uplink3 = "https://campus.w3schools.com/collections/course-best-sellers/products/sql-course";
+                            upclass3 = "ga-top-certification-generic-sql";
+                            upimgsubject4 = "webapp_";
+                            uplink4 = "https://campus.w3schools.com/collections/course-best-sellers/products/web-application-development-course";
+                            upclass4 = "ga-top-program-webapp";
+                            addTryitSpaces("SQL", "/sql/sql_server.asp");
+                            break;
+                        case "php":
+                            upimgsubject2 = "php_";
+                            uplink2 = "https://www.w3schools.com/php/php_server.asp";
+                            upclass2 = "ga-top-spaces-nov-php";
+                            upimgsubject4 = "webapp_";
+                            uplink4 = "https://campus.w3schools.com/collections/course-best-sellers/products/web-application-development-course";
+                            upclass4 = "ga-top-program-webapp";
+                            addTryitSpaces("PHP", "/php/php_server.asp");
+                            break;
+                        case "numpy":
+                            upimgsubject2 = "python_";
+                            uplink2 = "https://www.w3schools.com/python/python_server.asp";
+                            upclass2 = "ga-top-spaces-nov-python";
+                            upimgsubject3 = "python_";
+                            uplink3 = "https://campus.w3schools.com/collections/course-best-sellers/products/python-course";
+                            upclass3 = "ga-top-certification-generic-python";
+                            upimgsubject4 = "dataanalytics_";
+                            uplink4 = "https://campus.w3schools.com/collections/course-catalog/products/data-analytics-program";
+                            upclass4 = "ga-top-program-dataanalytics";
+                            addTryitSpaces("Python", "/python/python_server.asp");
+                            break;
+                        case "django":
+                            upimgsubject2 = "django_";
+                            uplink2 = "https://www.w3schools.com/django/django_server.php";
+                            upclass2 = "ga-top-spaces-nov-django";
+                            upimgsubject3 = "django_";
+                            uplink3 = "https://campus.w3schools.com/collections/certifications/products/django-certification-exam";
+                            upclass3 = "ga-top-certification-generic-django";
+                            addTryitSpaces("Django", "/django/django_server.php");
+                            break;
+                        case "typescript":
+                            upimgsubject4 = "modernweb_";
+                            uplink4 = "https://campus.w3schools.com/collections/course-best-sellers/products/learn-modern-web-development";
+                            upclass4 = "ga-top-program-modernweb";
+                            addTryitSpaces("TypeScript", "/spaces/");
+                            break;
+                        case "nodejs":
+                            upimgsubject2 = "node_";
+                            uplink2 = "https://www.w3schools.com/nodejs/nodejs_server.asp";
+                            upclass2 = "ga-top-spaces-nov-node";
+                            addTryitSpaces("Node.js", "/nodejs/nodejs_server.asp");
+                            break;
+                        case "pandas":
+                            upimgsubject2 = "python_";
+                            uplink2 = "https://www.w3schools.com/python/python_server.asp";
+                            upclass2 = "ga-top-spaces-nov-python";
+                            upimgsubject3 = "python_";
+                            uplink3 = "https://campus.w3schools.com/collections/course-best-sellers/products/python-course";
+                            upclass3 = "ga-top-certification-generic-python";
+                            upimgsubject4 = "dataanalytics_";
+                            uplink4 = "https://campus.w3schools.com/collections/course-catalog/products/data-analytics-program";
+                            upclass4 = "ga-top-program-dataanalytics";
+                            addTryitSpaces("Python", "/python/python_server.asp");
+                            break;
+                        case "python":
+                            upimgsubject2 = "python_";
+                            uplink2 = "https://www.w3schools.com/python/python_server.asp";
+                            upclass2 = "ga-top-spaces-nov-python";
+                            upimgsubject3 = "python_";
+                            uplink3 = "https://campus.w3schools.com/collections/course-best-sellers/products/python-course";
+                            upclass3 = "ga-top-certification-generic-python";
+                            upimgsubject4 = "dataanalytics_";
+                            uplink4 = "https://campus.w3schools.com/collections/course-catalog/products/data-analytics-program";
+                            upclass4 = "ga-top-program-dataanalytics";
+                            addTryitSpaces("Python", "/python/python_server.asp");
+                            break;
+                        case "cs":
+                            upimgsubject2 = "cs_";
+                            uplink2 = "https://www.w3schools.com/cs/cs_server.php";
+                            upclass2 = "ga-top-spaces-nov-cs";
+                            addTryitSpaces("C#", "/cs/cs_server.php");
+                            break;
+                        case "vue":
+                            addTryitSpaces("Vue", "/vue/vue_server.php");
+                            break;
+                        default:
+                            upimgsubject1 = "";
+                            upimgsubject2 = "";
+                            upimgsubject3 = "";
+                            upimgsubject4 = "";
+                            loimgsubject1 = "";
+                            loimgsubject2 = "";
+                            loimgsubject3 = "";
+                            loimgsubject4 = "";
+                    }
+
+                    upshowcaselink.classList.remove("ga-top-fullaccess-jan");
+                    if (internalFeatureRnd == 1) {
+                        upshowcase120.srcset = upimgstart1 + upimgsubject1 + "120" + upimgend1;
+                        upshowcase160.srcset = upimgstart1 + upimgsubject1 + "160" + upimgend1;
+                        upshowcase300.src = upimgstart1 + upimgsubject1 + "300" + upimgend1;
+                        upshowcase3001.srcset = upimgstart1 + upimgsubject1 + "300" + upimgend1;
+                        upshowcaselink.href = uplink1;
+                        upshowcaselink.classList.add(upclass1);
+                    } else if (internalFeatureRnd == 2) {
+                        upshowcase120.srcset = upimgstart2 + upimgsubject2 + "120" + upimgend2;
+                        upshowcase160.srcset = upimgstart2 + upimgsubject2 + "160" + upimgend2;
+                        upshowcase300.src = upimgstart2 + upimgsubject2 + "300" + upimgend2;
+                        upshowcase3001.srcset = upimgstart2 + upimgsubject2 + "300" + upimgend2;
+                        upshowcaselink.href = uplink2;
+                        upshowcaselink.classList.add(upclass2);
+                    } else if (internalFeatureRnd == 3) {
+                        upshowcase120.srcset = upimgstart3 + upimgsubject3 + "120" + upimgend3;
+                        upshowcase160.srcset = upimgstart3 + upimgsubject3 + "160" + upimgend3;
+                        upshowcase300.src = upimgstart3 + upimgsubject3 + "300" + upimgend3;
+                        upshowcase3001.srcset = upimgstart3 + upimgsubject3 + "300" + upimgend3;
+                        upshowcaselink.href = uplink3;
+                        upshowcaselink.classList.add(upclass3);
+                    } else if (internalFeatureRnd == 4) {
+                        upshowcase120.srcset = upimgstart4 + upimgsubject4 + "120" + upimgend4;
+                        upshowcase160.srcset = upimgstart4 + upimgsubject4 + "160" + upimgend4;
+                        upshowcase300.src = upimgstart4 + upimgsubject4 + "300" + upimgend4;
+                        upshowcase3001.srcset = upimgstart4 + upimgsubject4 + "300" + upimgend4;
+                        upshowcaselink.href = uplink4;
+                        upshowcaselink.classList.add(upclass4);
+                    }
+                </script>
+
+
+                <div id="vidpos" class="sidesection" style="text-align:center;margin-bottom:0;height:0;">
+                    <div id="adngin-outstream-0"></div>
+                </div>
+
+
+                <div id="stickypos" class="sidesection" style="text-align: center; position: sticky; top: 50px;">
+                    <div id="stickyadcontainer" style="width: 110.328px; position: fixed; top: 100px;">
+                        <div style="position:relative;margin:auto;">
+
+                            <div id="adngin-sidebar_sticky-0"></div>
+                            <script>
+                                function secondSnigel() {
+                                    if (window.adngin && window.adngin.adnginLoaderReady) {
+                                        if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+                                            if (document.getElementById("adngin-mid_content-0")) {
+                                                adngin.queue.push(function () {
+                                                    adngin.cmd.startAuction([
+                                                        { placement: "adngin-sidebar_sticky-0", adUnit: "sidebar_sticky" },
+                                                        { placement: "adngin-mid_content-0", adUnit: "mid_content" },
+                                                    ]);
+                                                });
+                                            } else {
+                                                adngin.queue.push(function () {
+                                                    adngin.cmd.startAuction([
+                                                        { placement: "adngin-sidebar_sticky-0", adUnit: "sidebar_sticky" },
+                                                    ]);
+                                                });
+                                            }
+                                        } else {
+                                            if (document.getElementById("adngin-mid_content-0")) {
+                                                adngin.queue.push(function () {
+                                                    adngin.cmd.startAuction([
+                                                        { placement: "adngin-mid_content-0", adUnit: "mid_content" },
+                                                    ]);
+                                                });
+                                            }
+                                        }
+                                    } else {
+                                        window.addEventListener('adnginLoaderReady', function () {
+                                            if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+                                                if (document.getElementById("adngin-mid_content-0")) {
+                                                    adngin.queue.push(function () {
+                                                        adngin.cmd.startAuction([
+                                                            { placement: "adngin-sidebar_sticky-0", adUnit: "sidebar_sticky" },
+                                                            { placement: "adngin-mid_content-0", adUnit: "mid_content" },
+                                                        ]);
+                                                    });
+                                                } else {
+                                                    adngin.queue.push(function () {
+                                                        adngin.cmd.startAuction([
+                                                            { placement: "adngin-sidebar_sticky-0", adUnit: "sidebar_sticky" },
+                                                        ]);
+                                                    });
+                                                }
+                                            } else {
+                                                if (document.getElementById("adngin-mid_content-0")) {
+                                                    adngin.queue.push(function () {
+                                                        adngin.cmd.startAuction([
+                                                            { placement: "adngin-mid_content-0", adUnit: "mid_content" },
+                                                        ]);
+                                                    });
+                                                }
+                                            }
+                                        });
+                                    }
+                                }
+                            </script>
+
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    uic_r_c()
+                </script>
+
             </div>
-            <notes-overlay course="htmlcss" position="right"></notes-overlay>
-            <course-sidebar course="htmlcss"></course-sidebar>
-        </nav>
+        </div>
+        <div id="footer" class="footer w3-container w3-white">
+
+            <hr>
+
+            <div style="overflow:auto">
+                <div class="bottomad">
+                    <!-- BottomMediumRectangle -->
+                    <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>-->
+                    <div id="adngin-bottom_left-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+                    <!-- adspace bmr -->
+                    <!-- RightBottomMediumRectangle -->
+                    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
+                    <div id="adngin-bottom_right-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
+                </div>
+            </div>
+
+            <!--<hr>-->
+
+        </div>
+
+        <style>
+            #footerwrapper {
+                background-image: url('/images/lynx_landing.png'), url('/images/background_in_space.gif');
+                background-repeat: no-repeat, repeat;
+                background-position: right bottom, center center
+                    /*left top*/
+                ;
+            }
+
+            #spacemyfooter {
+                padding: 40px 80px 300px 80px;
+                max-width: 1400px;
+            }
+
+            .footerlinks_1 {
+                width: auto;
+                float: left;
+                padding: 40px 30px;
+                color: #FFF4A3;
+                font-family: Source Sans Pro, sans-serif;
+            }
+
+            .footerlinks_1 .fa-logo {
+                font-size: 46px !important;
+                color: #ddd;
+            }
+
+            .footerlinks_1:nth-child(1) {
+                padding: 30px 10px 30px 40px;
+            }
+
+            .footerlinks_1 a {
+                text-decoration: none;
+            }
+
+            .footerlinks_1 a:hover,
+            .footerlinks_1 a:active {
+                text-decoration: underline;
+                color: #FFF4A3;
+            }
+
+            .footerlinks_1 a:hover,
+            .footerlinks_1 a:active {
+                text-decoration: underline;
+                color: #FFF4A3 !;
+            }
+
+            .footerlinks_1 a:hover i {
+                color: #FFF4A3 !important;
+            }
+
+            .footerlinks_2 {
+                width: auto;
+                float: left;
+                padding-left: 40px;
+                padding-right: 140px;
+                color: #ddd;
+                font-family: Source Sans Pro, sans-serif;
+                font-size: 12px;
+                line-height: 15px;
+            }
+
+            .footerlinks_2:nth-child(4) {
+                padding-right: 0;
+            }
+
+            .footerlinks_2 h5 {
+                margin-bottom: 20px;
+            }
+
+            .footerlinks_2 a:visited,
+            .footerlinks_2 a:link {
+                text-decoration: none;
+            }
+
+            .footerlinks_2 a:hover,
+            .footerlinks_2 a:active {
+                color: #FFF4A3;
+            }
+
+            .footersome {
+                padding: 60px 40px 10px 40px;
+                color: #ddd;
+                font-size: 20px;
+            }
+
+            .footersome a {
+                margin-right: 10px;
+            }
+
+            .footersome a:hover,
+            .footersome a:active {
+                color: #FFF4A3;
+            }
+
+            .footersome .textlink {
+                font-size: 15px;
+                text-decoration: none;
+            }
+
+            .footersome .textlink:active,
+            .footersome .textlink:hover {
+                text-decoration: underline;
+            }
+
+            .footertext {
+                padding-left: 40px;
+                color: #ddd;
+                font-size: 12px;
+                line-height: 15px;
+
+            }
+
+            .footertext a:hover,
+            .footertext a:active {
+                color: #FFF4A3;
+            }
+
+            @media screen and (max-width: 1200px) {
+                #footerwrapper {
+                    background-size: 500px, auto;
+                }
+
+                .footerlinks_1 {
+                    padding-left: 2.6%;
+                    padding-right: 2.6%;
+                }
+
+                .footerlinks_2 {
+                    padding-right: 8%;
+                }
+            }
+
+            @media screen and (max-width: 992px) {
+                .footerlinks_1 {
+                    width: 100%;
+                    margin: auto;
+                    float: none;
+                    text-align: center;
+                    padding: 10px 20px !important;
+                    font-size: 20px;
+                }
+
+                .footerlinks_1:nth-child(1) {
+                    padding: 40px 20px;
+                }
+
+                .footerlinks_2 {
+                    width: 100%;
+                    float: none;
+                    margin: auto;
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding: 0;
+                    text-align: center;
+                }
+
+                .footerlinks_2 h5 {
+                    font-size: 26px;
+                    margin-top: 40px;
+                }
+
+                .footertext {
+                    text-align: center;
+                    padding: 0;
+                }
+
+                .footer-hide-special {
+                    display: none;
+                }
+
+                #spacemyfooter {
+                    padding-bottom: 400px;
+                }
+
+                .footersome {
+                    text-align: center;
+                }
+            }
+
+            @media screen and (max-width: 992px) {
+                #footerwrapper {
+                    background-image: url('/images/lynx_landing.png'), url('/images/background_in_space.gif');
+                    background-repeat: no-repeat, repeat;
+                    background-position: center bottom, left top;
+                }
+            }
+        </style>
+        <div id="footerwrapper">
+
+            <style>
+                @media screen and (max-width: 1420px) {
+                    .footerlinks_1 {
+                        padding-left: 2.5%;
+                        padding-right: 1.5%;
+                    }
+
+                    .footerlinks_1:nth-child(1) {
+                        width: 100%;
+                        padding-left: 0;
+                    }
+
+                    .footerlinks_1:nth-child(2) {
+                        padding-left: 0;
+                    }
+
+                    .footerlinks_2 {
+                        padding-right: 2%;
+                    }
+
+                    .footerlinks_2:nth-child(1) {
+                        padding-left: 0;
+                    }
+
+                    .footerlinks_2:nth-child(4) {
+                        padding-right: 0;
+                    }
+
+                    #spacemyfooter {
+                        padding-bottom: 400px;
+                    }
+
+                    .footertext {
+                        padding-left: 0;
+                    }
+
+                    .footersome {
+                        padding-left: 0;
+                    }
+
+                    .footer-hide-special {
+                        display: none;
+                    }
+
+                }
+            </style>
+            <div id="spacemyfooter">
+
+
+
+
+
+                <div style="overflow:hidden;">
+                    <div class="footerlinks_1">
+                        <a href="//www.w3schools.com" class="ga-bottom">
+                            <i class="fa fa-logo"></i>
+                        </a>
+                    </div>
+                    <div class="footerlinks_1"><a href="/spaces/index.php">SPACES</a></div>
+                    <div class="footerlinks_1"><a href="/pro/index.php">UPGRADE</a></div>
+                    <div class="footerlinks_1"><a href="/pro/index.php">AD-FREE</a></div>
+                    <div class="footerlinks_1"><a href="https://campus.w3schools.com/pages/newsletter"
+                            target="_blank">NEWSLETTER</a></div>
+                    <div class="footerlinks_1"><a href="https://campus.w3schools.com/collections/certifications"
+                            target="_blank">GET CERTIFIED</a></div>
+                    <div class="footerlinks_1"><a href="javascript:void(0);" onclick="reportError();return false">REPORT
+                            ERROR</a></div>
+                </div>
+                <div class="w3-padding w3-margin-bottom" id="err_message"
+                    style="display:none;position:relative;background-color:#53555D;max-width:900px;color:#FFF4A3">
+                    <span onclick="this.parentElement.style.display='none'"
+                        class="w3-button w3-display-topright w3-large">×</span>
+
+                    <h2>Report Error</h2>
+
+                    <p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us
+                        an e-mail:</p>
+                    <p>help@w3schools.com</p>
+                    <br>
+
+                </div>
+
+
+                <div style="overflow:hidden;">
+                    <div class="footerlinks_2">
+                        <h5 style="font-family: 'Source Sans Pro', sans-serif;">Top Tutorials</h5>
+                        <a href="/html/default.asp" class="ga-bottom">HTML Tutorial</a><br>
+                        <a href="/css/default.asp" class="ga-bottom">CSS Tutorial</a><br>
+                        <a href="/js/default.asp" class="ga-bottom">JavaScript Tutorial</a><br>
+                        <a href="/howto/default.asp" class="ga-bottom">How To Tutorial</a><br>
+                        <a href="/sql/default.asp" class="ga-bottom">SQL Tutorial</a><br>
+                        <a href="/python/default.asp" class="ga-bottom">Python Tutorial</a><br>
+                        <a href="/w3css/default.asp" class="ga-bottom">W3.CSS Tutorial</a><br>
+                        <a href="/bootstrap/bootstrap_ver.asp" class="ga-bottom">Bootstrap Tutorial</a><br>
+                        <a href="/php/default.asp" class="ga-bottom">PHP Tutorial</a><br>
+                        <a href="/java/default.asp" class="ga-bottom">Java Tutorial</a><br>
+                        <a href="/cpp/default.asp" class="ga-bottom">C++ Tutorial</a><br>
+                        <a href="/jquery/default.asp" class="ga-bottom">jQuery Tutorial</a><br>
+                    </div>
+                    <div class="footerlinks_2">
+                        <h5 style="font-family: 'Source Sans Pro', sans-serif;">Top References</h5>
+                        <a href="/tags/default.asp" class="ga-bottom">HTML Reference</a><br>
+                        <a href="/cssref/index.php" class="ga-bottom">CSS Reference</a><br>
+                        <a href="/jsref/default.asp" class="ga-bottom">JavaScript Reference</a><br>
+                        <a href="/sql/sql_ref_keywords.asp" class="ga-bottom">SQL Reference</a><br>
+                        <a href="/python/python_reference.asp" class="ga-bottom">Python Reference</a><br>
+                        <a href="/w3css/w3css_references.asp" class="ga-bottom">W3.CSS Reference</a><br>
+                        <a href="/bootstrap/bootstrap_ref_all_classes.asp" class="ga-bottom">Bootstrap Reference</a><br>
+                        <a href="/php/php_ref_overview.asp" class="ga-bottom">PHP Reference</a><br>
+                        <a href="/colors/colors_names.asp" class="ga-bottom">HTML Colors</a><br>
+                        <a href="/java/java_ref_keywords.asp" class="ga-bottom">Java Reference</a><br>
+                        <a href="/angular/angular_ref_directives.asp" class="ga-bottom">Angular Reference</a><br>
+                        <a href="/jquery/jquery_ref_overview.asp" class="ga-bottom">jQuery Reference</a><br>
+                    </div>
+                    <div class="footerlinks_2">
+                        <h5 style="font-family: 'Source Sans Pro', sans-serif;">Top Examples</h5>
+                        <a href="/html/html_examples.asp" class="ga-bottom">HTML Examples</a><br>
+                        <a href="/css/css_examples.asp" class="ga-bottom">CSS Examples</a><br>
+                        <a href="/js/js_examples.asp" class="ga-bottom">JavaScript Examples</a><br>
+                        <a href="/howto/default.asp" class="ga-bottom">How To Examples</a><br>
+                        <a href="/sql/sql_examples.asp" class="ga-bottom">SQL Examples</a><br>
+                        <a href="/python/python_examples.asp" class="ga-bottom">Python Examples</a><br>
+                        <a href="/w3css/w3css_examples.asp" class="ga-bottom">W3.CSS Examples</a><br>
+                        <a href="/bootstrap/bootstrap_examples.asp" class="ga-bottom">Bootstrap Examples</a><br>
+                        <a href="/php/php_examples.asp" class="ga-bottom">PHP Examples</a><br>
+                        <a href="/java/java_examples.asp" class="ga-bottom">Java Examples</a><br>
+                        <a href="/xml/xml_examples.asp" class="ga-bottom">XML Examples</a><br>
+                        <a href="/jquery/jquery_examples.asp" class="ga-bottom">jQuery Examples</a><br>
+                    </div>
+                    <div class="footerlinks_2">
+                        <a href="https://campus.w3schools.com/collections/course-catalog" target="_blank"
+                            class="ga-bottom">
+                            <h5 style="font-family: 'Source Sans Pro', sans-serif;">Get Certified</h5>
+                        </a>
+                        <a href="https://campus.w3schools.com/collections/certifications/products/html-certificate"
+                            target="_blank" class="ga-bottom">HTML Certificate</a><br>
+                        <a href="https://campus.w3schools.com/collections/certifications/products/css-certificate"
+                            target="_blank" class="ga-bottom">CSS Certificate</a><br>
+                        <a href="https://campus.w3schools.com/collections/certifications/products/javascript-certificate"
+                            target="_blank" class="ga-bottom">JavaScript Certificate</a><br>
+                        <a href="https://campus.w3schools.com/collections/certifications/products/front-end-certificate"
+                            target="_blank" class="ga-bottom">Front End Certificate</a><br>
+                        <a href="https://campus.w3schools.com/collections/certifications/products/sql-certificate"
+                            target="_blank" class="ga-bottom">SQL Certificate</a><br>
+                        <a href="https://campus.w3schools.com/collections/certifications/products/python-certificate"
+                            target="_blank" class="ga-bottom">Python Certificate</a><br>
+                        <a href="https://campus.w3schools.com/collections/certifications/products/php-certificate"
+                            target="_blank" class="ga-bottom">PHP Certificate</a><br>
+                        <a href="https://campus.w3schools.com/collections/certifications/products/jquery-certificate"
+                            target="_blank" class="ga-bottom">jQuery Certificate</a><br>
+                        <a href="https://campus.w3schools.com/collections/certifications/products/java-certificate"
+                            target="_blank" class="ga-bottom">Java Certificate</a><br>
+                        <a href="https://campus.w3schools.com/collections/certifications/products/c-certificate"
+                            target="_blank" class="ga-bottom">C++ Certificate</a><br>
+                        <a href="https://campus.w3schools.com/collections/certifications/products/c-certificate-1"
+                            target="_blank" class="ga-bottom">C# Certificate</a><br>
+                        <a href="https://campus.w3schools.com/collections/certifications/products/xml-certificate"
+                            target="_blank" class="ga-bottom">XML Certificate</a><br>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
     </div>
 
     <footer class="bg-dark text-white text-center text-lg-start">
