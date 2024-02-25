@@ -135,12 +135,19 @@
             margin-top: 90px;
         }
 
-        @media (min-width: 993px) {
+        @media (max-width: 993px) {
             .w3-col.l10 {
                 width: 83.33333%;
             }
         }
-
+        @media (max-width: 993px){
+            .w3-sidebar.w3-collapse {
+                display: none !important;
+            }
+            #main {
+                width: auto;
+            }
+        }
         @media (min-width: 601px) {
             .w3-col.m12 {
                 width: 99.99999%;
@@ -295,7 +302,7 @@
             color: white;
             background-color: #1a55d6;
             border: 2px solid #1a55d6;
-        }
+        }                
     </style>
 </head>
 
@@ -622,180 +629,6 @@
                     attributes, events, color names, entities, character-sets, URL encoding,
                     language codes, HTTP messages, browser support, and more:</p>
 
-                <div class="w3-row-padding" style="margin-left:-16px;margin-right:-16px">
-
-                    <div class="w3-third">
-                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/default.asp">HTML Elements</a>
-                    </div>
-
-                    <div class="w3-third">
-                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_html_browsersupport.asp">Browser
-                            Support</a>
-                    </div>
-
-                    <div class="w3-third">
-                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_attributes.asp">Attributes</a>
-                    </div>
-
-                    <div class="w3-third">
-                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_standardattributes.asp">Global
-                            Attributes</a>
-                    </div>
-
-                    <div class="w3-third">
-                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_eventattributes.asp">Event
-                            Attributes</a>
-                    </div>
-
-                    <div class="w3-third">
-                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_colornames.asp">Color Names</a>
-                    </div>
-
-                    <div class="w3-third">
-                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_canvas.asp">Canvas</a>
-                    </div>
-
-                    <div class="w3-third">
-                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_av_dom.asp">Audio/Video DOM</a>
-                    </div>
-
-                    <div class="w3-third">
-                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_charactersets.asp">Character Sets</a>
-                    </div>
-
-                    <div class="w3-third">
-                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_urlencode.asp">URL Encoding</a>
-                    </div>
-
-                    <div class="w3-third">
-                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_language_codes.asp">Language Codes</a>
-                    </div>
-
-                    <div class="w3-third">
-                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_country_codes.asp">Country Codes</a>
-                    </div>
-
-                    <div class="w3-third">
-                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_httpmessages.asp">HTTP Messages</a>
-                    </div>
-
-                    <div class="w3-third">
-                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_pxtoemconversion.asp">Px to Em
-                            Converter</a>
-                    </div>
-
-                    <div class="w3-third">
-                        <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_keyboardshortcuts.asp">Keyboard
-                            Shortcuts</a>
-                    </div>
-
-                </div>
-                <br>
-
-                <style>
-                    #w3_cert_badge {
-                        position: absolute;
-                        right: 5%;
-                        width: 220px;
-                        transform: rotate(10deg);
-                        bottom: -20%;
-                    }
-
-                    #w3_cert_arrow {
-                        position: absolute;
-                        right: 220px;
-                        width: 220px;
-                        transform: rotate(10deg);
-                        bottom: 0;
-                        z-index: 1;
-                    }
-
-                    #getdiploma {
-                        position: relative;
-                        padding: 0 60px 50px 60px;
-                        margin-bottom: 125px;
-                        border-radius: 16px;
-                        background-color: #282A35;
-                        color: #FFC0C7;
-                        font-family: 'Source Sans Pro', sans-serif;
-                    }
-
-                    #getdiploma h2 {
-                        font-size: 50px;
-                        margin-top: 1em;
-                        margin-bottom: 1em;
-                        font-family: 'Source Sans Pro', sans-serif
-                    }
-
-                    #getdiploma p {
-                        font-size: 42px;
-                        margin-top: 1em;
-                        margin-bottom: 1em;
-                        font-family: 'Source Sans Pro', sans-serif
-                    }
-
-                    #getdiploma a {
-                        border-radius: 50px;
-                        font-size: 18px;
-                        background-color: #04AA6D;
-                        padding: 17px 55px
-                    }
-
-                    #getdiploma a:hover,
-                    #getdiploma a:active {
-                        background-color: #059862 !important;
-                    }
-
-
-                    @media screen and (max-width: 1442px) {
-                        #w3_cert_arrow {
-                            right: 212px;
-                            bottom: -15px;
-                        }
-                    }
-
-
-                    @media screen and (max-width: 1202px) {
-                        #w3_cert_arrow {
-                            display: none;
-                        }
-                    }
-
-                    @media screen and (max-width: 992px) {
-                        #w3_cert_arrow {
-                            display: block;
-                        }
-                    }
-
-
-                    @media screen and (max-width: 800px) {
-                        #w3_cert_arrow {
-                            display: none;
-                        }
-
-                        #getdiploma h2 {
-                            font-size: 44px;
-                        }
-
-                        #getdiploma p {
-                            font-size: 30px;
-                        }
-
-                        #getdiploma a {
-                            width: 100%;
-                        }
-
-                        #w3_cert_badge {
-                            top: -16px;
-                            right: -8px;
-                            width: 100px;
-                        }
-
-                        #getdiploma {
-                            margin-bottom: 55px;
-                        }
-                    }
-                </style>
                 <br>
                 <br>
                 <div class="w3-clear nextprev">
@@ -805,70 +638,6 @@
             </div>
 
             <div class="w3-col l2 m12" id="right">
-
-                <div class="sidesection">
-                    <div id="skyscraper">
-
-                        <div id="adngin-sidebar_top-0"></div>
-
-                    </div>
-                </div>
-
-                <style>
-                    .ribbon-vid {
-                        font-size: 12px;
-                        font-weight: bold;
-                        padding: 6px 20px;
-                        left: -20px;
-                        top: -10px;
-                        text-align: center;
-                        color: black;
-                        border-radius: 25px;
-                    }
-                </style>
-
-                <div class="sidesection" style="margin-top:20px;margin-bottom:20px;">
-                    <a id="upperfeatureshowcaselink" class="ga-right ga-top-certification-generic-html"
-                        href="https://campus.w3schools.com/collections/course-catalog/products/html-course"
-                        target="_blank">
-                        <picture id="upperfeatureshowcase">
-                            <source id="upperfeatureshowcase3001"
-                                srcset="/images/img_certification_up_generic_html_300.png" media="(max-width: 990px)"
-                                style="border-radius: 5px;">
-                            <source id="upperfeatureshowcase120"
-                                srcset="/images/img_certification_up_generic_html_120.png" media="(max-width: 1260px)"
-                                style="border-radius: 5px;">
-                            <source id="upperfeatureshowcase160"
-                                srcset="/images/img_certification_up_generic_html_160.png" media="(max-width: 1700px)"
-                                style="border-radius: 5px;">
-                            <img id="upperfeatureshowcase300" src="/images/img_certification_up_generic_html_300.png"
-                                alt="Get Certified" style="width:auto;border-radius: 5px;">
-                        </picture>
-                    </a>
-                </div>
-
-                <div class="sidesection">
-                    <h4><a href="/colors/colors_picker.asp">COLOR PIKER</a></h4>
-                    <a href="/colors/colors_picker.asp" class="ga-right">
-                        <img src="/images/colorpicker2000.png" alt="colorpicker" loading="lazy">
-                    </a>
-                </div>
-
-                <div class="sidesection">
-                    <div class="sharethis" style="visibility: visible;">
-                        <a href="https://www.facebook.com/w3schoolscom/" target="_blank" title="Facebook"><span
-                                class="fa fa-facebook-square fa-2x ga-right"></span></a>
-                        <a href="https://www.instagram.com/w3schools.com_official/" target="_blank"
-                            title="Instagram"><span class="fa fa-instagram fa-2x ga-right"></span></a>
-                        <a href="https://www.linkedin.com/company/w3schools.com/" target="_blank" title="LinkedIn"><span
-                                class="fa fa-linkedin-square fa-2x ga-right"></span></a>
-                        <a href="https://discord.gg/6Z7UaRbUQM" target="_blank"
-                            title="Join the W3schools community on Discord"><span
-                                class="fa fa-discord fa-2x ga-right"></span></a>
-                    </div>
-                </div>
-
-
                 <script>
                     var internalFeatureRnd = Math.floor(Math.random() * (5 - 1)) + 1;
                     function addTryitSpaces(subject, spacesurl) {
@@ -1584,7 +1353,7 @@
 
     </div>
 
-    <footer class="bg-dark text-white text-center text-lg-start">
+    <footer class="bg-dark text-white text-center text-lg-start" style="width: 85.6%; float: right;">
         <!-- Grid container -->
         <div class="container p-4">
             <!--Grid row-->
