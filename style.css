@@ -223,6 +223,7 @@ body { margin: 0; padding: 0; }
 
 /* Add shadow for 'Get Certified' button */
 .refe-button {
+
     text-decoration: none;
     background-color: #e0c423;
     color: black;
@@ -243,10 +244,10 @@ body { margin: 0; padding: 0; }
 }
 
 /* Add hover effect for 'Learn HTML' button */
-.ws-yellow:hover {
+/* .ws-yellow:hover {
     background-color: #c2b86fde!important;
     color: black!important;
-}
+} */
 
 /* Add hover effect for 'Video Tutorial' button */
 .ref-button:hover {
@@ -271,10 +272,6 @@ body { margin: 0; padding: 0; }
     margin-left: -2%;
 }
 
-
-.w3-content {
-    margin-right: 5%;
-}
 
 /*try it yourself section*/
 .grey-color {
@@ -354,6 +351,7 @@ body { margin: 0; padding: 0; }
 .w3-round, .w3-round-medium {
     border-radius: 4px;
 }
+
 @media (min-width: 993px){
     .w3-col.l6 {
         width: 49.99999%;
@@ -369,4 +367,53 @@ body { margin: 0; padding: 0; }
     .w3-content{
         margin-right: 40px;
     }
+}
+
+#w3-exerciseform {
+    padding: 20px;
+    margin: 32px -20px;
+}
+#w3-exerciseform {
+    background-color: #282A35;
+    padding: 16px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+#w3-exerciseform .exercisewindow {
+    background-color: #ffffff;
+    padding: 16px;
+    color: #000000;
+}
+
+.w3-padding-32 {
+    padding-top: 50px !important;
+    padding-bottom: 32px !important;
+
+}
+
+.ws-light-green {
+    background-color: #D9EEE1 !important;
+    color: black !important;
+    height: 37rem;
+}
+
+.ws-aquamarin {
+    background-color: rgb(231, 224, 255);
+    height: 37rem;
+}
+
+.ws-blacky {
+    background-color: black;
+    height: 37rem;
+    color: white;
+}
+
+.ws-light-pink {
+    background-color: #ffe8db;
+    height: 37rem;
+}
+
+.ws-turquoise {
+    background-color: #dfefff;
+    height: 37rem;;
 }
