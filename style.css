@@ -366,4 +366,7 @@ body { margin: 0; padding: 0; }
     .w3-hide-small{
         display: none;
     }
+    .w3-content{
+        margin-right: 40px;
+    }
 }
