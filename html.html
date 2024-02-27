@@ -141,17 +141,32 @@
                 width: 83.33333%;
             }
         }
-        
+
         @media (min-width: 993px) {
             .w3-sidebar.w3-collapse {
                 display: block !important;
             }
         }
+
+        @media (max-width: 992px) {
+            #sidenav {
+                width: 260px;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .w3-sidebar.w3-collapse {
+                display: none;
+            }
+        }
+
         @media (min-width: 601px) {
             .w3-col.m12 {
                 width: 99.99999%;
             }
         }
+
         @media (max-width: 992px) { 
             .w3-main {
                 margin-left: 0 !important;
@@ -320,11 +335,12 @@
             font-weight: 500;
             text-decoration: none;
         }
+
         .goto-btn:hover {
             color: white;
             background-color: #1a55d6;
             border: 2px solid #1a55d6;
-        }                
+        }
     </style>
 </head>
 
