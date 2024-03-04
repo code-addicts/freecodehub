@@ -42,13 +42,27 @@
     </script>
     <title>Learn HTML - FreeCodeHub - For Free</title>
     <style>
-        .w3-main {
-            transition: margin-left 0s;
-            min-width: 330px;
+        h1 {
+        font-size: 42px;
         }
-        .w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
-            color: #000 !important;
-            background-color: #f1f1f1 !important;
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Segoe UI", Arial, sans-serif;
+            font-weight: 400;
+            margin: 10px 0;
+        }
+    
+        @media (min-width: 993px) {
+            .w3-sidebar.w3-collapse {
+                display: block !important;
+            }
+        }
+        .w3-sidebar {
+            height: 100%;
+            width: 200px;
+            background-color: #fff;
+            position: fixed !important;
+            z-index: 1;
+            overflow: auto;
         }
     </style>
 </head>
