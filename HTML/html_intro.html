@@ -40,352 +40,362 @@
 
         gtag('config', 'G-WTELXM4BP4');
     </script>
-    <title>Learn HTML - FreeCodeHub - For Free</title>
+    <title>Inttroduction to HTML - FreeCodeHub - For Free</title>
     <style>
-        h1 {
+    h1 {
         font-size: 42px;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: "Segoe UI", Arial, sans-serif;
-            font-weight: 400;
-            margin: 10px 0;
-        }
-    
-        @media (min-width: 993px) {
-            .w3-sidebar.w3-collapse {
-                display: block !important;
-            }
-        }
-        .w3-sidebar {
-            height: 100%;
-            width: 200px;
-            background-color: #fff;
-            position: fixed !important;
-            z-index: 1;
-            overflow: auto;
-        }
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-weight: 400;
+        margin: 10px 0;
+    }
 
-        #leftmenuinner {
-            padding-top: 87px;
+    @media (min-width: 993px) {
+        .w3-sidebar.w3-collapse {
+            display: block !important;
         }
-        #leftmenuinner {
-            position: fixed;
-            top: 0;
-            padding-bottom: 0;
-            height: 100%;
-            width: 220px;
-            background-color: transparent;
-        }
-        #leftmenuinnerinner {
-            height: 100%;
-            width: 100%;
-            background-color: #E7E9EB;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            padding-top: 20px;
-        }
+    }
+    .w3-sidebar {
+        height: 100%;
+        width: 200px;
+        background-color: #fff;
+        position: fixed !important;
+        z-index: 1;
+        overflow: auto;
+    }
 
-        #sidenav h2 {
-            font-size: 21px;
-            padding-left: 16px;
-            margin: -4px 0 4px 0;
-            width: 204px;
-        }
-        h2 {
-            font-family: "Segoe UI", Arial, sans-serif;
-            font-weight: 400;
-        }
-        #sidenav a {
-            font-family: "Segoe UI", Arial, sans-serif;
-            text-decoration: none;
-            display: block;
-            padding: 2px 1px 1px 16px;
-        }
-        a {
-            color: inherit;
-        }
-        a {
-            background-color: transparent;
-        }
-        .ref_overview, .tut_overview {
-            display: none;
-            margin-left: 10px;
-            background-color: #ddd;
-            line-height: 1.8em;
-        }
-        .w3-main {
-            transition: margin-left 0s;
-            min-width: 330px;
-        }
-        .w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
-            color: #000 !important;
-            background-color: #f1f1f1 !important;
-        }
-        .w3-white, .w3-hover-white:hover {
-            color: #000 !important;
-            background-color: #fff !important;
-        }
-        #main {
-            padding: 16px 32px 32px 32px;
-            border-right: 1px solid #f1f1f1;
-        }
-        #main {
-            padding: 16px;
-            margin-top: 90px;
-        }
-        @media (min-width: 993px) {
-            .w3-col.l10 {
-                width: 83.33333%;
-            }
-        }
-        @media (min-width: 601px) {
-            .w3-col.m12 {
-                width: 99.99999%;
-            }
-        }
-        .w3-col, .w3-half, .w3-third, .w3-twothird, .w3-threequarter, .w3-quarter {
-            float: left;
-            width: 100%;
-        }
-        #midcontentadcontainer, #mainLeaderboard {
-            text-align: center;
-            margin-left: -16px;
-            margin-right: -16px;
-        }
-        #mainLeaderboard {
-            height: 90px;
-        }
-        .nextprev a.w3-left {
-            background-color: #04AA6D;
-            color: #ffffff;
-            border-color: #04AA6D;
-        }
-        .nextprev a:visited {
-            background-color: #ffffff;
-            color: #000000;
-        }
-        .w3-btn, .w3-btn:link, .w3-btn:visited {
-            color: #FFFFFF;
-            background-color: #4CAF50;
-        }
-        .nextprev a {
-            font-size: 18px;
-            font-family: 'Source Sans Pro', sans-serif;
-            padding-left: 19px;
-            padding-right: 19px;
-            border: 1px solid #cccccc;
-            border-radius: 5px;
-        }
-        .w3-left {
-            float: left !important;
-        }
-    
-        .w3-btn, .w3-button {
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        .w3-btn, .w3-button {
-            border: none;
-            display: inline-block;
-            padding: 8px 16px;
-            vertical-align: middle;
-            overflow: hidden;
-            text-decoration: none;
-            color: inherit;
-            background-color: inherit;
-            text-align: center;
-            cursor: pointer;
-            white-space: nowrap;
-        }
-        .w3-clear:before, .w3-bar:before, .w3-bar:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        .nextprev a.w3-right, .nextprev a.w3-left {
-            background-color: #04AA6D;
-            color: #ffffff;
-            border-color: #1a55d6;
-        }
-        .nextprev a:link, .nextprev a:visited {
-            background-color: #ffffff;
-            color: #000000;
-        }
-        .w3-btn, .w3-btn:link, .w3-btn:visited {
-            color: #FFFFFF;
-            background-color: #1a55d6;
-        }
-        .nextprev a {
-            font-size: 18px;
-            font-family: 'Source Sans Pro', sans-serif;
-            padding-left: 19px;
-            padding-right: 19px;
-            border: 1px solid #cccccc;
-            border-radius: 5px;
-        }
-        .w3-right {
-            float: right !important;
-        }
-        hr {
-            margin: 20px -16px;
-        }
-        hr {
-            border: 0;
-            border-top: 1px solid #eee;
-            margin: 20px 0;
-        }
-        hr {
-            box-sizing: content-box;
-            height: 0;
-            overflow: visible;
-        }
-        .intro {
-            font-size: 16px;
-        }
-        p {
-            margin-top: 1.2em;
-            margin-bottom: 1.2em;
-            font-size: 15px;
-        }
-        ul {
-            display: block;
-            list-style-type: disc;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            padding-inline-start: 40px;
-        }
-        li {
-            display: list-item;
-            text-align: -webkit-match-parent;
-        }
-        .w3-example {
-            padding: 8px 20px;
-            margin: 24px -20px;
-            box-shadow: none!important;
-        }
-        .w3-example {
-            background-color: #E7E9EB;
-            border-radius: 5px;
-            padding: 0.01em 16px;
-            margin: 20px 0;
-            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
-        }
-        .w3-code, w3-codeline {
-            font-size: 15px;
-        }
-        .w3-code {
-            border-left: 4px solid #04AA6D;
-        }
-        .w3-section, .w3-code {
-            margin-top: 16px !important;
-            margin-bottom: 16px !important;
-        }
-        .w3-code {
-            width: auto;
-            background-color: #fff;
-            color: #000;
-            padding: 8px 12px;
-            border-left: 4px solid #4CAF50;
-            word-wrap: break-word;
-        }
-        .w3-code, .w3-codespan {
-            font-family: Consolas, Menlo, "courier new", monospace;
-            font-size: 16px;
-        }
-        .w3-btn, .w3-btn:link, .w3-btn:visited {
-            color: #FFFFFF;
-            background-color: #4CAF50;
-        }
-        .w3-example .w3-btn, .w3-example .ws-btn {
-            background-color: #04AA6D !important;
-            border-radius: 5px;
-            font-size: 17px;
-            font-family: 'Source Sans Pro', sans-serif;
-            padding: 6px 18px;
-        }
-        .w3-margin-bottom {
-            margin-bottom: 16px !important;
-        }
-        .w3-btn, .w3-button {
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        .w3-btn, .w3-button {
-            border: none;
-            display: inline-block;
-            padding: 8px 16px;
-            vertical-align: middle;
-            overflow: hidden;
-            text-decoration: none;
-            color: inherit;
-            background-color: inherit;
-            text-align: center;
-            cursor: pointer;
-            white-space: nowrap;
-        }
-        table.ws-table-all {
-            margin: 20px 0;
-        }
-        .ws-table-all {
-            border-collapse: collapse;
-            border-spacing: 0;
-            width: 100%;
-            display: table;
-            border: 1px solid #ccc;
-        }
+    #leftmenuinner {
+        padding-top: 87px;
+    }
+    #leftmenuinner {
+        position: fixed;
+        top: 0;
+        padding-bottom: 0;
+        height: 100%;
+        width: 220px;
+        background-color: transparent;
+    }
 
-        tbody {
-            display: table-row-group;
-            vertical-align: middle;
-            border-color: inherit;
+    #leftmenuinnerinner {
+        height: 100%;
+        width: 100%;
+        background-color: #E7E9EB;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    #sidenav h2 {
+        font-size: 21px;
+        padding-left: 16px;
+        margin: -4px 0 4px 0;
+        width: 204px;
+    }
+    h2 {
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-weight: 400;
+    }
+    #sidenav a {
+        font-family: "Segoe UI", Arial, sans-serif;
+        text-decoration: none;
+        display: block;
+        padding: 2px 1px 1px 16px;
+    }
+    a {
+        color: inherit;
+    }
+    a {
+        background-color: transparent;
+    }
+
+    .ref_overview, .tut_overview {
+        display: none;
+        margin-left: 10px;
+        background-color: #ddd;
+        line-height: 1.8em;
+    }
+    .w3-main {
+        transition: margin-left 0s;
+        min-width: 330px;
+    }
+    .w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
+        color: #000 !important;
+        background-color: #f1f1f1 !important;
+    }
+    .w3-white, .w3-hover-white:hover {
+        color: #000 !important;
+        background-color: #fff !important;
+    }
+    #main {
+        padding: 16px 32px 32px 32px;
+        border-right: 1px solid #f1f1f1;
+    }
+    #main {
+        padding: 16px;
+        margin-top: 90px;
+    }
+    @media (min-width: 993px) {
+        .w3-col.l10 {
+            width: 83.33333%;
         }
-        .ws-table-all tr:nth-child(odd) {
-            background-color: #fff;
+    }
+    @media (min-width: 601px) {
+        .w3-col.m12 {
+            width: 99.99999%;
         }
+    }
+    .w3-col, .w3-half, .w3-third, .w3-twothird, .w3-threequarter, .w3-quarter {
+        float: left;
+        width: 100%;
+    }
+    #midcontentadcontainer, #mainLeaderboard {
+        text-align: center;
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+    #mainLeaderboard {
+        height: 90px;
+    }
+    .nextprev a.w3-left {
+        background-color: #04AA6D;
+        color: #ffffff;
+        border-color: #04AA6D;
+    }
+    .nextprev a:visited {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    .w3-btn, .w3-btn:link, .w3-btn:visited {
+        color: #FFFFFF;
+        background-color: #4CAF50;
+    }
+    .nextprev a {
+        font-size: 18px;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding-left: 19px;
+        padding-right: 19px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+    }
+    .w3-left {
+        float: left !important;
+    }
+
+    .w3-btn, .w3-button {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .w3-btn, .w3-button {
+        border: none;
+        display: inline-block;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        background-color: inherit;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+    .w3-clear:before, .w3-bar:before, .w3-bar:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .nextprev a.w3-right, .nextprev a.w3-left {
+        background-color: #04AA6D;
+        color: #ffffff;
+        border-color: #04AA6D;
+    }
+    .nextprev a:link, .nextprev a:visited {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    .w3-btn, .w3-btn:link, .w3-btn:visited {
+        color: #FFFFFF;
+        background-color: #4CAF50;
+    }
+    .nextprev a {
+        font-size: 18px;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding-left: 19px;
+        padding-right: 19px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+    }
+    .w3-right {
+        float: right !important;
+    }
+    hr {
+        margin: 20px -16px;
+    }
+    hr {
+        border: 0;
+        border-top: 1px solid #eee;
+        margin: 20px 0;
+    }
+    hr {
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible;
+    }
+    .intro {
+        font-size: 16px;
+    }
+    p {
+        margin-top: 1.2em;
+        margin-bottom: 1.2em;
+        font-size: 15px;
+    }
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+    .w3-example {
+        padding: 8px 20px;
+        margin: 24px -20px;
+        box-shadow: none!important;
+    }
+    .w3-example {
+        background-color: #E7E9EB;
+        border-radius: 5px;
+        padding: 0.01em 16px;
+        margin: 20px 0;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    }
+    .w3-code, w3-codeline {
+        font-size: 15px;
+    }
+    .w3-code {
+        border-left: 4px solid #04AA6D;
+    }
+    .w3-section, .w3-code {
+        margin-top: 16px !important;
+        margin-bottom: 16px !important;
+    }
+    .w3-code {
+        width: auto;
+        background-color: #fff;
+        color: #000;
+        padding: 8px 12px;
+        border-left: 4px solid #1a55d6;
+        word-wrap: break-word;
+    }
+    .w3-code, .w3-codespan {
+        font-family: Consolas, Menlo, "courier new", monospace;
+        font-size: 16px;
+    }
+    .w3-btn, .w3-btn:link, .w3-btn:visited {
+        color: #FFFFFF;
+        background-color: #1a55d6;
+    }
+    .w3-example .w3-btn, .w3-example .ws-btn {
+        background-color: #1a55d6 !important;
+        border-radius: 5px;
+        font-size: 17px;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 6px 18px;
+    }
+    .w3-margin-bottom {
+        margin-bottom: 16px !important;
+    }
+    .w3-btn, .w3-button {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .w3-btn, .w3-button {
+        border: none;
+        display: inline-block;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        background-color: inherit;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap;
+    }
     
-        .ws-table-all tr {
-            border-bottom: 1px solid #ddd;
-        }
-        
-        tr {
-            display: table-row;
-            vertical-align: inherit;
-            border-color: inherit;
-        }
-        .w3-note, .w3-warning {
-            margin-top: 24px;
-            margin-bottom: 24px;
-            margin-left: -32px;
-            margin-right: -32px;
-            padding: 16px 32px;
-        }
-        .w3-note, .w3-warning {
-            border-left: none;
-        }
-        .w3-note {
-         
-            margin: 5px;
-            background-color: #ffffcc;
-            border-left: 6px solid #ffeb3b;
-        }
-        .ws-grey {
-            background-color: #E7E9EB !important;
-            color: black !important;
-        }
-    </style>
+    table.ws-table-all {
+        margin: 20px 0;
+    }
+    .ws-table-all {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        display: table;
+        border: 1px solid #ccc;
+    }
+    
+    tbody {
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit;
+    }
+    .ws-table-all tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    .ws-table-all tr {
+        border-bottom: 1px solid #ddd;
+    }
+    
+    tr {
+        display: table-row;
+        vertical-align: inherit;
+        border-color: inherit;
+    }
+    .w3-note, .w3-warning {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        margin-left: -32px;
+        margin-right: -32px;
+        padding: 16px 32px;
+    }
+    .w3-note, .w3-warning {
+        border-left: none;
+    }
+    .w3-note {
+     
+        margin: 5px;
+        background-color: #ffffcc;
+        border-left: 6px solid #ffeb3b;
+    }
+    .ws-grey {
+        background-color: #E7E9EB !important;
+        color: black !important;
+    }
+    .ws-table-all {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        display: table;
+        border: 1px solid #ccc;
+    }
+</style>
 </head>
 
-<body>
+<body >
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
             <a href="https://www.freecodehub.tech/index.html" style="text-decoration: none;">
@@ -849,848 +859,6 @@
                             <span class="user-progress-point">+1</span>
                         </a>
                     </div>
-
-                    <div class="w3s-pathfinder -teaser user-anonymous">
-                        <div class="-background-image -variant-t2">&nbsp;</div>
-
-                        <div class="-inner-wrapper">
-                            <div class="-main-section">
-                                <div class="-inner-wrapper">
-                                    <div class="-title">W3schools Pathfinder</div>
-
-                                    <div class="-headline">Track your progress - it's free!</div>
-
-                                    <div class="-body">
-                                        <div class="-progress-bar">
-                                            <div class="-slider" style="width: 20%;">&nbsp;</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="-right-side-section">
-                                <div class="-user-session-btns">
-                                    <a href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fpathfinder.w3schools.com"
-                                        data-skip-href-patch="true"
-                                        class="-login-btn w3-btn bar-item-hover w3-right ws-light-green ga-bottom ga-bottom-login"
-                                        title="Login to your account" aria-label="Login to your account" target="_top">
-                                        Log in
-                                    </a>
-
-                                    <a href="https://profile.w3schools.com/sign-up?redirect_url=https%3A%2F%2Fpathfinder.w3schools.com"
-                                        data-skip-href-patch="true"
-                                        class="-signup-btn w3-button w3-right ws-green ws-hover-green ga-bottom ga-bottom-signup"
-                                        title="Sign Up to Improve Your Learning Experience"
-                                        aria-label="Sign Up to Improve Your Learning Experience" target="_top">
-                                        Sign Up
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="w3-col l2 m12" id="right">
-
-                <div class="sidesection">
-                    <div id="skyscraper">
-
-                        <div id="adngin-sidebar_top-0"></div>
-
-                    </div>
-                </div>
-
-                <style>
-                    .ribbon-vid {
-                        font-size: 12px;
-                        font-weight: bold;
-                        padding: 6px 20px;
-                        left: -20px;
-                        top: -10px;
-                        text-align: center;
-                        color: black;
-                        border-radius: 25px;
-                    }
-                </style>
-
-                <div class="sidesection" style="margin-top:20px;margin-bottom:20px;">
-                    <a id="upperfeatureshowcaselink" class="ga-right ga-top-spaces-nov-html"
-                        href="https://www.w3schools.com/html/html_website.asp" target="_blank">
-                        <picture id="upperfeatureshowcase">
-                            <source id="upperfeatureshowcase3001" srcset="/images/img_spaces_up_generic_html_300.png"
-                                media="(max-width: 990px)" style="border-radius: 5px;">
-                            <source id="upperfeatureshowcase120" srcset="/images/img_spaces_up_generic_html_120.png"
-                                media="(max-width: 1260px)" style="border-radius: 5px;">
-                            <source id="upperfeatureshowcase160" srcset="/images/img_spaces_up_generic_html_160.png"
-                                media="(max-width: 1700px)" style="border-radius: 5px;">
-                            <img id="upperfeatureshowcase300" src="/images/img_spaces_up_generic_html_300.png"
-                                alt="Get Certified" style="width:auto;border-radius: 5px;">
-                        </picture>
-                    </a>
-                </div>
-
-                <div class="sidesection">
-                    <h4><a href="/colors/colors_picker.asp">COLOR PICKER</a></h4>
-                    <a href="/colors/colors_picker.asp" class="ga-right">
-                        <img src="/images/colorpicker2000.png" alt="colorpicker" loading="lazy">
-                    </a>
-                </div>
-
-                <div class="sidesection">
-                    <div class="sharethis" style="visibility: visible;">
-                        <a href="https://www.facebook.com/w3schoolscom/" target="_blank" title="Facebook"><span
-                                class="fa fa-facebook-square fa-2x ga-right"></span></a>
-                        <a href="https://www.instagram.com/w3schools.com_official/" target="_blank"
-                            title="Instagram"><span class="fa fa-instagram fa-2x ga-right"></span></a>
-                        <a href="https://www.linkedin.com/company/w3schools.com/" target="_blank" title="LinkedIn"><span
-                                class="fa fa-linkedin-square fa-2x ga-right"></span></a>
-                        <a href="https://discord.gg/6Z7UaRbUQM" target="_blank"
-                            title="Join the W3schools community on Discord"><span
-                                class="fa fa-discord fa-2x ga-right"></span></a>
-                    </div>
-                </div>
-
-
-                <script>
-                    var internalFeatureRnd = Math.floor(Math.random() * (5 - 1)) + 1;
-                    function addTryitSpaces(subject, spacesurl) {
-                        let spacesButt = document.createElement("a");
-                        let ribb = document.createElement("span");
-                        spacesButt.innerHTML = "Get your own " + subject + " Server"
-                        spacesButt.classList.add("ws-black", "ws-hover-black", "spaces-tryit", "ga-featured");
-                        spacesButt.href = spacesurl;
-                        spacesButt.setAttribute("title", "W3Schools Spaces");
-                        spacesButt.setAttribute("target", "_blank");
-
-                        var tryits = document.getElementsByClassName("w3-example");
-                        for (var i = 0; i < tryits.length; i++) {
-                            if (tryits[i].firstElementChild.nodeName == "H3") {
-                                tryits[i].firstElementChild.appendChild(spacesButt.cloneNode(true));
-                                break;
-                            }
-                        }
-                    }
-
-                    var upimgsubject1 = "";
-                    var uplink1 = "https://campus.w3schools.com/products/w3schools-full-access-course";
-                    var upclass1 = "ga-top-fullaccess-jan";
-                    var upimgstart1 = "/images/img_fullaccess_up_sep1_green_";
-                    var upimgend1 = ".png";
-                    var upimgsubject2 = "";
-                    var uplink2 = "https://www.w3schools.com/spaces/index.php";
-                    var upclass2 = "ga-top-spaces-nov";
-                    var upimgstart2 = "/images/img_spaces_up_generic_";
-                    var upimgend2 = ".png";
-                    var upimgsubject3 = "";
-                    var uplink3 = "https://campus.w3schools.com/collections/course-catalog";
-                    var upclass3 = "ga-top-certification-generic";
-                    var upimgstart3 = "/images/img_certification_up_generic_";
-                    var upimgend3 = ".png";
-                    var upimgsubject4 = "";
-                    var uplink4 = "https://campus.w3schools.com/collections/course-catalog/products/front-end-course";
-                    var upclass4 = "ga-top-program";
-                    var upimgstart4 = "/images/img_program_up_";
-                    var upimgend4 = ".png";
-
-                    var upshowcase120 = document.getElementById("upperfeatureshowcase120");
-                    var upshowcase160 = document.getElementById("upperfeatureshowcase160");
-                    var upshowcase300 = document.getElementById("upperfeatureshowcase300");
-                    var upshowcase3001 = document.getElementById("upperfeatureshowcase3001");
-                    var upshowcaselink = document.getElementById("upperfeatureshowcaselink");
-
-                    switch (subjectFolder) {
-                        case "java":
-                            upimgsubject2 = "java_";
-                            uplink2 = "https://www.w3schools.com/java/java_server.asp";
-                            upclass2 = "ga-top-spaces-nov-java";
-                            addTryitSpaces("Java", "/java/java_server.asp");
-                            break;
-                        case "html":
-                            upimgsubject2 = "html_";
-                            uplink2 = "https://www.w3schools.com/html/html_website.asp";
-                            upclass2 = "ga-top-spaces-nov-html";
-                            upimgsubject3 = "html_";
-                            uplink3 = "https://campus.w3schools.com/collections/course-catalog/products/html-course";
-                            upclass3 = "ga-top-certification-generic-html";
-                            break;
-                        case "tags":
-                            upimgsubject2 = "html_";
-                            uplink2 = "https://www.w3schools.com/html/html_website.asp";
-                            upclass2 = "ga-top-spaces-nov-html";
-                            upimgsubject3 = "html_";
-                            uplink3 = "https://campus.w3schools.com/collections/course-catalog/products/html-course";
-                            upclass3 = "ga-top-certification-generic-html";
-                            break;
-                        case "css":
-                            upimgsubject2 = "css_";
-                            uplink2 = "https://www.w3schools.com/css/css_website.asp";
-                            upclass2 = "ga-top-spaces-nov-css";
-                            upimgsubject3 = "css_";
-                            uplink3 = "https://campus.w3schools.com/collections/course-catalog/products/css-course";
-                            upclass3 = "ga-top-certification-generic-css";
-                            break;
-                        case "cssref":
-                            upimgsubject2 = "css_";
-                            uplink2 = "https://www.w3schools.com/css/css_website.asp";
-                            upclass2 = "ga-top-spaces-nov-css";
-                            upimgsubject3 = "css_";
-                            uplink3 = "https://campus.w3schools.com/collections/course-catalog/products/css-course";
-                            upclass3 = "ga-top-certification-generic-css";
-                            break;
-                        case "js":
-                            upimgsubject2 = "js_";
-                            uplink2 = "https://www.w3schools.com/js/js_website.asp";
-                            upclass2 = "ga-top-spaces-nov-js";
-                            upimgsubject3 = "js_";
-                            uplink3 = "https://campus.w3schools.com/collections/course-catalog/products/javascript-course";
-                            upclass3 = "ga-top-certification-generic-js";
-                            break;
-                        case "jsref":
-                            upimgsubject2 = "js_";
-                            uplink2 = "https://www.w3schools.com/js/js_website.asp";
-                            upclass2 = "ga-top-spaces-nov-js";
-                            upimgsubject3 = "js_";
-                            uplink3 = "https://campus.w3schools.com/collections/course-catalog/products/javascript-course";
-                            upclass3 = "ga-top-certification-generic-js";
-                            break;
-                        case "react":
-                            upimgsubject2 = "react_";
-                            uplink2 = "https://www.w3schools.com/react/react_server.asp";
-                            upclass2 = "ga-top-spaces-nov-react";
-                            upimgsubject3 = "react_";
-                            uplink3 = "https://campus.w3schools.com/collections/course-best-sellers/products/react-js-course";
-                            upclass3 = "ga-top-certification-generic-react";
-                            upimgsubject4 = "modernweb_";
-                            uplink4 = "https://campus.w3schools.com/collections/course-best-sellers/products/learn-modern-web-development";
-                            upclass4 = "ga-top-program-modernweb";
-                            addTryitSpaces("React.js", "/react/react_server.asp");
-                            break;
-                        case "sql":
-                            upimgsubject2 = "sql_";
-                            uplink2 = "https://www.w3schools.com/sql/sql_server.asp";
-                            upclass2 = "ga-top-spaces-nov-sql";
-                            upimgsubject3 = "sql_";
-                            uplink3 = "https://campus.w3schools.com/collections/course-best-sellers/products/sql-course";
-                            upclass3 = "ga-top-certification-generic-sql";
-                            upimgsubject4 = "modernweb_";
-                            uplink4 = "https://campus.w3schools.com/collections/course-best-sellers/products/learn-modern-web-development";
-                            upclass4 = "ga-top-program-modernweb";
-                            addTryitSpaces("SQL", "/sql/sql_server.asp");
-                            break;
-                        case "mysql":
-                            upimgsubject2 = "sql_";
-                            uplink2 = "https://www.w3schools.com/sql/sql_server.asp";
-                            upclass2 = "ga-top-spaces-nov-sql";
-                            upimgsubject3 = "sql_";
-                            uplink3 = "https://campus.w3schools.com/collections/course-best-sellers/products/sql-course";
-                            upclass3 = "ga-top-certification-generic-sql";
-                            upimgsubject4 = "webapp_";
-                            uplink4 = "https://campus.w3schools.com/collections/course-best-sellers/products/web-application-development-course";
-                            upclass4 = "ga-top-program-webapp";
-                            addTryitSpaces("SQL", "/sql/sql_server.asp");
-                            break;
-                        case "php":
-                            upimgsubject2 = "php_";
-                            uplink2 = "https://www.w3schools.com/php/php_server.asp";
-                            upclass2 = "ga-top-spaces-nov-php";
-                            upimgsubject4 = "webapp_";
-                            uplink4 = "https://campus.w3schools.com/collections/course-best-sellers/products/web-application-development-course";
-                            upclass4 = "ga-top-program-webapp";
-                            addTryitSpaces("PHP", "/php/php_server.asp");
-                            break;
-                        case "numpy":
-                            upimgsubject2 = "python_";
-                            uplink2 = "https://www.w3schools.com/python/python_server.asp";
-                            upclass2 = "ga-top-spaces-nov-python";
-                            upimgsubject3 = "python_";
-                            uplink3 = "https://campus.w3schools.com/collections/course-best-sellers/products/python-course";
-                            upclass3 = "ga-top-certification-generic-python";
-                            upimgsubject4 = "dataanalytics_";
-                            uplink4 = "https://campus.w3schools.com/collections/course-catalog/products/data-analytics-program";
-                            upclass4 = "ga-top-program-dataanalytics";
-                            addTryitSpaces("Python", "/python/python_server.asp");
-                            break;
-                        case "django":
-                            upimgsubject2 = "django_";
-                            uplink2 = "https://www.w3schools.com/django/django_server.php";
-                            upclass2 = "ga-top-spaces-nov-django";
-                            upimgsubject3 = "django_";
-                            uplink3 = "https://campus.w3schools.com/collections/certifications/products/django-certification-exam";
-                            upclass3 = "ga-top-certification-generic-django";
-                            addTryitSpaces("Django", "/django/django_server.php");
-                            break;
-                        case "typescript":
-                            upimgsubject4 = "modernweb_";
-                            uplink4 = "https://campus.w3schools.com/collections/course-best-sellers/products/learn-modern-web-development";
-                            upclass4 = "ga-top-program-modernweb";
-                            addTryitSpaces("TypeScript", "/spaces/");
-                            break;
-                        case "nodejs":
-                            upimgsubject2 = "node_";
-                            uplink2 = "https://www.w3schools.com/nodejs/nodejs_server.asp";
-                            upclass2 = "ga-top-spaces-nov-node";
-                            addTryitSpaces("Node.js", "/nodejs/nodejs_server.asp");
-                            break;
-                        case "pandas":
-                            upimgsubject2 = "python_";
-                            uplink2 = "https://www.w3schools.com/python/python_server.asp";
-                            upclass2 = "ga-top-spaces-nov-python";
-                            upimgsubject3 = "python_";
-                            uplink3 = "https://campus.w3schools.com/collections/course-best-sellers/products/python-course";
-                            upclass3 = "ga-top-certification-generic-python";
-                            upimgsubject4 = "dataanalytics_";
-                            uplink4 = "https://campus.w3schools.com/collections/course-catalog/products/data-analytics-program";
-                            upclass4 = "ga-top-program-dataanalytics";
-                            addTryitSpaces("Python", "/python/python_server.asp");
-                            break;
-                        case "python":
-                            upimgsubject2 = "python_";
-                            uplink2 = "https://www.w3schools.com/python/python_server.asp";
-                            upclass2 = "ga-top-spaces-nov-python";
-                            upimgsubject3 = "python_";
-                            uplink3 = "https://campus.w3schools.com/collections/course-best-sellers/products/python-course";
-                            upclass3 = "ga-top-certification-generic-python";
-                            upimgsubject4 = "dataanalytics_";
-                            uplink4 = "https://campus.w3schools.com/collections/course-catalog/products/data-analytics-program";
-                            upclass4 = "ga-top-program-dataanalytics";
-                            addTryitSpaces("Python", "/python/python_server.asp");
-                            break;
-                        case "cs":
-                            upimgsubject2 = "cs_";
-                            uplink2 = "https://www.w3schools.com/cs/cs_server.php";
-                            upclass2 = "ga-top-spaces-nov-cs";
-                            addTryitSpaces("C#", "/cs/cs_server.php");
-                            break;
-                        case "vue":
-                            addTryitSpaces("Vue", "/vue/vue_server.php");
-                            break;
-                        default:
-                            upimgsubject1 = "";
-                            upimgsubject2 = "";
-                            upimgsubject3 = "";
-                            upimgsubject4 = "";
-                            loimgsubject1 = "";
-                            loimgsubject2 = "";
-                            loimgsubject3 = "";
-                            loimgsubject4 = "";
-                    }
-
-                    upshowcaselink.classList.remove("ga-top-fullaccess-jan");
-                    if (internalFeatureRnd == 1) {
-                        upshowcase120.srcset = upimgstart1 + upimgsubject1 + "120" + upimgend1;
-                        upshowcase160.srcset = upimgstart1 + upimgsubject1 + "160" + upimgend1;
-                        upshowcase300.src = upimgstart1 + upimgsubject1 + "300" + upimgend1;
-                        upshowcase3001.srcset = upimgstart1 + upimgsubject1 + "300" + upimgend1;
-                        upshowcaselink.href = uplink1;
-                        upshowcaselink.classList.add(upclass1);
-                    } else if (internalFeatureRnd == 2) {
-                        upshowcase120.srcset = upimgstart2 + upimgsubject2 + "120" + upimgend2;
-                        upshowcase160.srcset = upimgstart2 + upimgsubject2 + "160" + upimgend2;
-                        upshowcase300.src = upimgstart2 + upimgsubject2 + "300" + upimgend2;
-                        upshowcase3001.srcset = upimgstart2 + upimgsubject2 + "300" + upimgend2;
-                        upshowcaselink.href = uplink2;
-                        upshowcaselink.classList.add(upclass2);
-                    } else if (internalFeatureRnd == 3) {
-                        upshowcase120.srcset = upimgstart3 + upimgsubject3 + "120" + upimgend3;
-                        upshowcase160.srcset = upimgstart3 + upimgsubject3 + "160" + upimgend3;
-                        upshowcase300.src = upimgstart3 + upimgsubject3 + "300" + upimgend3;
-                        upshowcase3001.srcset = upimgstart3 + upimgsubject3 + "300" + upimgend3;
-                        upshowcaselink.href = uplink3;
-                        upshowcaselink.classList.add(upclass3);
-                    } else if (internalFeatureRnd == 4) {
-                        upshowcase120.srcset = upimgstart4 + upimgsubject4 + "120" + upimgend4;
-                        upshowcase160.srcset = upimgstart4 + upimgsubject4 + "160" + upimgend4;
-                        upshowcase300.src = upimgstart4 + upimgsubject4 + "300" + upimgend4;
-                        upshowcase3001.srcset = upimgstart4 + upimgsubject4 + "300" + upimgend4;
-                        upshowcaselink.href = uplink4;
-                        upshowcaselink.classList.add(upclass4);
-                    }
-                </script>
-
-
-                <div id="vidpos" class="sidesection" style="text-align:center;margin-bottom:0;height:0;">
-                    <div id="adngin-outstream-0"></div>
-                </div>
-
-
-                <div id="stickypos" class="sidesection" style="text-align:center;position:sticky;top:50px;">
-                    <div id="stickyadcontainer" style="width: 115.656px;">
-                        <div style="position:relative;margin:auto;">
-
-                            <div id="adngin-sidebar_sticky-0"></div>
-                            <script>
-                                function secondSnigel() {
-                                    if (window.adngin && window.adngin.adnginLoaderReady) {
-                                        if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
-                                            if (document.getElementById("adngin-mid_content-0")) {
-                                                adngin.queue.push(function () {
-                                                    adngin.cmd.startAuction([
-                                                        { placement: "adngin-sidebar_sticky-0", adUnit: "sidebar_sticky" },
-                                                        { placement: "adngin-mid_content-0", adUnit: "mid_content" },
-                                                    ]);
-                                                });
-                                            } else {
-                                                adngin.queue.push(function () {
-                                                    adngin.cmd.startAuction([
-                                                        { placement: "adngin-sidebar_sticky-0", adUnit: "sidebar_sticky" },
-                                                    ]);
-                                                });
-                                            }
-                                        } else {
-                                            if (document.getElementById("adngin-mid_content-0")) {
-                                                adngin.queue.push(function () {
-                                                    adngin.cmd.startAuction([
-                                                        { placement: "adngin-mid_content-0", adUnit: "mid_content" },
-                                                    ]);
-                                                });
-                                            }
-                                        }
-                                    } else {
-                                        window.addEventListener('adnginLoaderReady', function () {
-                                            if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
-                                                if (document.getElementById("adngin-mid_content-0")) {
-                                                    adngin.queue.push(function () {
-                                                        adngin.cmd.startAuction([
-                                                            { placement: "adngin-sidebar_sticky-0", adUnit: "sidebar_sticky" },
-                                                            { placement: "adngin-mid_content-0", adUnit: "mid_content" },
-                                                        ]);
-                                                    });
-                                                } else {
-                                                    adngin.queue.push(function () {
-                                                        adngin.cmd.startAuction([
-                                                            { placement: "adngin-sidebar_sticky-0", adUnit: "sidebar_sticky" },
-                                                        ]);
-                                                    });
-                                                }
-                                            } else {
-                                                if (document.getElementById("adngin-mid_content-0")) {
-                                                    adngin.queue.push(function () {
-                                                        adngin.cmd.startAuction([
-                                                            { placement: "adngin-mid_content-0", adUnit: "mid_content" },
-                                                        ]);
-                                                    });
-                                                }
-                                            }
-                                        });
-                                    }
-                                }
-                            </script>
-
-                        </div>
-                    </div>
-                </div>
-
-                <script>
-                    uic_r_c()
-                </script>
-
-            </div>
-        </div>
-        <div id="footer" class="footer w3-container w3-white">
-
-            <hr>
-
-            <div style="overflow:auto">
-                <div class="bottomad">
-                    <!-- BottomMediumRectangle -->
-                    <!--<pre>bottom_medium_rectangle, all: [970,250][300,250][336,280]</pre>-->
-                    <div id="adngin-bottom_left-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
-                    <!-- adspace bmr -->
-                    <!-- RightBottomMediumRectangle -->
-                    <!--<pre>right_bottom_medium_rectangle, desktop: [300,250][336,280]</pre>-->
-                    <div id="adngin-bottom_right-0" style="padding:0 10px 10px 0;float:left;width:auto;"></div>
-                </div>
-            </div>
-
-            <!--<hr>-->
-
-        </div>
-
-        <style>
-            #footerwrapper {
-                background-image: url('/images/lynx_landing.png'), url('/images/background_in_space.gif');
-                background-repeat: no-repeat, repeat;
-                background-position: right bottom, center center
-                    /*left top*/
-                ;
-            }
-
-            #spacemyfooter {
-                padding: 40px 80px 300px 80px;
-                max-width: 1400px;
-                margin: auto;
-            }
-
-            .footerlinks_1 {
-                width: auto;
-                float: left;
-                padding: 40px 30px;
-                color: #FFF4A3;
-                font-family: Source Sans Pro, sans-serif;
-            }
-
-            .footerlinks_1 .fa-logo {
-                font-size: 46px !important;
-                color: #ddd;
-            }
-
-            .footerlinks_1:nth-child(1) {
-                padding: 30px 10px 30px 40px;
-            }
-
-            .footerlinks_1 a {
-                text-decoration: none;
-            }
-
-            .footerlinks_1 a:hover,
-            .footerlinks_1 a:active {
-                text-decoration: underline;
-                color: #FFF4A3;
-            }
-
-            .footerlinks_1 a:hover,
-            .footerlinks_1 a:active {
-                text-decoration: underline;
-                color: #FFF4A3 !;
-            }
-
-            .footerlinks_1 a:hover i {
-                color: #FFF4A3 !important;
-            }
-
-            .footerlinks_2 {
-                width: auto;
-                float: left;
-                padding-left: 40px;
-                padding-right: 140px;
-                color: #ddd;
-                font-family: Source Sans Pro, sans-serif;
-                font-size: 12px;
-                line-height: 15px;
-            }
-
-            .footerlinks_2:nth-child(4) {
-                padding-right: 0;
-            }
-
-            .footerlinks_2 h5 {
-                margin-bottom: 20px;
-            }
-
-            .footerlinks_2 a:visited,
-            .footerlinks_2 a:link {
-                text-decoration: none;
-            }
-
-            .footerlinks_2 a:hover,
-            .footerlinks_2 a:active {
-                color: #FFF4A3;
-            }
-
-            .footersome {
-                padding: 60px 40px 10px 40px;
-                color: #ddd;
-                font-size: 20px;
-            }
-
-            .footersome a {
-                margin-right: 10px;
-            }
-
-            .footersome a:hover,
-            .footersome a:active {
-                color: #FFF4A3;
-            }
-
-            .footersome .textlink {
-                font-size: 15px;
-                text-decoration: none;
-            }
-
-            .footersome .textlink:active,
-            .footersome .textlink:hover {
-                text-decoration: underline;
-            }
-
-            .footertext {
-                padding-left: 40px;
-                color: #ddd;
-                font-size: 12px;
-                line-height: 15px;
-
-            }
-
-            .footertext a:hover,
-            .footertext a:active {
-                color: #FFF4A3;
-            }
-
-            @media screen and (max-width: 1200px) {
-                #footerwrapper {
-                    background-size: 500px, auto;
-                }
-
-                .footerlinks_1 {
-                    padding-left: 2.6%;
-                    padding-right: 2.6%;
-                }
-
-                .footerlinks_2 {
-                    padding-right: 8%;
-                }
-            }
-
-            @media screen and (max-width: 992px) {
-                .footerlinks_1 {
-                    width: 100%;
-                    margin: auto;
-                    float: none;
-                    text-align: center;
-                    padding: 10px 20px !important;
-                    font-size: 20px;
-                }
-
-                .footerlinks_1:nth-child(1) {
-                    padding: 40px 20px;
-                }
-
-                .footerlinks_2 {
-                    width: 100%;
-                    float: none;
-                    margin: auto;
-                    font-size: 16px;
-                    line-height: 20px;
-                    padding: 0;
-                    text-align: center;
-                }
-
-                .footerlinks_2 h5 {
-                    font-size: 26px;
-                    margin-top: 40px;
-                }
-
-                .footertext {
-                    text-align: center;
-                    padding: 0;
-                }
-
-                .footer-hide-special {
-                    display: none;
-                }
-
-                #spacemyfooter {
-                    padding-bottom: 400px;
-                }
-
-                .footersome {
-                    text-align: center;
-                }
-            }
-
-            @media screen and (max-width: 992px) {
-                #footerwrapper {
-                    background-image: url('/images/lynx_landing.png'), url('/images/background_in_space.gif');
-                    background-repeat: no-repeat, repeat;
-                    background-position: center bottom, left top;
-                }
-            }
-        </style>
-        <div id="footerwrapper">
-
-            <style>
-                @media screen and (max-width: 1420px) {
-                    .footerlinks_1 {
-                        padding-left: 2.5%;
-                        padding-right: 1.5%;
-                    }
-
-                    .footerlinks_1:nth-child(1) {
-                        width: 100%;
-                        padding-left: 0;
-                    }
-
-                    .footerlinks_1:nth-child(2) {
-                        padding-left: 0;
-                    }
-
-                    .footerlinks_2 {
-                        padding-right: 2%;
-                    }
-
-                    .footerlinks_2:nth-child(1) {
-                        padding-left: 0;
-                    }
-
-                    .footerlinks_2:nth-child(4) {
-                        padding-right: 0;
-                    }
-
-                    #spacemyfooter {
-                        padding-bottom: 400px;
-                    }
-
-                    .footertext {
-                        padding-left: 0;
-                    }
-
-                    .footersome {
-                        padding-left: 0;
-                    }
-
-                    .footer-hide-special {
-                        display: none;
-                    }
-
-                }
-            </style>
-            <div id="spacemyfooter">
-
-
-
-
-
-                <div style="overflow:hidden;">
-                    <div class="footerlinks_1">
-                        <a href="//www.w3schools.com" class="ga-bottom">
-                            <i class="fa fa-logo"></i>
-                        </a>
-                    </div>
-                    <div class="footerlinks_1"><a href="/spaces/index.php">SPACES</a></div>
-                    <div class="footerlinks_1"><a href="/pro/index.php">UPGRADE</a></div>
-                    <div class="footerlinks_1"><a href="/pro/index.php">AD-FREE</a></div>
-                    <div class="footerlinks_1"><a href="https://campus.w3schools.com/pages/newsletter"
-                            target="_blank">NEWSLETTER</a></div>
-                    <div class="footerlinks_1"><a href="https://campus.w3schools.com/collections/certifications"
-                            target="_blank">GET CERTIFIED</a></div>
-                    <div class="footerlinks_1"><a href="javascript:void(0);" onclick="reportError();return false">REPORT
-                            ERROR</a></div>
-                </div>
-                <div class="w3-padding w3-margin-bottom" id="err_message"
-                    style="display:none;position:relative;background-color:#53555D;max-width:900px;color:#FFF4A3">
-                    <span onclick="this.parentElement.style.display='none'"
-                        class="w3-button w3-display-topright w3-large">×</span>
-
-                    <h2>Report Error</h2>
-
-                    <p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us
-                        an e-mail:</p>
-                    <p>help@w3schools.com</p>
-                    <br>
-
-                </div>
-
-
-                <div style="overflow:hidden;">
-                    <div class="footerlinks_2">
-                        <h5 style="font-family: 'Source Sans Pro', sans-serif;">Top Tutorials</h5>
-                        <a href="/html/default.asp" class="ga-bottom">HTML Tutorial</a><br>
-                        <a href="/css/default.asp" class="ga-bottom">CSS Tutorial</a><br>
-                        <a href="/js/default.asp" class="ga-bottom">JavaScript Tutorial</a><br>
-                        <a href="/howto/default.asp" class="ga-bottom">How To Tutorial</a><br>
-                        <a href="/sql/default.asp" class="ga-bottom">SQL Tutorial</a><br>
-                        <a href="/python/default.asp" class="ga-bottom">Python Tutorial</a><br>
-                        <a href="/w3css/default.asp" class="ga-bottom">W3.CSS Tutorial</a><br>
-                        <a href="/bootstrap/bootstrap_ver.asp" class="ga-bottom">Bootstrap Tutorial</a><br>
-                        <a href="/php/default.asp" class="ga-bottom">PHP Tutorial</a><br>
-                        <a href="/java/default.asp" class="ga-bottom">Java Tutorial</a><br>
-                        <a href="/cpp/default.asp" class="ga-bottom">C++ Tutorial</a><br>
-                        <a href="/jquery/default.asp" class="ga-bottom">jQuery Tutorial</a><br>
-                    </div>
-                    <div class="footerlinks_2">
-                        <h5 style="font-family: 'Source Sans Pro', sans-serif;">Top References</h5>
-                        <a href="/tags/default.asp" class="ga-bottom">HTML Reference</a><br>
-                        <a href="/cssref/index.php" class="ga-bottom">CSS Reference</a><br>
-                        <a href="/jsref/default.asp" class="ga-bottom">JavaScript Reference</a><br>
-                        <a href="/sql/sql_ref_keywords.asp" class="ga-bottom">SQL Reference</a><br>
-                        <a href="/python/python_reference.asp" class="ga-bottom">Python Reference</a><br>
-                        <a href="/w3css/w3css_references.asp" class="ga-bottom">W3.CSS Reference</a><br>
-                        <a href="/bootstrap/bootstrap_ref_all_classes.asp" class="ga-bottom">Bootstrap Reference</a><br>
-                        <a href="/php/php_ref_overview.asp" class="ga-bottom">PHP Reference</a><br>
-                        <a href="/colors/colors_names.asp" class="ga-bottom">HTML Colors</a><br>
-                        <a href="/java/java_ref_keywords.asp" class="ga-bottom">Java Reference</a><br>
-                        <a href="/angular/angular_ref_directives.asp" class="ga-bottom">Angular Reference</a><br>
-                        <a href="/jquery/jquery_ref_overview.asp" class="ga-bottom">jQuery Reference</a><br>
-                    </div>
-                    <div class="footerlinks_2">
-                        <h5 style="font-family: 'Source Sans Pro', sans-serif;">Top Examples</h5>
-                        <a href="/html/html_examples.asp" class="ga-bottom">HTML Examples</a><br>
-                        <a href="/css/css_examples.asp" class="ga-bottom">CSS Examples</a><br>
-                        <a href="/js/js_examples.asp" class="ga-bottom">JavaScript Examples</a><br>
-                        <a href="/howto/default.asp" class="ga-bottom">How To Examples</a><br>
-                        <a href="/sql/sql_examples.asp" class="ga-bottom">SQL Examples</a><br>
-                        <a href="/python/python_examples.asp" class="ga-bottom">Python Examples</a><br>
-                        <a href="/w3css/w3css_examples.asp" class="ga-bottom">W3.CSS Examples</a><br>
-                        <a href="/bootstrap/bootstrap_examples.asp" class="ga-bottom">Bootstrap Examples</a><br>
-                        <a href="/php/php_examples.asp" class="ga-bottom">PHP Examples</a><br>
-                        <a href="/java/java_examples.asp" class="ga-bottom">Java Examples</a><br>
-                        <a href="/xml/xml_examples.asp" class="ga-bottom">XML Examples</a><br>
-                        <a href="/jquery/jquery_examples.asp" class="ga-bottom">jQuery Examples</a><br>
-                    </div>
-                    <div class="footerlinks_2">
-                        <a href="https://campus.w3schools.com/collections/course-catalog" target="_blank"
-                            class="ga-bottom">
-                            <h5 style="font-family: 'Source Sans Pro', sans-serif;">Get Certified</h5>
-                        </a>
-                        <a href="https://campus.w3schools.com/collections/certifications/products/html-certificate"
-                            target="_blank" class="ga-bottom">HTML Certificate</a><br>
-                        <a href="https://campus.w3schools.com/collections/certifications/products/css-certificate"
-                            target="_blank" class="ga-bottom">CSS Certificate</a><br>
-                        <a href="https://campus.w3schools.com/collections/certifications/products/javascript-certificate"
-                            target="_blank" class="ga-bottom">JavaScript Certificate</a><br>
-                        <a href="https://campus.w3schools.com/collections/certifications/products/front-end-certificate"
-                            target="_blank" class="ga-bottom">Front End Certificate</a><br>
-                        <a href="https://campus.w3schools.com/collections/certifications/products/sql-certificate"
-                            target="_blank" class="ga-bottom">SQL Certificate</a><br>
-                        <a href="https://campus.w3schools.com/collections/certifications/products/python-certificate"
-                            target="_blank" class="ga-bottom">Python Certificate</a><br>
-                        <a href="https://campus.w3schools.com/collections/certifications/products/php-certificate"
-                            target="_blank" class="ga-bottom">PHP Certificate</a><br>
-                        <a href="https://campus.w3schools.com/collections/certifications/products/jquery-certificate"
-                            target="_blank" class="ga-bottom">jQuery Certificate</a><br>
-                        <a href="https://campus.w3schools.com/collections/certifications/products/java-certificate"
-                            target="_blank" class="ga-bottom">Java Certificate</a><br>
-                        <a href="https://campus.w3schools.com/collections/certifications/products/c-certificate"
-                            target="_blank" class="ga-bottom">C++ Certificate</a><br>
-                        <a href="https://campus.w3schools.com/collections/certifications/products/c-certificate-1"
-                            target="_blank" class="ga-bottom">C# Certificate</a><br>
-                        <a href="https://campus.w3schools.com/collections/certifications/products/xml-certificate"
-                            target="_blank" class="ga-bottom">XML Certificate</a><br>
-                    </div>
-                </div>
-
-
-                <div class="footersome">
-                    <a target="_blank" href="https://www.facebook.com/w3schoolscom/" title="W3Schools on Facebook"><i
-                            class="fa"></i></a>
-                    <a target="_blank" href="https://discord.gg/6Z7UaRbUQM"
-                        title="Join the W3schools community on Discord"><i class="fa"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/company/w3schools.com/"
-                        title="W3Schools on LinkedIn"><i class="fa"></i></a>
-                    <a target="_blank" href="https://www.instagram.com/w3schools.com_official/"
-                        title="W3Schools on Instagram"><i class="fa"></i></a>
-                    <a target="_blank" href="/forum/default.asp" title="Forum" class="textlink">FORUM</a>
-                    <a target="_blank" href="/about/default.asp" title="About W3Schools" class="textlink">ABOUT</a>
-                </div>
-
-                <div class="footertext">
-                    W3Schools is optimized for learning and training. Examples might be simplified to improve reading
-                    and learning.<br class="footer-hide-special">
-                    Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant
-                    full correctness<br class="footer-hide-special">
-                    of all content. While using W3Schools, you agree to have read and accepted our <a
-                        href="/about/about_copyright.asp" class="ga-bottom">terms of use</a>,
-                    <a href="/about/about_privacy.asp" class="ga-bottom">cookie and privacy policy</a>.<br><br>
-                    <a href="/about/about_copyright.asp" class="ga-bottom">Copyright 1999-2024</a> by Refsnes Data. All
-                    Rights Reserved.
-                    <a href="//www.w3schools.com/w3css/default.asp" class="ga-bottom">W3Schools is Powered by
-                        W3.CSS</a>.<br><br>
-                </div>
-            </div>
-        </div>
-
 
 
 
