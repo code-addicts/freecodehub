@@ -17,8 +17,8 @@
     }
 
     body {
-      background-color: var(--background-light);
-      color: var(--text-light);
+      background-color: black;
+      color:black;
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
@@ -26,8 +26,8 @@
     }
 
     body.dark-mode {
-      background-color: var(--background-dark);
-      color: var(--text-dark);
+      background-color:white;
+      color: white;
     }
 
     .code-editor-container {
@@ -37,34 +37,46 @@
       height: 100vh;
     }
 
-    .code-editor, .output-preview {
+    .code-editor,
+    .output-preview {
       flex: 1;
-      border: 1px solid var(--text-light);
-      border-radius: 5px;
+      border: 1px solid black;
+      border-radius: 0px;
       overflow: hidden;
     }
-
-    .code-editor textarea, .output-preview {
+    .code-editor{
+      margin-bottom: -47px;
+    }
+    .code-editor textarea,
+    .output-preview {
+      margin: 4px;
       width: 100%;
       height: 100%;
       padding: 10px;
       box-sizing: border-box;
       font-family: 'Courier New', Courier, monospace;
       font-size: 14px;
+      background-color: white;
+      color: black;
+    }
+    .output-preview{
+      margin-top: 47px;
     }
 
     .toolbar {
-      padding: 5px;
-      background-color: var(--text-light);
-      color: var(--background-light);
-      border-bottom: 1px solid var(--text-light);
+      margin: 0px -6px;
+      width: 100%;
+      padding: 5px 20px;
+      background-color: black;
+      color: black;
+      border-bottom: 1px solid black;
     }
 
     .toolbar button {
       padding: 8px 12px;
       border: none;
-      background-color: var(--background-light);
-      color: var(--text-light);
+      background-color: white;
+      color: black;
       border-radius: 5px;
       cursor: pointer;
       margin-right: 5px;
@@ -74,16 +86,47 @@
     .toolbar button:hover {
       background-color: #ddd;
     }
+
+    @media screen and (max-width:375px) {
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .code-editor-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        height: 100vh;
+        width: 100vw;
+        gap: 5px;
+      }
+      .output-preview {
+        margin: 0px;
+        width: 100vw;
+        height: 100vh;
+        border: 6px solid black;
+        border-radius: 5px;
+      }
+      #code {
+        height: 100vh;
+        width: 100vw;
+        border-right: 11px solid black;
+        border-radius: 5px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <div class="code-editor-container">
     <div class="code-editor">
       <div class="toolbar">
-        <button id="runBtn"><i class="fas fa-play"></i> Run</button>
+        <a href="https://www.freecodehub.tech/"><button id="homeBtn"><i class="fas fa-home"></i> Home</button></a>
         <button id="resetBtn"><i class="fas fa-undo"></i> Reset</button>
         <button id="darkModeBtn"><i class="fas fa-moon"></i> Dark Mode</button>
-        <a href="https://www.freecodehub.tech/"><button id="homeBtn"><i class="fas fa-home"></i> Home</button></a>
+        <button id="runBtn"><i class="fas fa-play"></i> Run</button>
+        
       </div>
       <textarea id="code">
         <!DOCTYPE html>
@@ -108,25 +151,26 @@
     const darkModeBtn = document.getElementById('darkModeBtn');
     const body = document.body;
 
-    darkModeBtn.addEventListener('click', function() {
+    darkModeBtn.addEventListener('click', function () {
       body.classList.toggle('dark-mode');
     });
 
-    document.getElementById('runBtn').addEventListener('click', function() {
+    document.getElementById('runBtn').addEventListener('click', function () {
       var code = document.getElementById('code').value;
       var outputPreview = document.getElementById('outputPreview');
       outputPreview.innerHTML = code;
     });
 
-    document.getElementById('resetBtn').addEventListener('click', function() {
+    document.getElementById('resetBtn').addEventListener('click', function () {
       document.getElementById('code').value = '';
       document.getElementById('outputPreview').innerHTML = '';
     });
 
-    document.getElementById('homeBtn').addEventListener('click', function() {
+    document.getElementById('homeBtn').addEventListener('click', function () {
       // Add your home redirection logic here
       alert('Redirecting to Home...');
     });
   </script>
 </body>
+
 </html>
